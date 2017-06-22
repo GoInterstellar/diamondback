@@ -39,7 +39,7 @@ li.video2 {width: 100%; list-style: none;}
 div.manuals {width:100%; clear:both; margin-top:75px;}
 ul.manuals {background-color:#edeceb; width:45%; display:inline-block; vertical-align:top; padding:25px 0 50px 0; margin:0; border-right:thin solid #333333;}
 ul.manuals:nth-child(1){margin-right:5%;}
-ul.manuals li{width:80%; list-style:none; color:#4F5150; font-size:18px; border-bottom: thin solid #D5D7D8; padding:12px 0; margin:0 auto; font-family: "Conv_Forza-Black",sans-serif;}
+ul.manuals li{width:80%; list-style:none; color:#4F5150; font-size:16px!important; border-bottom: thin solid #D5D7D8; padding:12px 0; margin:0 auto; font-family: "Conv_Forza-Black",sans-serif;}
 ul.manuals li.title{width:80%; list-style:none; font-size:30px; border-bottom: thin solid #A0A1A2; padding:18px 0; margin:0 auto; font-family: "Conv_Vitesse-Book",sans-serif; text-align:center;}
 ul.manuals img {max-width:31px; margin-right:8px;}
 ul.manuals li.title span {font-family: "Conv_Vitesse-Black",sans-serif;}
