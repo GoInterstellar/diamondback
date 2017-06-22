@@ -1,0 +1,179 @@
+{% if section.settings.message %}
+  <style>
+    .notification-bar {
+      background-color: {{ section.settings.color_bg }};
+    }
+
+    .notification-bar__message {
+      color: {{ section.settings.color_text }};
+    }
+  </style>
+{% endif %}
+<input type="hidden" value="" id="collection_id" />
+<section class="header-container" data-section-id="{{ section.id }}" data-section-type="header-section">
+  <header>
+ <div id="header">
+   <div class="header-container-wrapper">
+ <div class="container">
+        <div class="row">
+	<div class="mobile-nav">
+	<div class="mini-nav">
+	<a href="#/"><i class="fa fa-bars"></i></a>
+	</div>
+	</div>
+	 <div class="col-sm-4 col-md-4 col-lg-4 logo-wrapper">
+	 
+	  {% if template == 'index' %}
+      <div itemscope itemtype="http://schema.org/Organization">
+	  <div class="logo">
+	 <a href="/">
+     <img src="{{ 'dback-logo.svg' | asset_url }}" width="325" class="hidden-xs hidden-sm" />
+	 <!--img src="https://cdn.shopify.com/s/files/1/1571/5355/files/logo_3795af13-3b00-439a-8c3a-fe4f1e09f0cb.png?13641142530930575340" alt="DimondBack Truck Covers" class="hidden-xs hidden-sm" /-->
+	 <!--img src="https://cdn.shopify.com/s/files/1/1571/5355/files/logo-mobile.png?2942781307791486638" alt="DimondBack Truck Covers" class="hidden-md hidden-lg" /-->
+     <img src="{{ 'dback-logo.svg' | asset_url }}" width="200" class="hidden-md hidden-lg" />
+	 </a>
+	 </div>
+	  </div>
+                        {% else %}
+<div class="logo">
+	 <a href="/">
+       <img src="{{ 'dback-logo.svg' | asset_url }}" width="325" class="hidden-xs hidden-sm" />
+       <img src="{{ 'dback-logo.svg' | asset_url }}" width="200" class="hidden-md hidden-lg" />
+	 <!--img src="https://cdn.shopify.com/s/files/1/1571/5355/files/logo_3795af13-3b00-439a-8c3a-fe4f1e09f0cb.png?13641142530930575340" alt="DimondBack Truck Covers" class="hidden-xs hidden-sm" /-->
+	 <!--img src="https://cdn.shopify.com/s/files/1/1571/5355/files/logo-mobile.png?2942781307791486638" alt="DimondBack Truck Covers" class="hidden-md hidden-lg" /-->
+	 </a>
+	 </div>
+{% endif %}
+	 </div>
+	 <div class="col-xs-12 col-sm-12 col-md-12  col-lg-8">
+	 <div class="header-right">
+	  <div class="header-info">	  
+	 <ul>
+	 	 <!--li><a href="#" data-collection="" class="configure_by_collection">CONFIGURE</a><span class="filter-result-top"> / </span></li-->
+	 <li style="display: none"><a class="truck-form" href="#truck-form">CONFIGURE
+	 
+	 <span class="detail" style="display: none">
+	 <div class="truck-form-wrapper">
+	 <form id="truck-form" class="mfp-hide white-popup-block" action="/pages/search-result">
+
+<div class="form-title">Fit your truck</div>
+<div class="make-wrapper">
+<select class="truck-form-select selected" id="make" data-next="model"><option value="0">Make</option></select>
+</div>
+       <div class="controll-wrapper" data-filter="model">
+         <select class="truck-form-select" id="model" data-next="year"><option value="0">Model</option></select></div>
+       
+       <div class="controll-wrapper" data-filter="year">
+         <select class="truck-form-select" id="year"  data-next="bed"><option value="0">Year Range</option></select></div>
+       
+       <div class="controll-wrapper" data-filter="bed">
+<select class="truck-form-select" id="bed"  data-next="inbed"><option value="0">Bed Length</option></select>
+       </div>
+ <div class="controll-wrapper" data-filter="inbed">      
+<select class="truck-form-select" id="inbed"><option value="0">In-Bed Track</option></select>
+       </div>
+<div class="btn-wrapper-form"><input type="submit" value="CONTINUE" class="btn search-products" /></div>
+</form>
+</div>
+	</span> 
+	 </a> / </li> 	
+	 <li id="header-phone"><a href="tel:8009354002">800.935.4002</a> / </li>
+        <li id="header-chat"><a id="header-chat-link" href="javascript:void(0);" onclick="olark('api.box.expand')">Live Chat</a> / 
+            <ul>
+                <li><a id="header-chat-sales" href="javascript:void(0);">Sales</a></li>
+                <li><a id="header-chat-support" href="javascript:void(0);">Support</a></li>
+            </ul>
+        </li>
+        <li><a href="/pages/built-in-the-usa">About</a> / </li>  
+	 <li class="header-cart"><a href="/cart"><span id="CartCount">{{ cart.item_count }}</span><img src="{{ 'utilbar-01.svg' | asset_url }}" alt="Shopping Cart" /></a></li>
+	 </ul>
+	 </div>
+	 <nav>
+	 <div id="main-nav" class="main-navigation">
+	 <div class="main-nav-wrap">
+	  {% include 'site-nav', nav_alignment: 'site-nav--centered' %}
+	   </div>
+	 </div>
+	 </nav>
+	 </div>
+	 </div>
+ </div>
+ </div>
+   </div>
+ <div class="filter-result">
+ <div class="container">
+        <div class="row">
+		<div class="col-lg-12">	
+<div class="filter-result-content"></div>		
+		</div>
+		</div>
+		</div>
+ </div>
+ </div>
+ </header> 	
+</section>
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "radio",
+        "id": "align_logo",
+        "label": "Logo alignment",
+        "default": "left",
+        "options": [
+          {"value": "left", "label": "Left"},
+          {"value": "center", "label": "Centered"}
+        ]
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo image"
+      },
+      {
+        "type": "text",
+        "id": "logo_max_width",
+        "label": "Custom logo width (in pixels)",
+        "default": "100"
+      },
+      {
+        "type": "link_list",
+        "id": "main_linklist",
+        "label": "Menu",
+        "default": "main-menu"
+      },
+      {
+        "type": "checkbox",
+        "id": "message",
+        "label": "Show announcement",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "message_text",
+        "label": "Announcement text",
+        "default": "Announce something here"
+      },
+      {
+        "type": "url",
+        "id": "message_link",
+        "label": "Announcement link",
+        "info": "Optional"
+      },
+      {
+        "type": "color",
+        "id": "color_bg",
+        "label": "Announcement color",
+        "default": "#7796A8"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Announcement text color",
+        "default": "#fff"
+      }
+    ]
+  }
+{% endschema %}

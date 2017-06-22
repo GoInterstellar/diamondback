@@ -1,0 +1,48 @@
+ <nav class="mobile-nav-wrapper-main hidden-md hidden-lg" role="navigation">
+   <div class="mobile-close">X</div>
+    <ul id="MobileNav" class="mobile-nav-main">
+      {% for link in linklists[section.settings.main_linklist].links %}
+        {%- assign child_list_handle = link.title | handleize -%}
+
+        <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+          {% if linklists[child_list_handle].links != blank %}
+            <button type="button" class="btn--link js-toggle-submenu mobile-nav__link" data-target="{{ child_list_handle }}" data-level="1">
+              {{ link.title }}
+              <div class="mobile-nav__icon">
+                {% include 'icon-chevron-right' %}
+                <span class="icon__fallback-text">{{ 'layout.navigation.expand' | t }}</span>
+              </div>
+            </button>
+            <ul class="mobile-nav__dropdown" data-parent="{{ child_list_handle }}" data-level="2">
+              <li class="mobile-nav__item border-bottom">
+                <div class="mobile-nav__table">
+                  <div class="mobile-nav__table-cell mobile-nav__return">
+                    <button class="btn--link js-toggle-submenu mobile-nav__return-btn" type="button">
+                      {% include 'icon-chevron-left' %}
+                      <span class="icon__fallback-text">{{ 'layout.navigation.collapse' | t }}</span>
+                    </button>
+                  </div>
+                  <a href="{{ link.url }}" class="mobile-nav__sublist-link mobile-nav__sublist-header">
+                    {{ link.title }}
+                  </a>
+                </div>
+              </li>
+
+              {% for childlink in linklists[child_list_handle].links %}
+                <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+                  <a href="{{ childlink.url }}" class="mobile-nav__sublist-link">
+                    {{ childlink.title | escape }}
+                  </a>
+                </li>
+              {% endfor %}
+
+            </ul>
+          {% else %}
+            <a href="{{ link.url }}" class="mobile-nav__link">
+              {{ link.title }}
+            </a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>

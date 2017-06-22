@@ -1,0 +1,354 @@
+<div class="product-template__container" itemscope itemtype="http://schema.org/Product" id="ProductSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true">
+<div class="page-product custom_product">  
+  <meta itemprop="name" content="{{ product.title }}">
+  <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
+  <meta itemprop="image" content="{{ product.featured_image.src | img_url: '800x' }}">
+
+  {% comment %}
+    Get first variant, or deep linked one
+  {% endcomment %}
+  {%- assign current_variant = product.selected_or_first_available_variant -%}
+  {%- assign product_thumb_size = '160x' -%}
+  {%- assign product_image_zoom_size = '1024x1024' -%}
+  {%- assign enable_zoom = section.settings.enable_zoom -%}
+
+  {% case section.settings.image_size %}
+    {% when 'small' %}
+      {%- assign product_image_width = 'medium-up--one-third' -%}
+      {%- assign product_description_width = 'medium-up--two-thirds' -%}
+      {%- assign product_thumbnail_width = 'medium-up--one-third' -%}
+      {%- assign product_image_size = '345x' -%}
+    {% when 'medium' %}
+      {%- assign product_image_width = 'medium-up--one-half' -%}
+      {%- assign product_description_width = 'medium-up--one-half' -%}
+      {%- assign product_thumbnail_width = 'medium-up--one-quarter' -%}
+      {%- assign product_image_size = '530x' -%}
+    {% when 'large' %}
+      {%- assign product_image_width = 'medium-up--two-thirds' -%}
+      {%- assign product_description_width = 'medium-up--one-third' -%}
+      {%- assign product_thumbnail_width = 'medium-up--one-fifth' -%}
+      {%- assign product_image_size = '720x' -%}
+    {% when 'full' %}
+      {%- assign product_image_width = '' -%}
+      {%- assign product_description_width = '' -%}
+      {%- assign product_thumbnail_width = 'medium-up--one-eighth' -%}
+      {%- assign product_image_size = '1090x' -%}
+      {%- assign enable_zoom = false -%}
+  {% endcase %}
+  {%- assign product_image_size = '1000x' -%}
+<div class="grid container">
+   <div class="row">
+    <div class="product-single__photos col-md-7 col-lg-8">
+      {%- assign featured_img_src = current_variant.featured_image.src | default: product.featured_image.src -%}
+      {%- assign featured_img_alt = current_variant.featured_image.alt | default: product.featured_image.alt -%}
+      <div id="FeaturedImageZoom-{{ section.id }}" class="product-single__photo{% if product.images.size > 1 %} product-single__photo--has-thumbnails{% endif %}" {% if enable_zoom %}data-zoom="{{ featured_img_src | img_url: product_image_zoom_size }}"{% endif %}>
+        <img src="{{ featured_img_src | img_url: product_image_size }}" alt="{{ featured_img_alt }}" id="FeaturedImage-{{ section.id }}" class="product-featured-img{% if enable_zoom %} js-zoom-enabled{% endif %}">
+      </div>
+
+      {% if product.images.size > 1 %}
+        {% if product.images.size > 3 %}
+          {%- assign enable_thumbnail_slides = true -%}
+        {% endif %}
+
+        <div class="thumbnails-wrapper{% if enable_thumbnail_slides == true %} thumbnails-slider--active{% endif %}">
+          {% if enable_thumbnail_slides == true %}
+            <button type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__prev thumbnails-slider__prev--{{ section.id }}">
+              {% include 'icon-chevron-left' %}
+              <span class="icon__fallback-text">{{ 'sections.slideshow.previous_slide' | t }}</span>
+            </button>
+          {% endif %}
+          <ul class="grid grid--uniform product-single__thumbnails product-single__thumbnails-{{ section.id }}">
+            {% for image in product.images %}
+              <li class="grid__item {{ product_thumbnail_width }} product-single__thumbnails-item">
+                <a
+                  href="{{ image.src | img_url: product_image_size }}"
+                    class="text-link product-single__thumbnail product-single__thumbnail--{{ section.id }}"
+                    {% if enable_zoom %}data-zoom="{{ image.src | img_url: product_image_zoom_size }}"{% endif %}>
+                    <img class="product-single__thumbnail-image" src="{{ image.src | img_url: product_thumb_size }}" alt="{{ image.alt | escape }}">
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+          {% if enable_thumbnail_slides == true %}
+            <button type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__next thumbnails-slider__next--{{ section.id }}">
+              {% include 'icon-chevron-right' %}
+              <span class="icon__fallback-text">{{ 'sections.slideshow.next_slide' | t }}</span>
+            </button>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="col-md-5 col-lg-4">
+      <div class="product-single__meta">
+         <div class="product-single__meta-content">
+        <h1 itemprop="name" class="product-single__title">{{ product.title }}</h1>
+
+        {% if section.settings.show_vendor %}
+          <p itemprop="brand" class="product-single__vendor">{{ product.vendor }}</p>
+        {% endif %}
+
+        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+          <meta itemprop="priceCurrency" content="{{ shop.currency }}">
+
+          <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
+<div class="extra-meta-data-cover hidden-xs hidden-sm">
+		  <div class="price-label">Starting MSRP</div>
+		  <div class="availability-label">Ready to ship: {{ product.metafields.product.readytoship }}</div>
+		  </div>
+          <p class="product-single__price product-single__price-{{ section.id }}{% unless current_variant.available %} product-price--sold-out{% endunless %}">
+            <div class="price-label-mobile hidden-md hidden-lg">Starting MSRP</div>
+            {% if current_variant.compare_at_price > current_variant.price %}
+                <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                <s id="ComparePrice-{{ section.id }}">{{ current_variant.compare_at_price | money }}</s>
+                <span class="product-price__price product-price__price-{{ section.id }} product-price__sale product-price__sale--single">
+                  <span id="ProductPrice-{{ section.id }}">{{ current_variant.price | money }}</span>
+                  <span class="product-price__sale-label product-price__sale-label-{{ section.id }}">{{ 'products.product.on_sale' | t }}</span>
+                </span>
+            {% else %}
+              <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+              <s id="ComparePrice-{{ section.id }}" class="hide">{{ current_variant.compare_at_price | money }}</s>
+              <span class="product-price__price product-price__price-{{ section.id }}">
+                <span id="ProductPrice-{{ section.id }}">{{ current_variant.price | money }}</span>
+                <span class="product-price__sale-label product-price__sale-label-{{ section.id }} hide">{{ 'products.product.on_sale' | t }}</span>
+              </span>
+            {% endif %}
+          </p>
+
+          <form action="/cart/add" method="post" enctype="multipart/form-data" class="product-form product-form-{{ section.id }}{% unless section.settings.show_variant_labels %} product-form--hide-variant-labels{% endunless %}" data-section="{{ section.id }}">
+            {% unless product.options.size == 1 and product.variants[0].title == 'Default Title' %}
+              {% for option in product.options_with_values %}
+                <div class="selector-wrapper js product-form__item">
+                  <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">                    
+					{% if option.name == 'Color' %}
+					Finish Options
+					{% else %}
+					{{ option.name }}					
+					{% endif %}					
+                  </label>
+				  {% if option.name == 'Color' %}
+				  <div class="product-color-wrapper">
+				  {% for value in option.values %}
+                      <div class="color-option {{ value | escape }} {% if option.selected_value == value %} selected{% endif %}" data-val="{{ value | escape }}"></div>
+                    {% endfor %}
+					
+				    <select style="display: none;" class="single-option-selector single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                    {% for value in option.values %}
+                      <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                    {% endfor %}
+                  </select>
+				  </div>
+				  {% else %}
+				   <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                    {% for value in option.values %}
+                      <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                    {% endfor %}
+                  </select>
+				  {% endif %}                 
+                </div>
+              {% endfor %}
+            {% endunless %}
+
+            <select name="id" id="ProductSelect-{{ section.id }}" data-section="{{ section.id }}" class="product-form__variants no-js">
+              {% for variant in product.variants %}
+                {% if variant.available %}
+                  <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                    {{ variant.title }}
+                  </option>
+                {% else %}
+                  <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                {% endif %}
+              {% endfor %}
+            </select>
+
+            {% if section.settings.show_quantity_selector %}
+              <div class="product-form__item product-form__item--quantity">
+                <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
+                <input type="number" id="Quantity" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*">
+              </div>
+            {% endif %}
+
+            <div class="product-form__item product-form__item--submit">
+            <a href="#" data-collection="382472009" class="configure_by_collection btn">Fit Your Truck</a>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="product-single__description rte" itemprop="description">
+          {{ product.description }}
+        </div>
+		<div class="product-additional-data">
+		<strong>Shipped</strong> to your door / Built in the <strong>USA</strong>
+		</div>
+        <div class="upload-gallery-wrapper-product">
+	 <div class="upload-title-gray">#Diamondback<span>ready</span></div>
+	 <div class="action inline">
+	 <a href="https://submit.curations.bazaarvoice.com/?client=diamondback&group=photo-upload" class="file-upload-gray">&gt; Upload your own photo</a>
+	 </div>
+	<!-- Begin Bazaarvoice Curations Embed Code -->
+    <script src="//static.curations.bazaarvoice.com/gallery/diamondback/prod/loader.js"></script>
+    <script type="text/javascript">
+      BVWidgets.display({});
+    </script>
+    <!-- BV INJECTION GRID -->
+    <div id="bv-carousel"></div>
+    <!-- End Bazaarvoice Curations Embed Code -->
+	</div>
+		  </div>
+      </div>
+    </div>
+	 </div>
+  </div>
+</div>
+<div class="product-additional-description">
+<div class="container">
+        <div class="row product-secondary-desc-wrapper">	 
+           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 desc-split desc-left">
+		   <div class="tab-desc-line-wrapper">
+		    <div class="tab-desc-line">
+			<div class="tab-title">PRODUCT SPECS</div>
+		   </div>
+		   </div>
+		   <div class="specs-content-wrapper">
+		   {% assign productspecs = product.metafields.productspecs %}
+{% assign key = 'desc' %}
+<div class="specs-content">{{ productspecs[key] }}</div>
+		   </div>
+</div>
+           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 desc-split  desc-right">
+		 <div class="tab-desc-line-wrapper">
+		    <div class="tab-desc-line">
+			<div class="tab-title">COMPATIBILITY</div>			
+		   </div>
+		   </div>
+		   <div class="comp-desc-wrapper">
+			<div class="comp-desc-1">
+			 <div class="comp-content-wrapper">
+		    <!--  assign productcomp = product.metafields.productcomp -->
+ <!--  assign key = 'desc' -->
+<div class="comp-content">
+<!--  productcomp[key] -->
+<ul>
+  {{ product.metafields.product.compatible-with }}
+</ul>
+
+
+</div>
+		   </div>
+			
+			</div>
+			<div class="comp-desc-2"><div class="db-bach"></div></div>
+			</div>
+{% assign installlink = product.metafields.installlink %}
+{% assign key = 'desc' %}
+{% assign manuallink = product.metafields.manuallink %}
+{% assign key = 'desc' %}
+
+			{% if installlink[key] != blank and manuallink[key] != blank %}
+			 <div class="document-desc-wrapper">
+			 <div class="document-desc-content-accessories">
+			 <div class="doc-desc-tab"><div class="tab-title">DOCUMENTS</div></div>
+			 <div class="document-desc-content-main">
+            {% if installlink[key] != blank %}
+			<div class="document-item">
+			<a href="{{ installlink[key] }}">
+			<div class="doc-img"><img src="https://cdn.shopify.com/s/files/1/1571/5355/files/doc-installation.png?16784171699949827067" alt="Installation Guilde" /></div>
+			<div class="doc-desc">DOWNLOAD:<span>Installation Guide</span></div>
+			</a>
+			</div>
+			{% endif %}
+{% if manuallink[key] != blank %}
+			<div class="document-item">
+			<a href="https://cdn.shopify.com/s/files/1/1571/5355/files/diamondback-owners-manual.pdf?6110302304246731053" target="_blank">
+			<div class="doc-img"><img src="https://cdn.shopify.com/s/files/1/1571/5355/files/doc-owners-manual.png?16784171699949827067" alt="Owners Manual" /></div>
+			<div class="doc-desc">DOWNLOAD:<span>Owner's Manual</span></div>
+			</a>
+			</div>
+			{% endif %}
+			</div>
+			 </div>
+			</div>
+			{% endif %}
+		   
+</div>
+</div>
+</div>		   
+		   
+</div>
+<!--div class="reviews-wrapper">
+<img class="img_bkg" src="https://cdn.shopify.com/s/files/1/1571/5355/files/reviews-bkg.png?9893518509269078388" alt="Product Reviews" />
+</div-->
+</div>
+<style>
+.email-wrapper .container {
+    border-top: 0!important;
+}
+</style>
+{% unless product.empty? %}
+  <script type="application/json" id="ProductJson-{{ section.id }}">
+    {{ product | json }}
+  </script>
+{% endunless %}
+
+{% schema %}
+  {
+    "name": "Product pages",
+    "settings": [
+      {
+        "type": "select",
+        "id": "image_size",
+        "label": "Image size",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          },
+          {
+            "value": "full",
+            "label": "Full-width"
+          }
+        ],
+        "default": "medium"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_quantity_selector",
+        "label": "Show quantity selector",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_variant_labels",
+        "label": "Show variant labels",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_zoom",
+        "label": "Enable image zoom",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_share_buttons",
+        "label": "Show social sharing buttons",
+        "default": true
+      }
+    ]
+  }
+{% endschema %}

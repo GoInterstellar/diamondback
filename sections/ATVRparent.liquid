@@ -1,0 +1,606 @@
+ <link href="{{ 'slick.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+ <script src="{{ 'slick.min.js' | asset_url }}" type="text/javascript"></script>
+<script type="text/javascript">		
+  $BV.ui( 'rr', 'inline_ratings', {		
+  productIds : ['ATV-REAR'],		
+  containerPrefix : 'BVRRInlineRating'		
+  });		
+  </script>		
+  <script type="text/javascript" src="https://display.ugc.bazaarvoice.com/bvstaging/static/diamondback/en_US/bvapi.js"></script>		
+  <!-- Bazaarvoice Configuration Call -->		
+  <script type="text/javascript">		
+      $BV.configure('global', {		
+          productId: 'ATV-REAR' // Use relevant ExternalId from product feed. This may need to be updated		
+      });		
+  </script>
+  
+<div class="product-template__container custom_product" itemscope itemtype="http://schema.org/Product" id="ProductSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true">
+<div class="page-product">  
+  <meta itemprop="name" content="{{ product.title }}">
+  <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
+  <meta itemprop="image" content="{{ product.featured_image.src | img_url: '800x' }}">
+
+  {% comment %}
+    Get first variant, or deep linked one
+  {% endcomment %}
+  {%- assign current_variant = product.selected_or_first_available_variant -%}
+  {%- assign product_thumb_size = '160x' -%}
+  {%- assign product_image_zoom_size = '2048x2048' -%}
+  {%- assign enable_zoom = section.settings.enable_zoom -%}
+
+  {% case section.settings.image_size %}
+    {% when 'small' %}
+      {%- assign product_image_width = 'medium-up--one-third' -%}
+      {%- assign product_description_width = 'medium-up--two-thirds' -%}
+      {%- assign product_thumbnail_width = 'medium-up--one-third' -%}
+      {%- assign product_image_size = '345x' -%}
+    {% when 'medium' %}
+      {%- assign product_image_width = 'medium-up--one-half' -%}
+      {%- assign product_description_width = 'medium-up--one-half' -%}
+      {%- assign product_thumbnail_width = 'medium-up--one-quarter' -%}
+      {%- assign product_image_size = '530x' -%}
+    {% when 'large' %}
+      {%- assign product_image_width = 'medium-up--two-thirds' -%}
+      {%- assign product_description_width = 'medium-up--one-third' -%}
+      {%- assign product_thumbnail_width = 'medium-up--one-fifth' -%}
+      {%- assign product_image_size = '720x' -%}
+    {% when 'full' %}
+      {%- assign product_image_width = '' -%}
+      {%- assign product_description_width = '' -%}
+      {%- assign product_thumbnail_width = 'medium-up--one-eighth' -%}
+      {%- assign product_image_size = '1090x' -%}
+      {%- assign enable_zoom = false -%}
+  {% endcase %}
+  {%- assign product_image_size = '1000x' -%}
+  <div class="grid container">
+    <div class="row">
+    <div class="product-single__photos col-md-7 col-lg-8">
+      {%- assign featured_img_src = current_variant.featured_image.src | default: product.featured_image.src -%}
+      {%- assign featured_img_alt = current_variant.featured_image.alt | default: product.featured_image.alt -%}
+      <div id="FeaturedImageZoom-{{ section.id }}" class="product-single__photo{% if product.images.size > 1 %} product-single__photo--has-thumbnails{% endif %}" {% if enable_zoom %}data-zoom="{{ featured_img_src | img_url: product_image_zoom_size }}"{% endif %}>
+        <img src="{{ featured_img_src | img_url: product_image_size }}" alt="{{ featured_img_alt }}" id="FeaturedImage-{{ section.id }}" class="product-featured-img{% if enable_zoom %} js-zoom-enabled{% endif %}">
+      </div>
+
+      {% if product.images.size > 1 %}
+        {% if product.images.size > 3 %}
+          {%- assign enable_thumbnail_slides = true -%}
+        {% endif %}
+
+        <div class="thumbnails-wrapper{% if enable_thumbnail_slides == true %} thumbnails-slider--active{% endif %}">
+          {% if enable_thumbnail_slides == true %}
+            <button type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__prev thumbnails-slider__prev--{{ section.id }}">
+              {% include 'icon-chevron-left' %}
+              <span class="icon__fallback-text">{{ 'sections.slideshow.previous_slide' | t }}</span>
+            </button>
+          {% endif %}
+          <ul class="grid grid--uniform product-single__thumbnails product-single__thumbnails-{{ section.id }}">
+            {% for image in product.images %}
+              <li class="grid__item {{ product_thumbnail_width }} product-single__thumbnails-item">
+                <a
+                  href="{{ image.src | img_url: product_image_size }}"
+                    class="text-link product-single__thumbnail product-single__thumbnail--{{ section.id }}"
+                    {% if enable_zoom %}data-zoom="{{ image.src | img_url: product_image_zoom_size }}"{% endif %}>
+                    <img class="product-single__thumbnail-image" src="{{ image.src | img_url: product_thumb_size }}" alt="{{ image.alt | escape }}">
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+          {% if enable_thumbnail_slides == true %}
+            <button type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__next thumbnails-slider__next--{{ section.id }}">
+              {% include 'icon-chevron-right' %}
+              <span class="icon__fallback-text">{{ 'sections.slideshow.next_slide' | t }}</span>
+            </button>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="col-md-5 col-lg-4">
+      <div class="product-single__meta">
+         <div class="product-single__meta-content">
+        <h1 itemprop="name" class="product-single__title">DIAMONDBACK<span>ATV</span>R<span class="copy">&reg;</span></h1>
+
+        {% if section.settings.show_vendor %}
+          <p itemprop="brand" class="product-single__vendor">{{ product.vendor }}</p>
+        {% endif %}
+
+        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+          <meta itemprop="priceCurrency" content="{{ shop.currency }}">
+
+          <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
+          <div class="extra-meta-data-cover hidden-xs hidden-sm">
+		  <div class="price-label">Starting MSRP</div>
+		  <div class="availability-label">Ready to ship: {{ product.metafields.product.readytoship }}</div>
+		  </div>
+          <p class="product-single__price product-single__price-{{ section.id }}{% unless current_variant.available %} product-price--sold-out{% endunless %}">
+            <div class="price-label-mobile hidden-md hidden-lg">Starting MSRP</div>
+			{% if current_variant.compare_at_price > current_variant.price %}
+                <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                <s id="ComparePrice-{{ section.id }}">{{ current_variant.compare_at_price | money }}</s>
+                <span class="product-price__price product-price__price-{{ section.id }} product-price__sale product-price__sale--single">
+                  <span id="ProductPrice-{{ section.id }}">{{ current_variant.price | money }}</span>
+                  <span class="product-price__sale-label product-price__sale-label-{{ section.id }}">{{ 'products.product.on_sale' | t }}</span>
+                </span>
+            {% else %}
+              <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+              <s id="ComparePrice-{{ section.id }}" class="hide">{{ current_variant.compare_at_price | money }}</s>
+              <span class="product-price__price product-price__price-{{ section.id }}">
+                <span id="ProductPrice-{{ section.id }}">{{ current_variant.price | money  | remove: '.00'}}</span>
+                <span class="product-price__sale-label product-price__sale-label-{{ section.id }} hide">{{ 'products.product.on_sale' | t }}</span>
+              </span>
+            {% endif %}
+          </p>
+           <div class="shipping-info-mobile hidden-md hidden-lg">
+		   Ready to ship: {{ product.metafields.product.readytoship }}
+		   </div>
+          <form action="/cart/add" method="post" enctype="multipart/form-data" class="product-form product-form-{{ section.id }}{% unless section.settings.show_variant_labels %} product-form--hide-variant-labels{% endunless %}" data-section="{{ section.id }}">
+            {% unless product.options.size == 1 and product.variants[0].title == 'Default Title' %}
+              {% for option in product.options_with_values %}
+                <div class="selector-wrapper js product-form__item">
+                  <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">                    
+					{% if option.name == 'Color' %}
+					Finish Options
+					{% else %}
+					{{ option.name }}					
+					{% endif %}					
+                  </label>
+				  {% if option.name == 'Color' %}
+				  <div class="product-color-wrapper">
+				  {% for value in option.values %}
+                      <div class="color-option {{ value | escape }} {% if option.selected_value == value %} selected{% endif %}" data-val="{{ value | escape }}"></div>
+                    {% endfor %}
+					
+				    <select style="display: none;" class="single-option-selector single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                    {% for value in option.values %}
+                      <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                    {% endfor %}
+                  </select>
+				  </div>
+				  {% else %}
+				   <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                    {% for value in option.values %}
+                      <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                    {% endfor %}
+                  </select>
+				  {% endif %}                 
+                </div>
+              {% endfor %}
+            {% endunless %}
+            
+            <!-- BEGIN RATINGS CODE SNIPPET HERE -->		
+            <!--div class="bv-supercontainer">		
+                <div class="bv-container">		
+                    <label>Customer Reviews</label>		
+                    <div id="BVRRInlineRating-ATV-REAR"></div>		
+                </div>                       		
+            </div-->		
+            <!-- END RATINGS CODE SNIPPET HERE -->
+
+            <select name="id" id="ProductSelect-{{ section.id }}" data-section="{{ section.id }}" class="product-form__variants no-js">
+              {% for variant in product.variants %}
+                {% if variant.available %}
+                  <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                    {{ variant.title }}
+                  </option>
+                {% else %}
+                  <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                {% endif %}
+              {% endfor %}
+            </select>
+
+            {% if section.settings.show_quantity_selector %}
+              <div class="product-form__item product-form__item--quantity">
+                <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
+                <input type="number" id="Quantity" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*">
+              </div>
+            {% endif %}
+            
+            <div class="rear-win">
+		  Rear Window Protection Options<br/>
+		  <span><img src="{{ 'hex-bullet-b.svg' | asset_url }}"  alt="Low-profile Cab Guard"  />Low-profile Cab Guard</span>
+              <span><img src="{{ 'hex-bullet-b.svg' | asset_url }}"  alt="HD Cab Guard"  />HD Cab Guard</span>
+              <span><img src="{{ 'hex-bullet-b.svg' | asset_url }}"  alt="Headache Rack"  />Headache Rack</span>
+		  </div>
+
+            <div class="product-form__item product-form__item--submit">
+              <a href="#" data-collection="356840457" class="configure_by_collection btn">Fit Your Truck</a>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="product-single__description rte" itemprop="description">
+          {{ product.description }}
+        </div>
+		<div class="product-main-specs atv">
+		<div class="custom-prod-spec-content">
+		Max wheelbase of ATV: <span>Truck bed specific</span>
+		</div>
+		</div>
+		
+		
+		
+		<div class="product-additional-data">
+		<strong>Shipped</strong> to your door / Built in the <strong>USA</strong> / <strong>Lifetime</strong> Warranty
+		</div>
+		<div class="upload-gallery-wrapper-product">
+	 <div class="upload-title-gray">#Diamondback<span>ready</span></div>
+	 <div class="action inline">
+	 <a href="https://submit.curations.bazaarvoice.com/?client=diamondback&group=photo-upload" class="file-upload-gray">&gt; Upload your own photo</a>
+	 </div>
+	<!-- Begin Bazaarvoice Curations Embed Code -->
+    <script src="//static.curations.bazaarvoice.com/gallery/diamondback/prod/loader.js"></script>
+    <script type="text/javascript">
+      BVWidgets.display({});
+    </script>
+    <!-- BV INJECTION GRID -->
+    <div id="bv-carousel"></div>
+    <!-- End Bazaarvoice Curations Embed Code -->
+	</div>
+		  </div>
+      </div>
+    </div>
+	  </div>
+  </div>
+</div>
+
+<section class="product-gallery">
+<div class="container tab-wrapper hidden-xs hidden-sm"><div class="tab"><div class="title">GALLERY</div></div></div>
+<div class="gallery-product">
+<div>
+		<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-gal-02.png?13097014993922800686"  alt="Shop for DIAMONDBACKATVR"  />
+		</div>
+		<div>
+		<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-gal-03.png?11100987250493310721"  alt="Shop for DIAMONDBACKATVR"  />
+		</div>
+<div>
+		<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-gal-04.png?13097014993922800686"  alt="Shop for DIAMONDBACKATVR"  />
+		</div>
+</div>
+{% include 'product-gallery-js' %}
+
+</section>
+
+<!--section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center">
+<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR1-800.png?9865851746000911533" class="hidden-lg">
+</section-->
+
+<section class="go-where">
+	<div class="row">
+		<div class="column one atvr"></div>
+		<div class="column two"><h1>GO WHERE NO TRAILER HAS</h1>
+           <h2>GONE BEFORE.</h2>
+		<p>With the DIamondBack ATV Carrier you don’t have to worry about speed limit restrictions, increased tolls, parking constraints and difficulty getting to off-road trailheads. Say goodbye to the added expense of buying a trailer and keeping it registered, maintained, and stored.</p>
+		</div>
+	</div>
+</section>
+
+<!--section class="product-section section-product-img-left atv prod-atvr-bkg-left-1">
+<div class="container">
+        <div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		</div>		
+		<div class="col-md-6 col-lg-6">
+		 <div class="product-cms-wrapper">
+		 <h2>GO WHERE NO TRAILER HAS</h2>
+		 <h1>GONE BEFORE.</h1>
+		 <div class="product-content-section">
+		With the DIamondBack ATV Carrier you don’t have to worry about speed limit restrictions, increased tolls, parking constraints and difficulty getting to off-road trailheads. Say goodbye to the added expense of buying a trailer and keeping it registered, maintained, and stored.
+		</div>
+		</div>
+          
+	  </div>
+	 
+	  	 
+ </div> 
+ </div>
+</section-->
+
+<section class="free-up">
+	<div class="row atvr">
+		<div class="column"><h1>FREE UP</h1>
+           <h2>YOUR HITCH.</h2>
+		<p>Forget about having to make those hard decisions on what to take. Whether that be more ATVs, a boat, or a camper now you can haul it all with one truck.</p>
+		</div>
+	</div>
+</section>
+
+
+<!--section class="product-section product-section-dark section-product-full-width full-width-atvr-bkg">
+<div class="container-absolute-content">
+<div class="container">
+        <div class="row">	 
+	  		<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+			<div class="zb-wrapper">
+			<div class="white-zubriki-bottom hidden-xs hidden-sm"></div></div>
+		 <div class="product-cms-wrapper">
+		  <h2>FREE UP</h2>
+		  <h1>YOUR HITCH.</h1>		 
+		 <div class="product-content-section">
+		Forget about having to make those hard decisions on what to take. Whether that be more ATVs, a boat, or a camper now you can haul it all with one truck.
+		</div>
+		</div>          
+	  </div>
+	  	
+<div class="hidden-xs hidden-sm col-md-5  col-lg-5">
+	 </div>
+ </div>  
+ </div>
+  </div>
+<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-super-large-bkg-1.png?16873850045679682003" alt="ATV DiamondBack covers" class="bkgimg-full-width bkg-temp" />		
+ 
+</section-->
+
+<!--section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center">
+<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR-1.png?5706995955420655820" class="hidden-lg">
+</section-->
+
+<section class="protect-your-gear">
+	<div class="row atvr">
+		<div class="column one"></div>
+		<div class="column two"><h2>PROTECT YOUR GEAR</h2>
+           <h1>FROM WEATHER AND THEFT.</h1>
+		<p>Peace of mind is knowing your gear is safe when you’re out riding or away from your truck while traveling to ATV trails.</p>
+		</div>
+	</div>
+  </section>
+
+<!--section class="product-section  section-product-img-left section-atvr-bkg-2 more">
+<div class="container">
+        <div class="row">
+		<div class="col-md-6 col-lg-6">
+		   </div>	 
+		<div class="col-md-6 col-lg-6">
+		<div class="zb-wrapper">
+		<div class="zibra-grey-bottom-in hidden-xs hidden-sm hidden-md"></div>
+		</div>
+		 <div class="product-cms-wrapper">
+		  <h1>PROTECT YOUR GEAR</h1>
+		 <h2>FROM WEATHER AND THEFT.</h2>
+		
+		 <div class="product-content-section">
+		Peace of mind is knowing your gear is safe when you’re out riding or away from your truck while traveling to ATV trails.
+		</div>
+		</div>
+          
+	  </div>
+	 
+	  	 
+ </div> 
+ </div>
+</section-->
+<section class="product-section section-product-type-atvr-facts">
+<div class="atv-options-content-wrapper">
+<div class="container">
+        <div class="row">
+		<div class="col-lg-12">
+		<h2 class="product-slide-title">Helping You Turn A Truck Cover</h2>
+		<h1 class="product-slide-title">Into An ATV Hauler.</h1>
+		</div>
+	</div>
+
+ <div class="row atv-options-items">
+		<div class="hex-col-xs hex-col-s hex-col-m hex-col-l hex-col-xl">
+		<div class="atv-option-item">
+		<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/atv-ramps-on.png?9548597685857714991" alt="ATV Ramps" class="active" data-off="https://cdn.shopify.com/s/files/1/1571/5355/files/atv-ramps.png" data-hover="desc-1" data-bkg="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-help-01.png?8601998476485003886"/>
+		<div class="opt-title" >ATV Ramps</div>
+	 </div>
+	 </div>
+	 
+	 	 <div class="hex-col-xs hex-col-s hex-col-m hex-col-l hex-col-xl">
+		<div class="atv-option-item">
+		<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/atv-adopter.png?9548597685857714991" alt="Adapter Bars" data-off="https://cdn.shopify.com/s/files/1/1571/5355/files/atv-adopter.png"  data-hover="desc-3" data-bkg="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-help-02.png?8601998476485003886"/>
+		<div class="opt-title">Adapter Bars</div>
+	 </div>
+	 </div>
+	 
+	 
+	 <div class="hex-col-xs hex-col-s hex-col-m hex-col-l hex-col-xl">
+		<div class="atv-option-item">
+		<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-risers.png?13903048584521895879" alt="Risers" data-off="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-risers.png?13903048584521895879"  data-hover="desc-2" data-bkg="https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-risers-bg.png?17484565979957619317"/>
+		<div class="opt-title">Risers</div>
+	 </div>
+	 </div>
+	 
+
+
+ <div class="hex-col-xs hex-col-s hex-col-m hex-col-l hex-col-xl">
+		<div class="atv-option-item">
+		<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-cab.png?14534912511516898823" alt="Cab Guard" data-off="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-cab.png?14534912511516898823"  data-hover="desc-4" data-bkg="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-help-04.png?9595205501500024778"/>
+		<div class="opt-title">Cab Guard</div>
+	 </div>
+	 </div>
+	 
+	 </div>	
+	 
+	 
+	 
+		<div class="row">
+     <div class="col-lg-12">
+<div class="atv-options-desc">
+<div class="atv-options-desc-details">
+<div class="desc-1 product-data-desc">
+<div class="opt-main-content"><strong>Not your average ramps.</strong> They're 12' long, providing an inline less than most taligate ramps. A 3" side wall helps keep your tires on the ramp. Designed to hook on Adapter Bars eliminating the chance of kick-out.
+<a href="/products/ramps">Learn More > </a>
+</div>
+<ul class="slider-bullets">
+<li>Supports up to 1600 lbs per set</li>
+<li>Weighs 35 lbs per ramp</li>
+</ul>
+</div>
+<div class="desc-2 product-data-desc">
+<div class="opt-main-content"><strong>An add-on to help you get a little extra length</strong> to haul longer wheelbase vehicles. Detachable when not in use, they prop up your tires so you can still hook your ramps on and off the Adapter Bars.
+<a href="/products/risers">Learn More > </a>
+</div>
+</div>
+<div class="desc-3 product-data-desc">
+<div class="opt-main-content"><strong>A ramp’s best friend,</strong> they’re mounted to the DiamondBack HD with stainless steel bolts and rubber washers, providing a secure foundation for the ATV Ramps to hook on and hook off.
+<a href="/products/rear-adapter-bars">Learn More > </a>
+</div>
+</div>
+<div class="desc-4 product-data-desc">
+<div class="opt-main-content"><strong>Providing varying levels of window protection,</strong> they mount to the top of the DiamondBack HD. Choose between the Low-Profile Cab Guard, HD Cab Guard, or Headache Rack.
+<a href="/collections/rear-window-protection">Learn More > </a>
+</div>
+</div>
+</div>
+<div class="opt-desc-text"></div>
+</div>
+      </div>	 
+	 
+	 
+	 
+ </div>	 
+	 
+
+ </div>	
+</div>
+
+
+<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/atvr-help-01.png?8601998476485003886" alt="ATV Options" class="bkgimg-full-width bkg-temp hidden-xs hidden-sm hidden-md slider-img" />
+</section>
+
+
+<div class="product-additional-description">
+<div class="container">
+        <div class="row product-secondary-desc-wrapper">	 
+           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 desc-split desc-left">
+		   <div class="tab-desc-line-wrapper">
+		    <div class="tab-desc-line">
+			<div class="tab-title">PRODUCT SPECS</div>
+		   </div>
+		   </div>
+		   <div class="specs-content-wrapper">
+		   {% assign productspecs = product.metafields.productspecs %}
+{% assign key = 'desc' %}
+<div class="specs-content">{{ productspecs[key] }}</div>
+		   </div>
+</div>
+           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 desc-split  desc-right">
+		 <div class="tab-desc-line-wrapper">
+		    <div class="tab-desc-line">
+			<div class="tab-title">WARRANTY</div>			
+		   </div>
+		   </div>
+		   <div class="comp-desc-wrapper">
+			<div class="comp-desc-1">
+			 <div class="comp-content-wrapper">
+		   {% assign productcomp = product.metafields.productcomp %}
+{% assign key = 'desc' %}
+<div class="comp-content">{{ productcomp[key] }}</div>
+		   </div>
+			
+			</div>
+			<div class="comp-desc-2"><div class="w-bach"></div></div>
+			</div>
+{% assign installlink = product.metafields.installlink %}
+{% assign key = 'desc' %}
+{% assign manuallink = product.metafields.manuallink %}
+{% assign key = 'desc' %}
+
+			{% if installlink[key] != blank and manuallink[key] != blank %}
+			 <div class="document-desc-wrapper">
+			 <div class="document-desc-content">
+			 <div class="doc-desc-tab"><div class="tab-title">DOCUMENTS</div></div>
+			 <div class="document-desc-content-main">
+            {% if installlink[key] != blank %}
+			<div class="document-item">
+			<a href="{{ installlink[key] }}"  target="_blank">
+			<div class="doc-img"><img src="https://cdn.shopify.com/s/files/1/1571/5355/files/doc-installation.png?16784171699949827067" alt="Installation Guilde" /></div>
+			<div class="doc-desc">DOWNLOAD:<span>Installation Guide</span></div>
+			</a>
+			</div>
+			{% endif %}
+{% if manuallink[key] != blank %}
+			<div class="document-item">
+			<a href="https://cdn.shopify.com/s/files/1/1571/5355/files/diamondback-owners-manual.pdf?6110302304246731053" target="_blank">
+			<div class="doc-img"><img src="https://cdn.shopify.com/s/files/1/1571/5355/files/doc-owners-manual.png?16784171699949827067" alt="Owners Manual" /></div>
+			<div class="doc-desc">DOWNLOAD:<span>Owner's Manual</span></div>
+			</a>
+			</div>
+			{% endif %}
+			</div>
+			 </div>
+			</div>
+			{% endif %}
+		   
+</div>
+</div>
+</div>		   
+		   
+</div>
+
+<!--{ % include 'product-reviews' % }-->
+
+{% unless product.empty? %}
+  <script type="application/json" id="ProductJson-{{ section.id }}">
+    {{ product | json }}
+  </script>
+{% endunless %}
+
+{% schema %}
+  {
+    "name": "Product pages",
+    "settings": [
+      {
+        "type": "select",
+        "id": "image_size",
+        "label": "Image size",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          },
+          {
+            "value": "full",
+            "label": "Full-width"
+          }
+        ],
+        "default": "medium"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_quantity_selector",
+        "label": "Show quantity selector",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_variant_labels",
+        "label": "Show variant labels",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_zoom",
+        "label": "Enable image zoom",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_share_buttons",
+        "label": "Show social sharing buttons",
+        "default": true
+      }
+    ]
+  }
+{% endschema %}
+<style>
+.email-wrapper .container .contact-wrapper {
+    border-top: 0 none;
+}
+</style>
