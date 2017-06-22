@@ -170,6 +170,12 @@ jQuery('a[href^="http"]').not('a[href^="{{ shop.url }}"]').attr('target', '_blan
     document.getElementById('header-chat-link').style.left = '0';
     document.getElementById('header-chat').style.opacity = '1';
     document.getElementById('header-chat-link').style.opacity = '1';
+    document.getElementById('footer-chat').style.position = 'relative';
+    document.getElementById('footer-chat-link').style.position = 'relative';
+    document.getElementById('footer-chat').style.left = '0';
+    document.getElementById('footer-chat-link').style.left = '0';
+    document.getElementById('footer-chat').style.opacity = '1';
+    document.getElementById('footer-chat-link').style.opacity = '1';    
     document.getElementById('contact-page-chat').style.opacity = '1';
     document.getElementById('contact-page-chat').style.visibility = 'visible';
     document.getElementById('contact-page-chat').style.display = 'block';
@@ -181,6 +187,12 @@ jQuery('a[href^="http"]').not('a[href^="{{ shop.url }}"]').attr('target', '_blan
     document.getElementById('header-chat-link').style.left = '-10000px';
     document.getElementById('header-chat').style.opacity = '0';
     document.getElementById('header-chat-link').style.opacity = '0';
+    document.getElementById('footer-chat').style.position = 'absolute';
+    document.getElementById('footer-chat-link').style.position = 'absolute';
+    document.getElementById('footer-chat').style.left = '-10000px';
+    document.getElementById('footer-chat-link').style.left = '-10000px';
+    document.getElementById('footer-chat').style.opacity = '0';
+    document.getElementById('footer-chat-link').style.opacity = '0';
     document.getElementById('contact-page-chat').style.opacity = '0';
     document.getElementById('contact-page-chat').style.visibility = 'hidden';
     document.getElementById('contact-page-chat').style.display = 'none';
