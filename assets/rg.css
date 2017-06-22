@@ -39,7 +39,7 @@ li.video2 {width: 100%; list-style: none;}
 div.manuals {width:100%; clear:both; margin-top:75px;}
 ul.manuals {background-color:#edeceb; width:45%; display:inline-block; vertical-align:top; padding:25px 0 50px 0; margin:0; border-right:thin solid #333333;}
 ul.manuals:nth-child(1){margin-right:5%;}
-ul.manuals li{width:80%; list-style:none; color:#4F5150; font-size:16px!important; border-bottom: thin solid #D5D7D8; padding:12px 0; margin:0 auto; font-family: "Conv_Forza-Black",sans-serif;}
+ul.manuals li{width:80%; list-style:none; color:#4F5150; font-size:18px; border-bottom: thin solid #D5D7D8; padding:12px 0; margin:0 auto; font-family: "Conv_Forza-Black",sans-serif;}
 ul.manuals li.title{width:80%; list-style:none; font-size:30px; border-bottom: thin solid #A0A1A2; padding:18px 0; margin:0 auto; font-family: "Conv_Vitesse-Book",sans-serif; text-align:center;}
 ul.manuals img {max-width:31px; margin-right:8px;}
 ul.manuals li.title span {font-family: "Conv_Vitesse-Black",sans-serif;}
@@ -47,19 +47,24 @@ ul.manuals li a, ul.manuals li a:visited, ul.manuals li a:active{color:#4F5150; 
 ul.manuals li a:hover{color:#06b9e4; text-decoration:none!important;}
 span.small{font-size:24px;}
 
-@media screen and (max-width: 1388px) {
+/* Tablet 1024px */
+@media (max-width:1024px) {
   ul.manuals li.title {font-size:28px;}
   ul.manuals li {font-size:16px;}
 }
-@media screen and (max-width: 1253px) {
-  ul.manuals li.title {font-size:26px;}
+/* Tablet 768px */
+@media (max-width:768px) {
+  ul.manuals li.title {font-size:24px;}
   ul.manuals li {font-size:14px;}
 }
-@media screen and (max-width: 1122px) {
+/* Tablet 667px */
+@media (max-width:667px) {
   ul.manuals {width:100%;}
-  ul.manuals li.title {font-size:30px;}
-  ul.manuals li {font-size:18px;}
 }
+
+/* Tablet 375px */
+@media (max-width:375px) {
+	}
 
 /* PAGE: SHIPPING PAGE */
 /*section.shipping {margin-left:150px;}*/
@@ -390,9 +395,9 @@ li.get-ready-icon-3{margin: 25px auto 0 auto; max-width:80px; }
 
 }
   
-  /* Installation Guides */
+  /* Installation Guides
   ul.manuals li {font-size:12px;}
-  ul.manuals li.title {font-size:22px;}
+  ul.manuals li.title {font-size:22px;}*/
 }
 
 #bazaar {display:block;}
