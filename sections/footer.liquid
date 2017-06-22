@@ -1,140 +1,143 @@
 <section class="email-wrapper">
-  <div class="container">
+    <div class="container">
         <div class="row">
-          <div class="contact-wrapper" >
-          <h1>Get in touch with us.</h1>
-          <div class="sm-instr" >Our reps are available to help you</div>
-          <div class="time-instr" >MON - FRI 8:30AM - 5PM ET</div>
-            <div class="contact-sections">
-              <div class="contact-section">
-                <div class="img-wrap">
-                  <img src="{{ 'get-in-touch-01.svg' | asset_url }}" alt="Call us" style="max-height:50px; margin:15px auto;"/></div>
-                <a href="tel:8009354002">800.935.4002</a>
+            <div class="contact-wrapper">
+                <h1>Get in touch with us.</h1>
+                <div class="sm-instr">
+                    Our reps are available to help you
+                </div>
+                <div class="time-instr">
+                    MON - FRI 8:30AM - 5PM ET
+                </div>
+                <div class="contact-sections">
+                    <div class="contact-section">
+                        <div class="img-wrap"><img alt="Call us" src="{{ 'get-in-touch-01.svg' | asset_url }}" style="max-height:50px; margin:15px auto;"></div><a href="tel:8009354002">800.935.4002</a>
+                    </div>
+                    <div class="contact-section">
+                        <div class="img-wrap" id="footer-chat"><img alt="Chat with us" src="{{ 'get-in-touch-02.svg' | asset_url }}" style="max-height:50px; margin:15px auto;"></div><a href="javascript:void(0);" id="footer-chat-link" onclick="olark('api.box.expand')">CHAT</a>
+                    </div>
+                    <div class="contact-section">
+                        <div class="img-wrap"><img alt="Message us" src="{{ 'get-in-touch-03.svg' | asset_url }}" style="max-height:50px; margin:15px auto;"></div><a href="/pages/contact-us">MESSAGE</a>
+                    </div>
+                </div>
             </div>
-               <div class="contact-section">
-                 <div class="img-wrap">
-                   <img src="{{ 'get-in-touch-02.svg' | asset_url }}" alt="Chat with us" style="max-height:50px; margin:15px auto;"/></div>
-                 <a href="">CHAT</a>
-            </div>
-               <div class="contact-section">
-                 <div class="img-wrap">
-                   <img src="{{ 'get-in-touch-03.svg' | asset_url }}" alt="Message us" style="max-height:50px; margin:15px auto;"/></div>
-                 <a href="/pages/contact-us">MESSAGE</a>
-            </div>
-            </div>
+        </div>
     </div>
-           </div>
-  </div>
 </section>
-
 <footer>
- <div class="footer">
-  <div class="container">
-        <div class="row">
-	 <div class="col-md-3 col-lg-3 footer-item email-item">
-	 <div class="footer-email-wrapper">
-    <div class="grey-zubriki-top"></div>
-       <div class="cmApp_embedFormContainer" style="display:none"></div>
-	 <!--div class="email-title">Get Connected</div>
-	 <div class="footer-email-subtitle hidden-large">DiamondBack updates &amp; specials.</div>
-	 <div class="email-form">
-	 <form>
-	 <input class="email-box" name="email" type="textbox" placeholder="Enter email for DiamondBack updates and specials" />
-	 <input type="submit" class="email-submit" value="" />
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 footer-item email-item">
+                    <div class="footer-email-wrapper">
+                        <div class="grey-zubriki-top"></div>
+                        <div class="cmApp_embedFormContainer" style="display:none"></div><!--div class="email-title">Get Connected</div>
+     <div class="footer-email-subtitle hidden-large">DiamondBack updates &amp; specials.</div>
+     <div class="email-form">
+     <form>
+     <input class="email-box" name="email" type="textbox" placeholder="Enter email for DiamondBack updates and specials" />
+     <input type="submit" class="email-submit" value="" />
    </form>
-	 </div-->
-	 <div class="email-note">(Private, secure, spam-free.)</div>
-	 <div class="batches batches-main">
-	 <ul>
-	 <li><img src="https://cdn.shopify.com/s/files/1/1571/5355/files/build-in-usa_568843c9-1436-4176-b9f6-e2164d232388.png?18055403870707473455" alt="Build in USA"></li>
-	 <li><img src="https://cdn.shopify.com/s/files/1/1571/5355/files/lifetime-warranty_036aef9b-170b-4249-8643-7ec283a715cc.png?18055403870707473455" alt="lifetime warranty"></li>
-	 <li class="social"><a href="https://www.facebook.com/diamondbackcovers" target="_blank"><i class="fa fa-facebook"></i></a></li>
-	 <li class="social"><a href="https://twitter.com/dbackcovers" target="_blank"><i class="fa fa-twitter"></i></a></li>
-	 <li class="social"><a href="https://www.youtube.com/user/diamondbackcover" target="_blank"><i class="fa fa-youtube"></i></a></li>
-	 <li class="social"><a href="https://www.instagram.com/diamondbackcovers/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-	 </ul>
-	 </div>
-	  </div> 
-	 </div> 
-	
-     <div class="col-md-2 col-lg-2 footer-item footer-links-wrapper  footer-links-group-1 footer-links-first-group">
-	 <ul>
-	 <li class="footer-titles">Shop</li>
-     {% include 'shop' %}  
-	 
-	 </ul>
-	 </div>    
-          
-          
-          
-          
-	  <div class="col-md-2 col-lg-2 footer-item footer-links-wrapper">
-	   <ul>
-	 <li class="footer-titles">Product Info</li>
-       {% include 'footer-product-info' %}    
-         
-         
-    
-	 </ul>
-	 </div> 
-	  <div class="col-md-2 col-lg-2 footer-item footer-links-wrapper">
-	  	   <ul>
-	 <li class="footer-titles">Get Help</li>
-        {% include 'get-help-footer' %}  
-	 </ul>
-	 </div> 
-	   <div class="col-md-2 col-lg-2 footer-item footer-links-wrapper">
-	  	   <ul>
-	 <li class="footer-titles">About</li>
-	 {% include 'about' %} 
-	 </ul>
-	 </div>
-          
-  
-        <div class="col-md-1 col-lg-1 footer-item footer-links-wrapper footer-last-item footer-links-last-group">
-	  	   <ul>
-	 <li class="footer-titles">Dealers</li>
-	 {% include 'dealers' %} 
-	 </ul>
-          {% include 'utility' %} 
-	 </div>      
-          
-     
-          
-          
-          
-          
-	 </div> 
-	 <div class="row hidden-large footer-mobile-batches">
-	 	 <div class="batches">
-	 <ul>
-	 <li class="hidden-xs hidden-sm"><img src="https://cdn.shopify.com/s/files/1/1571/5355/files/build-in-usa_568843c9-1436-4176-b9f6-e2164d232388.png?18055403870707473455" alt="Build in USA"></li>
-	 <li class="hidden-xs hidden-sm"><img src="https://cdn.shopify.com/s/files/1/1571/5355/files/lifetime-warranty_036aef9b-170b-4249-8643-7ec283a715cc.png?18055403870707473455" alt="lifetime warranty"></li>
-	 <li class="social"><a href="https://www.facebook.com/diamondbackcovers" target="_blank"><i class="fa fa-facebook"></i></a></li>
-	 <li class="social"><a href="https://twitter.com/dbackcovers" target="_blank"><i class="fa fa-twitter"></i></a></li>
-	 <li class="social"><a href="https://www.youtube.com/user/diamondbackcover" target="_blank"><i class="fa fa-youtube"></i></a></li>
-	 <li class="social"><a href="https://www.instagram.com/diamondbackcovers/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-	 </ul>
-	 </div>
-	 </div>
-	<div class="row hidden-large footer-copy">
-	<div class="copy-content">&copy;2016 DiamondBack</div>
-	<ul>
-	<li class="first"><a href="/pages/privacy-terms">Privacy &amp; Terms</a></li>
-	<li class="sep"><div></div></li>
-	<li><a href="/pages/site-map">Site Map</a></li>
-	</ul>
-    </div>	
-	 <div class="hidden-md hidden-lg mobile-logos">
-	 <ul>
-	 <li><img src="https://cdn.shopify.com/s/files/1/1571/5355/files/build-in-usa_568843c9-1436-4176-b9f6-e2164d232388.png?18055403870707473455" alt="Build in USA"></li>
-	 <li><img src="https://cdn.shopify.com/s/files/1/1571/5355/files/lifetime-warranty_036aef9b-170b-4249-8643-7ec283a715cc.png?18055403870707473455" alt="lifetime warranty"></li>
-	</ul>
-	</div>
-	 
- </div> 
- </div>
- </footer>
+     </div-->
+                        <div class="email-note">
+                            (Private, secure, spam-free.)
+                        </div>
+                        <div class="batches batches-main">
+                            <ul>
+                                <li><img alt="Build in USA" src="https://cdn.shopify.com/s/files/1/1571/5355/files/build-in-usa_568843c9-1436-4176-b9f6-e2164d232388.png?18055403870707473455"></li>
+                                <li><img alt="lifetime warranty" src="https://cdn.shopify.com/s/files/1/1571/5355/files/lifetime-warranty_036aef9b-170b-4249-8643-7ec283a715cc.png?18055403870707473455"></li>
+                                <li class="social">
+                                    <a href="https://www.facebook.com/diamondbackcovers" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li class="social">
+                                    <a href="https://twitter.com/dbackcovers" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="social">
+                                    <a href="https://www.youtube.com/user/diamondbackcover" target="_blank"><i class="fa fa-youtube"></i></a>
+                                </li>
+                                <li class="social">
+                                    <a href="https://www.instagram.com/diamondbackcovers/" target="_blank"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2 footer-item footer-links-wrapper footer-links-group-1 footer-links-first-group">
+                    <ul>
+                        <li class="footer-titles">Shop</li>
+                        <li style="list-style: none">{% include 'shop' %}</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-lg-2 footer-item footer-links-wrapper">
+                    <ul>
+                        <li class="footer-titles">Product Info</li>
+                        <li style="list-style: none">{% include 'footer-product-info' %}</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-lg-2 footer-item footer-links-wrapper">
+                    <ul>
+                        <li class="footer-titles">Get Help</li>
+                        <li style="list-style: none">{% include 'get-help-footer' %}</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-lg-2 footer-item footer-links-wrapper">
+                    <ul>
+                        <li class="footer-titles">About</li>
+                        <li style="list-style: none">{% include 'about' %}</li>
+                    </ul>
+                </div>
+                <div class="col-md-1 col-lg-1 footer-item footer-links-wrapper footer-last-item footer-links-last-group">
+                    <ul>
+                        <li class="footer-titles">Dealers</li>
+                        <li style="list-style: none">{% include 'dealers' %}</li>
+                    </ul>{% include 'utility' %}
+                </div>
+            </div>
+            <div class="row hidden-large footer-mobile-batches">
+                <div class="batches">
+                    <ul>
+                        <li class="hidden-xs hidden-sm"><img alt="Build in USA" src="https://cdn.shopify.com/s/files/1/1571/5355/files/build-in-usa_568843c9-1436-4176-b9f6-e2164d232388.png?18055403870707473455"></li>
+                        <li class="hidden-xs hidden-sm"><img alt="lifetime warranty" src="https://cdn.shopify.com/s/files/1/1571/5355/files/lifetime-warranty_036aef9b-170b-4249-8643-7ec283a715cc.png?18055403870707473455"></li>
+                        <li class="social">
+                            <a href="https://www.facebook.com/diamondbackcovers" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="social">
+                            <a href="https://twitter.com/dbackcovers" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="social">
+                            <a href="https://www.youtube.com/user/diamondbackcover" target="_blank"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li class="social">
+                            <a href="https://www.instagram.com/diamondbackcovers/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row hidden-large footer-copy">
+                <div class="copy-content">
+                    &copy;2016 DiamondBack
+                </div>
+                <ul>
+                    <li class="first">
+                        <a href="/pages/privacy-terms">Privacy &amp; Terms</a>
+                    </li>
+                    <li class="sep">
+                        <div></div>
+                    </li>
+                    <li>
+                        <a href="/pages/site-map">Site Map</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden-md hidden-lg mobile-logos">
+                <ul>
+                    <li><img alt="Build in USA" src="https://cdn.shopify.com/s/files/1/1571/5355/files/build-in-usa_568843c9-1436-4176-b9f6-e2164d232388.png?18055403870707473455"></li>
+                    <li><img alt="lifetime warranty" src="https://cdn.shopify.com/s/files/1/1571/5355/files/lifetime-warranty_036aef9b-170b-4249-8643-7ec283a715cc.png?18055403870707473455"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 	 
 	 <script>
 
@@ -301,7 +304,7 @@ document.cookie=c_name + "=" + c_value + '; path=/';
 }
   
   function replaceHTMLSYMB(data){
-   data = replaceAll(data, '%20',' ');
+   data = replaceAll(data, ' ',' ');
    data = replaceAll(data, '%27',"'"); 
    data =replaceAll(data, '%u2013',"-");
    data =replaceAll(data, '%28',"(");
