@@ -1,0 +1,133 @@
+{% layout 'blank' %}
+    <style>
+      body {min-width: 0}
+      label {position:absolute;color:#A0A1A2;font-size:0.8em;margin-left:3px}
+	</style>
+<div class="contact-section-wrapper section-last contained">
+    <div class="contact-icon"><img src="{{ 'get-in-touch-03.svg' | asset_url }}" alt="Message" style="max-height:40px;" /></div>
+    <div class="contact-section-title">
+        Send a Message
+    </div>
+    <div class="rte">
+        <div class="contact-form form-vertical" id="contact_form">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead" method="post">
+                <input name="oid" type="hidden" value="00D50000000JMfX">
+                <input id="00N500000036qYx" name="00N500000036qYx" type="hidden" value="RFI" />
+                <input name="retURL" type="hidden" value="https://diamondback-truck-covers.myshopify.com/pages/message-sent"> 
+                <!--  <input type="hidden" name="debug" value=1> -->
+                <!--  <input type="hidden" name="debugEmail" value="scott@diamondbackcovers.com"> -->
+                <div class="grid grid--half-gutters">
+                    <div class="grid__item">
+                        <!--[if lte IE 9]>
+                            <label for="first_name">First Name</label>
+                        <![endif]-->
+                        <input id="first_name" name="first_name" placeholder="> First Name" required tabindex="1" type="text" />
+                    </div>
+                    <div class="grid__item">
+                        <!--[if lte IE 9]>
+                            <label for="last_name">Last Name</label>
+                        <![endif]-->
+                        <input id="last_name" name="last_name" placeholder="> Last Name" required tabindex="2" type="text" />
+                    </div>
+                    <div class="grid__item">
+                        <!--[if lte IE 9]>
+                            <label for="email">Email</label>
+                        <![endif]-->
+                        <input id="email" name="email" placeholder="> Email" required tabindex="3" type="email" />
+                    </div>
+                </div>
+                <!--[if lte IE 9]>
+                    <label for="phone">Phone</label>
+                <![endif]-->
+                <input id="phone" name="phone" placeholder="> Phone" tabindex="4" type="tel" /> 
+                <!--[if lte IE 9]>
+                    <label for="description">Message</label>
+                <![endif]-->
+                <textarea id="ContactFormMessage" name="description" placeholder="> Enter Your Question" required rows="10" tabindex="5"></textarea>
+                <div class="letter-wrapper">
+                    <input id="00N50000002c4bq" name="00N50000002c4bq" type="hidden" value="1" />
+                    <a class="selected check-mark" onclick="toggleCheckbox()">
+                        <i class="fa fa-check"></i>
+                    </a>
+                    <div class="update-note">
+                        Please send me product updates, the DiamondBack newsletter and special deals!
+                    </div>
+                </div>
+                <input class="btn" name="submit" tabindex="6" type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function toggleCheckbox () {
+        var status = document.getElementById("00N50000002c4bq");
+        if (status.value === "1") {
+           status.value = "0"
+        }
+        else
+        {
+           status.value = "1"
+        }
+    };
+</script>
+<script>
+$('.check-mark').click(function(ev){
+  if ($(this).hasClass('selected') == true){
+   $(this).removeClass('selected'); 
+  }else{
+    $(this).addClass('selected');
+  }
+})
+</script>
+	<script>olark('api.box.hide');</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

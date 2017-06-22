@@ -1,0 +1,89 @@
+<style>
+  iframe {height: 612px;}
+  .message-form-container {padding: 40px 20px 25px;}
+</style>
+<div class="columns-container" id="customer-service">
+    <div class="container">
+        <div class="row">
+            <aside>
+                <div class="left_column sidebar col-xs-12 col-sm-12 col-md-3 col-lg-3" id="left_column">
+                    {% include 'helpful-links' %}
+                </div>
+            </aside>
+            <section class="center_column col-xs-12 col-sm-12 col-md-9 col-lg-9" id="center_column">
+                <div class="page-wrap">
+                    <div class="page-content">
+                        <h1>{{ page.title }}</h1>
+                        <div class="contact-main-info">
+                            Our office is open <strong>Monday-Friday, 8:30am-5pm ET.</strong><br>
+                            Get in touch with us by phone, chat, email, or fill out the form below.<br>
+                            <br>
+                            You can also see if your question has already been addresed in our <a href="/pages/faq">Frequently Asked Questions</a> section.
+                        </div>
+                        <div class="container-contact-us">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <div class="contact-section-wrapper section-last message-form-container">
+                                        <iframe frameborder="0" scrolling="no" src="/pages/send-a-message" style="left: 0; top: 0; width: 100%; overflow: hidden; background-color: #FAF8F9; height: 612px"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 contact-call-wrapper">
+                                    <div class="contact-call-content">
+                                        <div class="contact-section-wrapper">
+                                            <div class="contact-icon"><img alt="Call" src="{{ 'get-in-touch-01.svg' | asset_url }}" style="max-height:40px;"></div>
+                                            <div class="contact-section-title">
+                                                Make a Call
+                                            </div>
+                                            <div class="call-content">
+                                                Mon-Fri, 8:30am - 5pm ET
+                                            </div><a class="btn btn_call" href="tel:8009354002">800.935.4002</a>
+                                        </div>
+                                        <div class="contact-section-wrapper section-last" id="contact-page-chat">
+                                            <div class="contact-icon"><img alt="Chat" src="{{ 'get-in-touch-02.svg' | asset_url }}" style="max-height:40px;"></div>
+                                            <div class="contact-section-title">
+                                                Live Chat
+                                            </div>
+                                            <div class="chat-content">
+                                                Get in contact with us quickly.
+                                            </div><a class="btn btn_call" href="javascript:void(0);" onclick="olark('api.box.expand')">Chat Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <div class="contact-email-wrapper">
+                                        <div class="contact-section-wrapper">
+                                            <div class="contact-icon"><img alt="Email" src="{{ 'get-in-touch-04.svg' | asset_url }}" style="max-height:40px;"></div>
+                                            <div class="contact-section-title">
+                                                Email
+                                            </div>
+                                            <div class="section-email-content">
+                                                Sales<br>
+                                                <a href="mailto:sales@diamondbackcovers.com">sales@diamondbackcovers.com</a><br>
+                                                <br>
+                                                Customer Support<br>
+                                                <a href="mailto:support@diamondbackcovers.com">support@diamondbackcovers.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="contact-section-wrapper section-last">
+                                            <div class="contact-icon"><img alt="Address" src="{{ 'get-in-touch-05.svg' | asset_url }}" style="max-height:60px;"></div>
+                                            <div class="contact-section-title">
+                                                Address
+                                            </div>
+                                            <div class="address-content">
+                                                <strong>DiamondBack Truck Covers</strong><br>
+                                                200 Shadylane Drive, Ste. 130 Philipsburg, PA 16866
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<style>
+  .email-wrapper{display: none!important;}
+</style>

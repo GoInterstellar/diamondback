@@ -1,0 +1,37 @@
+{% comment %}
+  The contents of the collection.liquid template can be found in /sections/collection-template.liquid
+{% endcomment %}
+<div class="banner accessories">
+  <div class="banner-content">     
+    <h1>DIAMONDBACK ACCESSORIES</h1>
+    <h2>Get a little more out of your DiamondBack.</h2>
+  </div>
+</div>
+<div  id="collection-accessories" class="columns-container">
+	<div class="container">
+		<div class="row">
+          	<aside>
+                <div id="left_column" class="left_column sidebar col-sm-12 col-md-3 col-lg-3">
+                    {% include 'acc-filter' %}
+                </div>
+          	</aside>
+			<section id="center_column" class="center_column col-xs-12 col-sm-12 col-md-9 col-lg-9">
+              	<div class="page-wrap">
+                    <div class="page-content">
+                      {% section 'accessories-template' %}
+                    </div>
+              	</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+<style>
+.main-content {
+    padding-top: 0;
+}
+.email-wrapper{display: none!important;}
+</style>
+<style>
+
+</style>
