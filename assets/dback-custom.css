@@ -152,6 +152,7 @@ section.haul-ready h4 {color:#fff; font-family: "Vitesse SSm A", "Vitesse SSm B"
 section.haul-ready h4 span {color:#fff; font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 400;}
 section.haul-ready .content {padding:50px;}
 section.haul-ready .fm-header {display:none!important;}
+.fm-title span {display:none!important;}
 section.haul-ready .bv-curations-cleanslate .fm-carousel.bv-carousel-theme-social .fm-carousel-wrapper {left:0!important;}
 
 /* Tablet 1024px */
@@ -646,6 +647,7 @@ section.banner-product .price {font-size: 15px; margin:5% 0 0 0; padding:0; text
 section.banner-product .price span {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 800; font-size:33px; color:#4f5150;}
 section.banner-product .btns {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 300; font-size:18px; margin:2% 0 0 0; padding:0; text-transform:uppercase; color:#808285;}
 section.banner-product .btns a {color:#06b9e4; text-transform: uppercase; text-decoration: none;}
+section.banner-product .btns a:hover {text-decoration:underline;}
 
 section.banner-product .hd {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-hd_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat; background-position: right;}
 section.banner-product .se {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-se_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat;}
