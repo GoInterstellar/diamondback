@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+
+    <title>{{ shop.name }} - {{ page_title }}</title>
+
+    {{ content_for_header }}
+    {% include 'site-nav' %}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+    <link href="{{ 'main.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/VB.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/VM.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/VL.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ 'rg.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+
+   <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/ForzaSSm-Medium.css" rel="stylesheet" type="text/css" media="all" />
+   <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/Forza-Bold.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/Sentinel-Book.css" rel="stylesheet" type="text/css" media="all" />
+   <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/Forza-Book.css" rel="stylesheet" type="text/css" media="all" />
+   <link href="{{ 'Forza-Black.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+   <link href="{{ 'Vitesse-Book.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+   <link href="{{ 'Conv_ForzaSSm-Light.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{{ 'Conv_ForzaSSm-Bold.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />  
+   <link href="{{ 'Vitesse-Black.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ 'Sentinel-BlackItal.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ 'ForzaSSm-Black.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ 'ForzaSSm-Book.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+  
+  
+  <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/f-awesom.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ '34.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ 'truck-form.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6667956/7877772/css/fonts.css" />
+  </head>
+  <body>
+    <section class="cart_header">
+{% section 'header' %}
+    </section>
+    <section class="cart">
+    <div class="banner" data-header>
+      <div class="wrap">
+        {{ content_for_logo }}
+      </div>
+    </div>
+
+    {{ order_summary_toggle }}
+
+    <div class="content" data-content>
+      <div class="checkout-wrap">
+        <div class="sidebar" role="complementary" style="width:40%;">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+            {{ content_for_order_summary }}
+          </div>
+        </div>
+        <div class="main" role="main" style="width:60%;">
+          <div class="main__header">
+            <h1 style="text-align:left!important;">Checkout</h1>
+            {{ breadcrumb }}
+            <hr>
+            {{ alternative_payment_methods }}
+          </div>
+          <div class="main__content">
+            {{ content_for_layout }}
+           
+          </div>
+          <div class="main__footer">
+            {{ content_for_footer }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{ tracking_code }}
+    </section>
+    <section class="cart_footer">
+{% section 'footer' %}
+    </section>
+  </body>
+</html>
