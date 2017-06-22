@@ -143,8 +143,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 #SiteNav li a {
     color: #fff;
-    font-family: "Conv_Vitesse-Medium",sans-serif;
-    font-size: 16px;
+    font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif;
+    font-size: 14px;
+  font-weight:800;
     text-transform: uppercase;
 	transition: all 0.3s ease 0s;
 }
@@ -3505,14 +3506,15 @@ background:  url("https://cdn.shopify.com/s/files/1/1571/5355/files/select-on_c0
     padding-bottom: 60px;
 }
 .qmain-title {
-	font-family: "Conv_Vitesse-Medium",sans-serif;
-    font-size: 35px;
-    font-weight: bold;
+	font-family: "Vitesse SSm A", "Vitesse SSm B",sans-serif;
+    font-size: 32px;
+    font-weight: 800;
 	margin-bottom: 30px;
 }
 .q-title {
     color: #4f5150;
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B",sans-serif;
+  font-weight:800;
     font-size: 18px;
     margin-bottom: 20px;
 }

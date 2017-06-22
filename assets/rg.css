@@ -64,8 +64,8 @@ span.small{font-size:24px;}
 /* PAGE: SHIPPING PAGE */
 /*section.shipping {margin-left:150px;}*/
 section.shipping h3 {font-family: "Conv_Vitesse-Book", sans-serif; font-size:30px;}
-section.shipping h4 {font-family: "Conv_Vitesse-Bold", sans-serif; font-size: 22px;}
-section.shipping h4 span {font-family: "Conv_Vitesse-Book", sans-serif; font-size:15px;}
+section.shipping h4 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-size: 22px; font-weight:800;}
+section.shipping h4 span {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-size:15px; font-weight:400;}
 section.shipping p {font-size:18px; color:#4F5150;}
 .shipping-info {
     margin-bottom: 50px;
