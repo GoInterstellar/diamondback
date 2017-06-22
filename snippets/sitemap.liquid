@@ -1,0 +1,20 @@
+<ul>
+  <h3>Covers</h3>
+{% for link in linklists.covers.links %}
+   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
+{% endfor %}
+</ul>
+
+<ul>
+  <h3>ATV/SXS</h3>
+{% for link in linklists.atv-sxs.links %}
+   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
+{% endfor %}
+</ul>
+
+<ul>
+  <h3>Accessories</h3>
+{% for link in linklists.accessories.links %}
+   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
+{% endfor %}
+</ul>
