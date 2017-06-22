@@ -1,0 +1,656 @@
+ body {
+	color: #2d2d2d;
+}
+a:hover {
+	color: #06b9e4;
+}
+.template-index .main-content {
+    padding-top: 0;
+}
+ #header{
+	background-image:url(https://cdn.shopify.com/s/files/1/1571/5355/files/header-bkg.png);
+	backgroud-repeat: repeat;
+	height: 98px;
+	width: 100%;
+ }
+#header h1 {
+	margin: 0;
+}
+  .logo img {
+   min-height: 1px;
+   min-width: 1px;
+}
+ .logo img {
+    margin-top: 1px;
+    position: absolute;
+    z-index: 1;
+}
+ .header-right {
+	float: right;
+	}
+.header-info ul li {
+		float: left;
+		list-style: none;
+	}
+.header-info ul li a {
+    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-weight: normal;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+.header-info {
+    float: right;
+    margin-top: 9px;
+}
+.header-info ul li,
+.header-info ul li a   {
+    color: #a7a9ac;
+    font-size: 15px;
+    font-weight: bold;
+}
+.header-cart {
+
+}
+.header-cart img {
+    margin-top: -2px;
+    width: 50px;
+}
+#main-nav {
+    margin-top: 60px;
+    overflow: hidden;
+    width: 100%;
+}
+#SiteNav {
+    float: right;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+#SiteNav li {
+    float: left;
+    list-style: none;
+    margin-right: 25px;
+    padding: 0;
+}
+
+#SiteNav li a {
+    color: #fff;
+    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+}
+#SiteNav li.site-nav--active a,
+#SiteNav li a:hover {
+	color: #06b9e4;
+	text-decoration: none!important;
+}
+.banner img {
+	width: 100%;
+}
+.banner-content-wrapper {
+position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.banner-content {
+    margin: 10% auto;
+    max-width: 1200px;
+    text-align: center;
+    width: 100%;
+}
+.banner-title {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-size: 80px;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+}
+.banner-sub-title {
+    color: #fff;
+    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-size: 30.1px;
+    text-transform: uppercase;
+}
+.banner-btn {
+    border: 1px solid #06b9e4;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 8px 35px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+.home-cms-about {
+	background-image:url(https://cdn.shopify.com/s/files/1/1571/5355/files/home-content-bkg-lg.png);
+	background-size: cover;
+	min-height: 400px;
+}
+.home-cms-about-wrapper {
+	padding: 15% 0;
+}
+.home-cms-about h1 {
+    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.home-cms-about h2 {
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.home-cms-about .btn-wrapper {
+    margin-top: 50px;
+    text-align: left;
+    width: 100%;
+}
+.home-about-content {
+	margin-top: 40px;
+}
+.btn {
+    background: #06b9e4;
+    color: #fff !important;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal;
+    min-width: 200px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 5px 25px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+.info-highlight,
+.info-highlight-secondary,
+.footer {
+	width: 100%;
+	min-height: 150px;
+	background: #06b9e4;
+	padding: 60px 0;
+}
+.info-highlight {
+	background: #06b9e4;
+}
+.info-highlight-secondary {
+	background: #4f5150;
+}
+.info-highlight-secondary.home-section {
+	padding: 0px!important
+}
+.info-highlight-secondary.home-section div{
+	
+	}
+.info-highlight-secondary div img{
+	width: 100%;
+	}	
+.footer {
+	background: #2d2d2d;
+	color: #a0a1a2;
+	padding: 40px 0 80px 0;
+}
+.footer ul li {
+	list-style: none;
+	color: #a0a1a2;
+}
+.footer ul li, .footer ul li a {
+    color: #a0a1a2;
+    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+	transition: all 0.3s ease 0s;
+	text-decoration: none!important;
+}
+.footer ul li a:hover {
+	color: #06b9e4;
+	text-decoration: none!important;
+}
+.footer .footer-titles {
+    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.footer .batches {
+    margin-left: -10px;
+    margin-top: 40px;
+}
+.footer .batches ul{
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.footer .batches li {
+    float: left;
+    width: 30%;
+}
+.footer .batches li img{
+    width: 100%;
+}
+.footer .grey-zubriki-top {
+	margin-top: -40px;
+}
+.email-wrapper {
+    min-height: 100px;
+    padding: 0 0 50px;
+    width: 100%;
+}
+
+.email-wrapper .container {
+    border-top: 1px solid #ccc;
+    padding-top: 50px;
+}
+.contact-wrapper {
+    color: #2d2d2d;
+    font-family: "Conv_Vitesse-Medium",sans-serif;
+    text-align: center;
+}
+.contact-wrapper h1 {
+    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-size: 40px;
+}
+.contact-sections {
+    margin: 60px auto auto;
+    max-width: 800px;
+    width: 100%;
+}
+.contact-section {
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+.contact-sections a {
+    background: #06b9e4;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 10px;
+    min-width: 180px;
+    padding: 8px 35px;
+    text-decoration: none !important;
+}
+.sm-instr {
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-weight: bold;
+}
+.time-instr{
+    font-size: 20px;
+}
+.template-index .email-wrapper {
+	display: none;
+}
+.batches .social {
+    margin-right: 10px;
+    width: auto !important;
+}
+.batches .social a {
+    display: block;
+    font-size: 28px;
+    margin-top: 30px;
+}
+.batches .social a:hover {
+	 color: #06b9e4;
+}
+
+.email-title {
+    color: #fff;
+    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.email-note {
+	text-indent: 15px;
+	font-style: italic;
+}
+.email-box {
+    background: #2d2d2d;
+    border: 2px solid #a0a1a2;
+    float: left;
+    font-size: 12px;
+    height: 40px;
+    width: 70%;
+}
+.email-submit {
+    background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/email-submit_786f4c59-d159-46cd-a54b-14f8609a39c9.png?5291940656791731068");
+	background-repeat: no-repeat;
+    border: 1px solid #06b9e4;
+    border-radius: 0 !important;
+    float: left;
+    height: 40px;
+    margin-left: 2px;
+    width: 40px;
+}
+.email-form {
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.cont-title-1 {
+	width: 100%;
+	text-align: center;
+	color: #2d2d2d;
+	font-family: "Conv_Vitesse-Black",sans-serif;
+    font-size: 45px;
+    text-transform: uppercase;
+	
+}
+.cont-title-2 {
+    color: #2d2d2d;
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -30px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.home-section-points h1 {
+	padding: 30px 0;
+}
+.home-trusted {
+    background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/home-about-bkg.png?16417607453655942144");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: 300px;
+    width: 100%;
+    padding: 60px 0;
+}
+.cont-title-light {
+ 	color: #fff; 
+}
+.logos {
+    margin-top: 30px;
+    max-width: 600px;
+    overflow: hidden;
+    text-align: center;
+}
+.logos li {
+    float: left;
+    text-align: center;
+}  
+.logos li img {
+    max-width: 200px;
+    width: 100%;
+}
+.logos li.mdl img {
+    max-width: 110px;
+   
+}  
+.testimonials {
+    border-left: 1px solid #a7a9ac;
+    margin-top: 40px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+.tsm-item {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.tst-content {
+    color: #d5d7d8;
+    float: left;
+    font-size: 18px;
+    width: 75%;
+}
+ .tst-content span {
+ }
+ .testimonials img {
+    float: left;
+    margin-right: 2%;
+    width: 18%;
+}
+ .home-section-points .zibra-grey-bottom-in {
+    margin-top: -60px;
+   } 
+  
+.home-section-points .img-wrapper {
+	text-align: center;
+	}
+.cms-content-wrap .main-title {
+    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cms-content-wrap .main-content {
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 200px;
+    text-align: center;
+}
+.cms-content-wrap .btn-wrapper {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+/* ================ Zubriki  ================ */
+
+.white-zubriki-bottom {
+    background-image: url("//cdn.shopify.com/s/files/1/1571/5355/files/white-zubriki-buttom.png?16938621794481435862");
+    background-repeat: no-repeat;
+    height: 20px;
+    margin-top: -2px;
+    position: absolute;
+    width: 300px;
+}
+.template-index .grey-zubriki-top {
+    background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/grey-zubriki-top.png?3929241110247851887");
+    height: 20px;
+    position: absolute;
+    width: 300px;
+}
+.blue-zubzi-top-in {
+    background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/blue-zubzi-top-in.png?14190967759530746510_");
+    height: 20px;
+    position: absolute;
+    width: 300px;
+}
+.grey-zubriki-top {
+    background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/grey-zubzi-top-in.png?7608419114768359779");
+    height: 20px;
+    position: absolute;
+    width: 300px;
+}
+.template-index .footer .grey-zubriki-top {
+    margin-top: -58px !important;
+}
+.zibra-grey-bottom-in {
+    background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/zibra-grey-bottom-in.png?13485801430981164129");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 300px;
+    z-index: 1;
+}
+/* ====================== Collections ======================== */
+.cover {
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    min-height: 400px;
+	margin-bottom: 20px;
+}
+.cover-hd {
+  background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-1.png");
+}
+.cover-sd {
+  background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-2.png");
+  background-position: right top;
+  background-color: #f6f5f5;
+  }
+.cover-270 {
+  background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-3.png");
+} 
+.cover-180 {
+    background-color: #f6f5f5;
+    background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-4.png");
+    background-position: right top;
+}
+.cover-more-info {
+background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-5_8ccac952-72fc-4616-811c-13c8ece6d6f7.png?441055794810896013");
+background-size: 100%;
+min-height: 500px;
+}
+.collection-item-wrapper {
+    padding: 60px 0;
+    text-align: left;
+}
+.comp-name{
+    color: #000;
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.group-name {
+    color: #808285;
+    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-size: 130px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.collection-item-wrapper h1  {
+    color: #2d2d2d;
+    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-size: 30px;
+    line-height: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+.collection-item-wrapper h2 {
+    color: rgb(45, 45, 45);
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-size: 30px;
+    margin-top: 0;
+    text-transform: none;
+}
+.price-tag{
+    color: #808285;
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-size: 15px;
+    margin-top: 0;
+    text-transform: none;
+}
+
+.collection-item-wrapper .price{
+    color: #4f5150;
+    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-transform: none;
+}
+.collection-btn-wrapper {
+    color: rgb(79, 81, 80);
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.collection-btn-wrapper a {
+    color: #06b9e4;
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    overflow: hidden;
+    text-decoration: none !important;
+	
+}
+.template-collection .blue-zubzi-top-in {
+    margin-top: -60px;
+}
+.template-collection .main-title span {
+    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.template-collection .main-title span {
+    display: inline-block;
+    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.template-collection .main-title b {
+    font-family: "Conv_Vitesse-Black",sans-serif;
+}
+
+.cover-more-info .container {
+    padding: 100px 0;
+    text-align: center;
+}
+.cover-more-info h1 {
+    color: #fff;
+    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-size: 50px;
+}
+
+.cover-more-info h2 {
+    color: #fff;
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    margin-top: 0;
+    text-transform: none;
+}
+ .section-wrapper {
+   padding: 60px 0;
+ }
+.cms-up-sell h1 {
+    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.cms-up-sell h2 {
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-size: 20px;
+    margin: 0 0 30px;
+    padding: 0;
+}
+.cms-upsell-content{
+    float: left;
+    width: 60%;
+}
+
+  .cms-up-sell img {
+    float: left;
+    width: 40%;
+}
+.cms-up-sell .first-item {
+    border-right: 1px solid #ccc;
+    margin-right: 15px;
+}
+.cms-up-sell .second-item {
+    margin-right: -15px !important;
+} 
+
+.cms-upsell-text {
+    font-family: "Conv_Vitesse-Light",sans-serif;
+    margin-bottom: 10px;
+}
+

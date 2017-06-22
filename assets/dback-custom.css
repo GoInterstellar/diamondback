@@ -1,0 +1,706 @@
+/* ADDITIONAL HIDDEN ELEMENTS FOR BOOTSTRAP */
+  
+@media (min-width:1200px) {
+  .hidden-4 {display: none !important;}
+}
+  
+@media (min-width:1025px) and (max-width: 1199px) {
+  .hidden-4 {display: none !important;}
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+  .hidden-3 {display: none !important;}
+}
+  
+@media (min-width:376px) and (max-width: 767px) {
+  .hidden-2 {display: none !important;}
+}
+@media (max-width:375px) {
+    .hidden-1 {display: none !important;}
+}
+
+
+/* ADDITIONAL HEX SLIDER ELEMENTS FOR BOOTSTRAP */
+@media (min-width:1200px) {
+  .hex-col-xl {width: 25%; float:left;}
+  .hex-col-xl-sxs {width: 20%; float:left;}
+}
+  
+@media (min-width:1025px) and (max-width: 1199px) {
+  .hex-col-l {width:25%; float:left;}
+  .hex-col-l-sxs {width: 20%; float:left;}
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+  .hex-col-m {width:25%; float:left;}
+  .hex-col-m-sxs {width: 20%; float:left;}
+}
+  
+@media (min-width:376px) and (max-width: 767px) {
+  .hex-col-s {width:25%; float:left;}
+  .hex-col-s-sxs {width: 20%; float:left;}
+}
+@media (max-width:375px) {
+  .hex-col-xs {width:50%; float:left;}
+  .hex-col-xs-sxs {width: 50%; float:left;}
+}
+
+
+/***** SECTION: GET READY */
+
+/* Desktop 1920px */
+section.get-ready {background-color:#06b9e4; height: auto; text-align: center;}
+section.get-ready .wrapper{width:80%; margin: 0 auto; padding: 40px 0;}
+section.get-ready h1 {color: #2d2d2d; font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 50px; text-transform: uppercase; text-align: center; margin: 0; padding: 0;}
+section.get-ready h2 {color: #2d2d2d; font-family: "Conv_Vitesse-Medium", sans-serif; font-size: 24px; font-weight: normal; margin: 0; padding: 0;}
+section.get-ready .column {width: 33%; display: inline-block;}
+section.get-ready .row {margin:0; padding:0;}
+section.get-ready .spacer {width: 100%; height: 20px; display: block;}
+section.get-ready .title {font-family: "Conv_ForzaSSm-Book", sans-serif; font-size: 24px;}
+section.get-ready .title span {font-family: "Conv_Forza-Bold", sans-serif; font-size: 50px; margin-right: 10px;}
+section.get-ready .get-ready-icon img {width:170px;}
+section.get-ready .get-ready-icon-last img {width:70px;}
+section.get-ready .tabs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/blue-zubzi-top-in.png?14190967759530746510_"); background-repeat: no-repeat; height: 20px; width: 300px; z-index: 1; margin-left: 200px;}
+
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+section.get-ready h1 {font-size: 33px;}
+section.get-ready h2 {font-size: 17px;}
+section.get-ready .title {font-family: "Conv_ForzaSSm-Book", sans-serif; font-size: 18px;}
+section.get-ready .title span {font-family: "Conv_Forza-Bold", sans-serif; font-size: 35px; margin-right: 10px;}
+section.get-ready .tabs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/blue-zubzi-top-in.png?14190967759530746510_"); background-repeat: no-repeat; height: 20px; width: 300px; z-index: 1; margin: 0 auto;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+section.get-ready .column {width:100%; margin-bottom: 30px;}
+section.get-ready .tabs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/blue-zubzi-top-in.png?14190967759530746510_"); background-repeat: no-repeat; height: 20px; width: 300px; z-index: 1; margin: 0 auto;}
+  section.get-ready .get-ready-icon img {width:108px;}
+  section.get-ready .get-ready-icon-last img {width:58px; margin-top:25px;}
+}
+
+/* Phone 667px */
+@media (max-width:667px) {
+section.get-ready .column {width: 100%; display: inline-block; margin-bottom: 25px;}
+}
+
+
+
+/***** SECTION: WHY DIAMONDBACK */
+
+/* Desktop 1920px */
+section.why-diamondback {height: 590px; background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/COvers-1_0f571a0a-8534-459e-bb4b-71ef4ec06297.png?10049709399584580944"); background-size: cover; background-repeat: no-repeat; text-align: center;}
+section.why-diamondback h1{color: #fff; font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size:56px; text-transform: uppercase; text-align: center; margin: 18px 0; padding: 0;}
+section.why-diamondback h2 {color: #fff; font-family: "Conv_Forza-Book", sans-serif; font-size: 21px; text-transform: none; margin: 0; padding: 0;}
+section.why-diamondback .row {padding-top: 150px; margin:0;}
+section.why-diamondback .row img {margin-top:50px!important;}
+section.why-diamondback .tabs-blue{width: 300px; height: 20px; background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/zubzi-bottom-blue-in.png?8983740209328410719"); background-repeat: no-repeat; margin:0 auto;}
+
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+section.why-diamondback {height: 327px;}
+section.why-diamondback h1 {font-size:33px;}
+section.why-diamondback h2 {font-size:16px;}
+section.why-diamondback .row {padding-top: 50px;}
+	}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.why-diamondback {background-position: -250px;}
+section.why-diamondback .row {padding-top:20px;}
+}
+
+
+
+
+/***** SECTION: WHY BUY? */
+section.why-buy{background-color:#06b9e4; height: auto; text-align: center;}
+section.why-buy .wrapper{width:80%; margin: 0 auto; padding: 40px 0;}
+section.why-buy .column {width: 33%; display: inline-block; vertical-align: top;}
+section.why-buy h1 {color: #2d2d2d; font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 43px; text-transform: uppercase; text-align: center; margin: 0; padding: 0;}
+section.why-buy .spacer {width: 100%; height: 30px; display: block;}
+section.why-buy .title {font-family: "Conv_Forza-Bold", sans-serif; font-size: 18px; text-transform: uppercase;}
+section.why-buy .content {font-family: "Conv_ForzaSSm-Book", sans-serif; font-size: 15px;}
+section.why-buy .img-wrapper {width: 130px; height: 130px; margin: 5px auto;}
+section.why-buy .img-fist {padding-top: 15px;}
+section.why-buy .btn-wrapper {margin-top:25px;}
+section.why-buy .tabs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/zibra-grey-bottom-in_f8da2a53-505d-4e8d-b187-af14818520b8.png?15325024768471276417"); background-repeat: no-repeat; height: 20px; width: 300px; z-index: 1; margin: 0 auto;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+section.why-buy h1 {font-size: 28px;}
+section.why-buy .column {padding:0 20px;}
+section.haul-ready h4 {font-size:28px!important;}
+section.haul-ready .content {text-align:center;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+section.why-buy .column {width: 100%; display: block; margin-bottom: 25px;}
+	}
+
+
+
+/***** SECTION: HAUL IT & DIAMONDBACK READY */
+section.haul-ready {background-color: #4f5150;}
+section.haul-ready .wrapper{width:100%; height:500px;}
+section.haul-ready .column {width: 50%; display: inline-block; float: left; min-height: 500px;}
+section.haul-ready .column:nth-child(1) {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Home-1.jpg?16042279245685304319"); background-repeat: no-repeat; background-size: cover;}
+section.haul-ready h4 {color:#fff; font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 38px; text-transform: uppercase; margin-bottom: 15px;}
+section.haul-ready h4 span {color:#fff; font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 400;}
+section.haul-ready .content {padding:50px;}
+section.haul-ready .fm-header {display:none!important;}
+section.haul-ready .bv-curations-cleanslate .fm-carousel.bv-carousel-theme-social .fm-carousel-wrapper {left:0!important;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+  section.haul-ready .column:nth-child(1) {background-position: -75px 0;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+  section.haul-ready .column {width: 100%; display: block;}
+  section.haul-ready h4 {font-size:30px!important;}
+}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.haul-ready .column:nth-child(1) {background-position: -175px 0;}
+}
+
+
+
+/***** SECTION: COMPARE ATV/SXS */
+section.compare-atv {background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/atv-bkg-1-lg.png?3951131946015901314); background-size: cover; height:565px;}
+section.compare-atv .wrapper {width:100%; height:auto; padding:100px;}
+section.compare-atv h1 {color: #fff; font-weight: normal; font-family: "Conv_Vitesse-Medium",sans-serif; font-size: 50px; text-align: center!important; margin: 0 0 30px 0;}
+section.compare-atv h2 {color: #fff; font-weight: normal; font-family: "Conv_Forza-Book",sans-serif; font-size: 24px; text-transform: none; text-align: center!important;}
+section.compare-atv .row {margin:0; padding:0;}
+section.compare-atv .row-btn {width:80%; margin: 100px auto 0 auto; text-align: center;}
+section.compare-atv .column {display:inline-block; margin-right:120px;}
+section.compare-atv .link {color: #fff; font-family: "Conv_ForzaSSm-Light",sans-serif; text-decoration: none; transition: all 0.3s ease 0s; font-size: 18px;}
+section.compare-atv .link span {font-family: "Conv_ForzaSSm-Bold",sans-serif;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+section.compare-atv {height:auto;}
+section.compare-atv h1 {font-size: 26px;margin: 0 0 15px 0;}
+section.compare-atv h2 {font-size: 16px;}
+section.compare-atv .link {font-size:13px;}
+section.compare-atv .row-btn {margin: 50px auto 0 auto;}
+section.compare-atv .column {display:block; text-align:center; margin-bottom:25px; margin-right:0;}
+.link.youtube {padding:20px!important;}
+section.compare-atv .tabs {width: 300px; height: 20px; background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/zubzi-bottom-blue-in.png?8983740209328410719); background-repeat: no-repeat; margin: 0 auto;}
+}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.compare-atv .wrapper {padding:40px!important;}
+  .link.youtube {text-indent:58px!important; padding: 10px!important;}
+}
+
+
+
+/***** SECTION: ATV SAFETY */
+section.atv-safety {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/atv-bkg-3_648afd44-ee84-49bc-84ac-26cbaf1e7591.png?7655032511084697572"); background-size: cover;}
+section.atv-safety .wrapper {width:50%; height: auto; max-height:565px; margin: 0 auto; padding:100px 0 175px 0;}
+section.atv-safety h1 {font-family: "Conv_Vitesse-Medium",sans-serif; font-size: 43px; text-align: center; font-weight: normal; margin-bottom:40px;}
+section.atv-safety .link {color: #06b9e4; font-family: "Conv_Forza-Book",sans-serif; font-size: 21px; text-align:center;}
+section.atv-safety p {text-align:center;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+section.atv-safety h1 {font-size:26px; margin-bottom:20px;}
+  section.atv-safety .wrapper {width:39%; padding: 50px 0 100px 0;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+  section.atv-safety .wrapper {width:52%; padding: 50px 0 100px 0;}
+}
+
+/* Phone 667px */
+@media (max-width:667px) {
+}
+
+
+
+/***** SECTION: GO WHERE */
+section.go-where {width:100%; display:inline-block;}
+section.go-where .row {width:100%; margin-left:0; margin-right:0;}
+section.go-where .column {display: inline-block; float: left;}
+section.go-where .one {width: 60%; height:693px;}
+section.go-where .two {width:40%; padding: 10% 15% 0 0;}
+section.go-where h1 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 400; font-size: 28px; line-height: 1.1em; letter-spacing: 0; margin: 0; padding: 0; text-align:left!important;}
+section.go-where h2 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 48px; line-height: 0.9em; text-transform: uppercase; margin-top: 0; letter-spacing: 0; text-align:left;}
+section.go-where p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300; font-size:17px; margin-top:15px; color:#2d2d2d;}
+
+/* Background Images */
+section.go-where .atvs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-bg-atvs-xl.png?12189333916130954735"); background-repeat: no-repeat; background-size:contain;}
+section.go-where .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR1-800.png?9865851746000911533"); background-repeat: no-repeat; background-size:contain;}
+section.go-where .sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-left-background_55497052-2b73-4607-a309-fdabdb155795.png?7826891482510995792"); background-repeat: no-repeat; background-size:contain;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+  section.go-where h1 {font-size:23px;}
+  section.go-where h2 {font-size:32px;}
+  section.go-where p {font-size:13px;}
+  section.go-where .one {height:493px;}
+  section.go-where .two {padding: 6% 6% 0 1%;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+  section.go-where .one {height:353px;}
+  section.go-where .two {padding: 6% 4% 0 1%;}
+  section.go-where .leave-trailer {width:100%; height:493px;}
+  section.go-where .column .one .leave-trailer {padding: 10% 5% 12% 5%;}
+  section.go-where .column .two .leave-trailer {padding: 10% 5% 12% 5%!important;}
+  section.go-where .leave-trailer h1, section.go-where .leave-trailer h2, section.go-where .leave-trailer p {text-align:center!important;}
+}
+
+/* Phone 667px */
+@media (max-width:667px) {
+  section.go-where .one {width: 100%; height:493px;}
+  section.go-where .two {width:100%;}
+  section.go-where .column {display: block;}
+  section.go-where h1, section.go-where h2, section.go-where p {text-align:center!important;}
+  section.go-where .two {padding: 10% 5% 12% 5%;}
+}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.go-where .one {height:293px;}
+  section.go-where h1 {font-size:18px;}
+  section.go-where .two {padding: 10% 8% 12% 8%;}
+}
+
+
+
+/***** SECTION: PROTECT YOUR GEAR */
+section.protect-your-gear {width:100%; display:inline-block;}
+section.protect-your-gear .row {width:100%; margin-left:0; margin-right:0;}
+section.protect-your-gear .column {display: inline-block; float: left;}
+section.protect-your-gear .one {width: 60%; height:693px;}
+section.protect-your-gear .two {width:40%; padding: 10% 24% 0 0;}
+section.protect-your-gear h1 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 400; font-size: 28px; line-height: 1.1em; letter-spacing: 0; margin: 0; padding: 0; text-align:left!important;}
+section.protect-your-gear h2 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 48px; line-height: 0.9em; text-transform: uppercase; margin-top: 0; letter-spacing: 0; text-align:left;}
+section.protect-your-gear p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300; font-size:17px; margin-top:15px;}
+
+/* Background Images */
+section.protect-your-gear .atvs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/cover-atv-bkg-lg.png?15101619999279341013"); background-repeat: no-repeat; background-size:contain;}
+section.protect-your-gear .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR-1.png?5706995955420655820"); background-repeat: no-repeat; background-size:contain; background-position: -75px 0;}
+section.protect-your-gear .sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-bkg-2_aba0e95b-bb60-4159-ba71-facff42f29c9.png?7826891482510995792"); background-repeat: no-repeat; background-size:contain;}
+
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+  section.protect-your-gear h1 {font-size:23px;}
+  section.protect-your-gear h2 {font-size:32px;}
+  section.protect-your-gear p {font-size:13px;}
+  section.protect-your-gear .one {height:453px;}
+  section.protect-your-gear .two {padding: 6% 14% 0 1%;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+  section.protect-your-gear .one {height:353px;}
+  section.protect-your-gear .two {padding: 6% 5% 0 5%;}
+}
+
+/* Phone 667px */
+@media (max-width:667px) {
+  section.protect-your-gear .one {width: 100%; height:443px;}
+  section.protect-your-gear .two {width:100%; padding: 10% 20% 12% 20%;}
+  section.protect-your-gear .column {display: block;}
+  section.protect-your-gear h1, section.protect-your-gear h2, section.protect-your-gear p {text-align:center!important;}
+  
+  /* Background images */
+  section.protect-your-gear .atvr {background-position:0 0;}
+}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.protect-your-gear .one {height:253px;}
+  section.protect-your-gear h1 {font-size:18px;}
+  section.protect-your-gear .two {padding: 10% 15% 12% 15%;}
+}
+
+
+/***** SECTION: FREE UP YOUR HITCH */
+section.free-up {width:100%; display:block;}
+section.free-up .row {width:100%; margin-left:0; margin-right:0; height:622px;}
+section.free-up .column {width:350px; margin:10%;}
+section.free-up h1 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 400; font-size: 28px; line-height: 1.1em; letter-spacing: 0; margin: 0; padding: 0; text-align:left!important; color:#fff;}
+section.free-up h2 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 48px; line-height: 0.9em; text-transform: uppercase; margin-top: 0; letter-spacing: 0; text-align:left; color:#fff;}
+section.free-up p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300; font-size:17px; margin-top:15px; color:#fff;}
+
+/* Bakground Images */
+section.free-up .atvs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-16.png?14833711004349352338"); background-repeat: no-repeat; background-size:cover; background-position:0;}
+section.free-up .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR2-1980px.png?14584498820584947628"); background-repeat: no-repeat; background-size:cover; background-position: bottom;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+  section.free-up .row {height: 467px;}
+  section.free-up h1 {font-size:23px;}
+  section.free-up h2 {font-size:32px;}
+  section.free-up p {font-size:13px;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+  section.free-up .row {height: 291px;}
+  section.free-up .column {width:300px; margin:10%;}
+}
+
+/* Phone 667px */
+@media (max-width:667px) {
+  section.free-up h1, section.free-up h2, section.free-up p {text-align:center!important;}
+  section.free-up .column {margin:10% auto;}
+}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.free-up .column {margin:15% auto;}
+}
+
+
+
+/***** SECTION: HELPING YOU */
+section.helping-you {width:100%; display:block; background:#2d2d2d; height:1177px;}
+section.helping-you .wrapper{width:55%; margin: 0 auto; padding: 50px 0; text-align:center; color:#fff;}
+section.helping-you .column {width:24%; display:inline-block;}
+section.helping-you h1 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 400; font-size: 50px; line-height:1em; margin:0;}
+section.helping-you h2 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 50px; text-transform:none; margin:0;}
+section.helping-you p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400; font-size:20px; margin-top:15px; margin-bottom:30px; color:#fff;}
+section.helping-you p span {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800!important;}
+section.helping-you p a {color: #06b9e4 !important; display: inline-block; margin-left: 5px;}
+section.helping-you div.opt-title {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700; font-size:18px;}
+section.helping-you ul.slider-bullets {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700; font-size:17px;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+  section.helping-you {height:734px;}
+  section.helping-you h1 {font-size: 28px;}
+  section.helping-you h2 {font-size: 28px;}
+  section.helping-you p {font-size: 13px;}
+  section.helping-you ul.slider-bullets {font-size: 13px;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+  section.helping-you .wrapper{width:80%;}
+    section.helping-you {height:840px;}
+}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.helping-you .column {width:49%; margin-bottom: 20px;}
+}
+
+/***** SECTION: WE BUILT */
+section.we-built {width:100%; display:inline-block;}
+section.we-built .row {width:100%; margin-left:0; margin-right:0;}
+section.we-built .column {display: inline-block; float: left;}
+section.we-built .one {width: 60%; height:693px;}
+section.we-built .two {width:40%; padding: 6% 10% 0 0;}
+section.we-built h1 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 400; font-size: 28px; line-height: 1.1em; letter-spacing: 0; margin: 0; padding: 0; text-align:left!important;}
+section.we-built h2 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 48px; line-height: 0.9em; text-transform: uppercase; margin-top: 0; letter-spacing: 0; text-align:left;}
+section.we-built p {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 300; font-size:17px; margin-top:25px;}
+section.we-built .custom-link {}
+section.we-built .custom-link span {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 700;}
+section.we-built .link.youtube {background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/play.png?4108859132183675603); background-repeat: no-repeat; cursor: pointer; display: inline-block; height: 60px; padding-top: 20px; text-indent: 65px;}
+section.we-built .bullets {margin: 30px auto; overflow: hidden;}
+section.we-built .bullets li {background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/list-item-light.png?17198230689133276032); background-position: 3px center; background-repeat: no-repeat; font-size: 17px; font-weight: bold; line-height: 30px; padding-left: 30px; text-align: left;}
+
+/* Background Images */
+section.we-built .se {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-3_7217534c-f76b-4ca6-8c08-dee57de92a9f.png?4092405501371076944"); background-repeat: no-repeat; background-size:contain;}
+section.we-built .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR1-800.png?9865851746000911533"); background-repeat: no-repeat; background-size:contain;}
+section.we-built .sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-left-background_55497052-2b73-4607-a309-fdabdb155795.png?7826891482510995792"); background-repeat: no-repeat; background-size:contain;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+  section.we-built h1 {font-size:23px;}
+  section.we-built h2 {font-size:32px;}
+  section.we-built p {font-size:13px;}
+  section.we-built .one {height:493px;}
+  section.we-built .two {padding: 6% 6% 0 1%;}
+  section.we-built .bullets li {font-size:15px;}
+}
+
+/* Phone 768px */
+@media (max-width:768px) {
+  section.we-built .one {width: 100%; height:573px;}
+  section.we-built .two {width:100%;}
+  section.we-built .column {display: block;}
+  section.we-built h1, section.we-built h2, section.we-built p {text-align:center!important;}
+  section.we-built .two {padding: 2% 20% 12% 20%;}
+  section.we-built .custom-link {text-align:center;}
+  section.we-built .bullets {padding:0 15%;}
+}
+
+/* Phone 667px */
+@media (max-width:667px) {
+  section.we-built .one {width: 100%; height:493px;}
+}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.we-built .one {height:293px;}
+  section.we-built h1 {font-size:18px;}
+  section.we-built h2 {font-size:30px;}
+  section.we-built .two {padding: 2% 8% 12% 8%;}
+  section.we-built .bullets {margin: 30px auto!important; padding: 0 5%;}
+}
+
+
+
+/***** SECTION: ALWAYS READY */
+section.always-ready {width:100%; display:inline-block;}
+section.always-ready .row {width:100%; margin-left:0; margin-right:0;}
+section.always-ready .column {display: inline-block; float: left;}
+section.always-ready .one {width: 60%; height:693px;}
+section.always-ready .two {width:40%; padding: 6% 10% 0 0;}
+section.always-ready h1 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 400; font-size: 28px; line-height: 1.1em; letter-spacing: 0; margin: 0; padding: 0; text-align:left!important;}
+section.always-ready h2 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 48px; line-height: 0.9em; text-transform: uppercase; margin-top: 0; letter-spacing: 0; text-align:left;}
+section.always-ready p {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 300; font-size:17px; margin-top:25px;}
+section.always-ready .custom-link {}
+section.always-ready .custom-link span {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 700;}
+section.always-ready .link.youtube {background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/play.png?4108859132183675603); background-repeat: no-repeat; cursor: pointer; display: inline-block; height: 60px; padding-top: 20px; text-indent: 65px;}
+section.always-ready .bullets {margin: 30px auto; overflow: hidden;}
+section.always-ready .bullets li {background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/list-item-light.png?17198230689133276032); background-position: 3px center; background-repeat: no-repeat; font-size: 17px; font-weight: bold; line-height: 30px; padding-left: 30px; text-align: left;}
+
+/* Background Images */
+section.always-ready .se {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-1_b1da0e55-d8b9-451d-a8d6-166c886d3d43.png?4092405501371076944"); background-repeat: no-repeat; background-size:contain;}
+section.always-ready .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR1-800.png?9865851746000911533"); background-repeat: no-repeat; background-size:contain;}
+section.always-ready .sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-left-background_55497052-2b73-4607-a309-fdabdb155795.png?7826891482510995792"); background-repeat: no-repeat; background-size:contain;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+  section.always-ready h1 {font-size:23px;}
+  section.always-ready h2 {font-size:32px;}
+  section.always-ready p {font-size:13px;}
+  section.always-ready .one {height:493px;}
+  section.always-ready .two {padding: 6% 6% 0 1%;}
+  section.always-ready .bullets li {font-size:15px;}
+}
+
+/* Phone 768px */
+@media (max-width:768px) {
+  section.always-ready .one {width: 100%; height:573px;}
+  section.always-ready .two {width:100%;}
+  section.always-ready .column {display: block;}
+  section.always-ready h1, section.always-ready h2, section.always-ready p {text-align:center!important;}
+  section.always-ready .two {padding: 2% 20% 12% 20%;}
+  section.always-ready .custom-link {text-align:center;}
+  section.always-ready .bullets {padding:0 15%;}
+}
+
+/* Phone 667px */
+@media (max-width:667px) {
+  section.always-ready .one {width: 100%; height:493px;}
+}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.always-ready .one {height:293px;}
+  section.always-ready h1 {font-size:18px;}
+  section.always-ready h2 {font-size:30px;}
+  section.always-ready .two {padding: 2% 8% 12% 8%;}
+  section.always-ready .bullets {margin: 30px auto!important; padding: 0 5%;}
+}
+
+
+
+/***** SECTION: SEE HOW */
+
+/* Desktop 1920px */
+section.see-how {height: 590px; background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/atv-bkg-2_5f1c9ab2-a493-4a85-9224-66e603bb28de.png?17700654302731039324"); background-size: cover; background-repeat: no-repeat; text-align: center;}
+section.see-how h1{color: #fff; font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size:50px; text-transform: uppercase; text-align: center; margin: 18px 0; padding: 0;}
+section.see-how h2 {color: #fff; font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 400; font-size: 21px; text-transform: none; margin: 0; padding: 0;}
+section.see-how .row {padding: 8% 25%; margin:0;}
+section.see-how .row img {margin-top:50px!important;}
+section.see-how .tabs-blue{width: 300px; height: 20px; background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/zubzi-bottom-blue-in.png?8983740209328410719"); background-repeat: no-repeat; margin:0 auto;}
+
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+section.see-how {height: 327px;}
+section.see-how h1 {font-size:28px;}
+section.see-how h2 {font-size:16px;}
+section.see-how .row {padding: 5% 25%;}
+	}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.see-how {height: 244px;}
+  section.see-how .row {padding: 5% 10%;}
+}
+
+
+/***** BANNER STYLES */
+section.banner {width:100%; display:block;}
+section.banner h1 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-style: normal; font-weight: 400; font-size: 28px; line-height: 1.1em; text-transform: uppercase; letter-spacing: 0; margin: 0; padding: 0; text-align:left;}
+section.banner h2 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-style: normal; font-weight: 800; font-size: 48px; line-height: 0.9em; text-transform: uppercase; letter-spacing: 0; margin-top: 0;  text-align:left;}
+section.banner p {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 300; font-size:17px; line-height:1.5em; margin-top:15px;}
+section.banner .wrapper {margin-left:0; margin-right:0; display:inline-block; width:100%;}
+section.banner .column {display: inline-block;}
+section.banner .copy-left {width:40%; float:left; padding:5% 5% 0 8%;}
+section.banner .copy-right {width:40%; float:right; padding:5% 12% 0 0;}
+section.banner .bullets, section.banner .bullets-white {margin: 30px auto; overflow: hidden;}
+section.banner .bullets li {background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/list-item-light.png?17198230689133276032); background-position: 3px top; background-repeat: no-repeat; font-size: 17px; font-weight: bold; line-height: 1.5em; padding-left: 30px; text-align: left; margin-bottom: 8px;}
+section.banner .bullets-white li {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/list-item-dark.png?17198230689133276032"); background-position: 3px top; background-repeat: no-repeat; font-size: 17px; font-weight: bold; line-height: 1.5em; padding-left: 30px; text-align: left; margin-bottom: 8px;}
+
+
+section.banner .custom-link {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 300; font-size:17px;}
+section.banner .custom-link span {font-weight: 800;}
+section.banner .link.youtube {background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/play.png?4108859132183675603); background-repeat: no-repeat; cursor: pointer; display: inline-block; height: 60px; padding-top: 20px; text-indent: 65px;}
+section.banner .white {color:#fff;}
+
+/* Unique Images */
+section.banner .honey-done {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/HD-1.png?14675765856015483689"); background-size: cover; background-repeat: no-repeat; display:inline-block; background-position:0 50px; width:60%; height:623px;}
+section.banner .we-built {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/banner-we-built_1_5x.png?8321588178314262560"); background-size: cover; background-repeat: no-repeat; width:60%; display:inline-block; height:623px;}
+section.banner .always-ready {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-1_b1da0e55-d8b9-451d-a8d6-166c886d3d43.png?4092405501371076944"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
+section.banner .still-playing {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-10_50e52107-c9be-44ec-989a-daef62f33a80.png?13012381318366980262"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
+section.banner .finally-reach {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-12_ef99dee8-41f5-45f8-8e3e-b01db0aa98fb.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
+section.banner .durability {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-13_b5d2ef98-e8c2-48b4-a55e-b2edb2b9e193.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}section.banner .protection {background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-11_edb839cc-fd0d-44ea-9ce7-1d4871875e62.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px;}
+section.banner .be-ready {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/home-1_67c3514d-6f8a-4e24-b836-43af06d489bf.png?2294898553019570319"); background-size: cover; background-repeat: no-repeat; background-position: -25px 0; height:623px; width:60%;}
+section.banner .be-ready h1 {font-size:48px;} 
+
+/* Unique Images with Overlays */
+section.banner .dry-gear {background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/hd-desction-3_710844cc-a5dc-4625-91fc-ab2dc0fc0b07.png?48076164648996798"); background-size: cover; background-repeat: no-repeat; height:623px;}
+section.banner .protection {background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-11_edb839cc-fd0d-44ea-9ce7-1d4871875e62.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px;}
+
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+  section.banner h1 {font-size: 23px;}
+  section.banner h2 {font-size: 33px;}
+  section.banner p {font-size:13px;}
+  section.banner .bullets li, section.banner .bullets-white li {font-size:15px;}
+  section.banner .custom-link {font-size:13px;}
+  section.banner .copy-left {padding: 5% 0 0 8%;}
+  section.banner .link.youtube {text-indent:45px;}
+  
+  /* Unique Images */
+  section.banner .honey-done, section.banner .we-built, section.banner .still-playing, section.banner .durability {height:470px;}
+  section.banner .dry-gear {height:500px;}
+  section.banner .always-ready, section.banner .still-playing, section.banner .finally-reach, section.banner .be-ready {height:520px;}
+  section.banner .always-ready, section.banner .still-playing, section.banner .be-ready {background-position: -220px 0;}
+  section.banner .finally-reach {background-position: -75px 0;}
+  section.banner .we-built {background-position: center;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+  section.banner .column {width:100%; padding:10%;}
+  section.banner h1, section.banner h2, section.banner p, section.banner .custom-link {text-align:center;}
+  section.banner .link.youtube {margin-left:0!important;}
+  section.banner .bullets, section.banner .bullets-white {margin: 30px 170px;}
+  section.banner .always-ready, section.banner .be-ready {background-position:0;}
+  section.banner .dry-gear {background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/dry-gear-768.png?2866073418324721280");}
+  section.banner .protection {background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-11_edb839cc-fd0d-44ea-9ce7-1d4871875e62.png?7214567596613659704");}
+  section.banner .still-playing {background-position: -100px 0;}
+  section.banner .finally-reach {background-position: 0;}
+  section.banner .protection {background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/protection-768.png?8648014835025993817"); background-position: right;}
+  section.banner .btn-wrapper {text-align:center!important;}
+}
+
+/* Phone 667px */
+@media (max-width:667px) {
+  section.banner .bullets, section.banner .bullets-white {margin: 30px 130px;}
+  section.banner .protection {height: 523px;}
+}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.banner .bullets, section.banner .bullets-white {margin: 30px 15px!important;}
+  section.banner .protection {background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/protection-375.png?5494689429686404100"); background-position:left;}
+  section.banner .dry-gear {background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/dry-gear-375.png?13314591307011974515");}
+  section.banner .still-playing {background-position: -275px 0;}
+  section.banner .we-built {height:270px;}
+}
+      
+
+
+
+/***** CATEGORY: COVERS & ATV */
+section.banner-product {width:100%; height:auto; display:block; overflow:hidden;}
+section.banner-product .gray {background-color: #f6f5f5;}
+section.banner-product .wrapper {width:100%; display:inline-block; margin-bottom: 10px;}
+section.banner-product .column {display: block;}
+section.banner-product .column-hidden {display: none;}
+section.banner-product .image {width:55%; height:564px; float:left;}
+section.banner-product .copy {display:inline-block; padding: 5% 0 0 5%;}
+section.banner-product .left {float:left;}
+section.banner-product .right {float:right;}
+section.banner-product h1, section.banner-product h2, section.banner-product h3, section.banner-product h4 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; text-align:left;}
+section.banner-product h1, section.banner-product h2, section.banner-product h4 {color:#2d2d2d;}
+section.banner-product h1 {font-size:34px; font-weight: 800; margin:0; padding:0; text-transform:none;}
+section.banner-product h2 {font-size:34px; font-weight: 400; margin:0; padding:0; text-transform:none;}
+section.banner-product h3 {font-size:150px; font-weight: 800; margin:0 0 5% 0; padding:0; text-transform:uppercase; line-height: .8em; letter-spacing:-.06em; color:#808285;}
+section.banner-product h4 {font-size:25px; font-weight: 400; margin:0; padding:0; text-transform:uppercase;}
+section.banner-product .price {font-size: 15px; margin:5% 0 0 0; padding:0; text-transform:uppercase; color:#808285;}
+section.banner-product .price span {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 800; font-size:33px; color:#4f5150;}
+section.banner-product .btns {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 300; font-size:18px; margin:2% 0 0 0; padding:0; text-transform:uppercase; color:#808285;}
+section.banner-product .btns a {color:#06b9e4; text-transform: uppercase; text-decoration: none;}
+
+section.banner-product .hd {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-hd_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat; background-position: right;}
+section.banner-product .se {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-se_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat;}
+section.banner-product .i270 {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-270_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat;}
+section.banner-product .i180 {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-180_1_5x.png?15976954353574770196"); background-size: cover; background-repeat: no-repeat;}
+section.banner-product .atvs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/atvs_1_5x.png?7485904071159953320"); background-size: cover; background-repeat: no-repeat;}
+section.banner-product .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/atvr_1_5x.png?7485904071159953320"); background-size: cover; background-repeat: no-repeat; background-position: right;}
+section.banner-product .sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs_1_5x.png?7485904071159953320"); background-size: cover; background-repeat: no-repeat;}
+
+
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+	section.banner-product h1 {font-size:24px;}
+	section.banner-product h2 {font-size:24px;}
+	section.banner-product h3 {font-size:110px;}
+	section.banner-product h4 {font-size:18px; text-transform:uppercase;}
+	section.banner-product .price {font-size: 15px; text-transform:uppercase; margin:5% 0 0 0;}
+	section.banner-product .price span {font-size:33px;}
+	section.banner-product .image {height:380px;}
+	}
+	
+	/* Tablet 768px */
+@media (max-width:768px) {
+  	section.banner-product h1 {font-size:27px;}
+	section.banner-product h2 {font-size:27px;}
+	section.banner-product h1, section.banner-product h2, section.banner-product h3, section.banner-product h4 {text-align:center;}
+	section.banner-product .image {width:100%; height:266px;}
+	section.banner-product .price {font-size: 15px; text-transform:uppercase; margin:2% 0 0 0;}
+	section.banner-product .gray {background-color: #fff;}
+	section.banner-product .sxs {background-position: 0 -75px;}
+  
+  /* Hidden Functions */
+	section.banner-product .column-hidden h3, section.banner-product .column-hidden h4 {color:#fff; text-shadow: 1px 1px #333;}
+	section.banner-product .column-hidden {display:none; text-align: center; padding-top:6%;}
+	section.banner-product .column h3, section.banner-product .column h4, section.banner-product .image  {display: none;}
+	section.banner-product .column-hidden {display: block; float:left;}
+	section.banner-product .copy {text-align: center; width:100%; padding: 5% 0;}
+	}
+
+/* Phone 667px */
+@media (max-width:667px) {
+  section.banner-product .price {margin: 5% 0 0 0;}
+}
+
+	/* Phone 375px */
+@media (max-width:375px) {
+  section.banner-product .copy {padding:15% 3%;}
+  section.banner-product .image {height:392px;}
+  
+  /* Unique Cover Images for 375 */
+  section.banner-product .hd {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/hd-375.png?17054151450224800146"); background-size: cover; background-repeat: no-repeat;}
+  section.banner-product .se {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/se-375.png?17054151450224800146"); background-size: cover; background-repeat: no-repeat;}
+  section.banner-product .i270 {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/270-375.png?3131855877568877906"); background-size: cover; background-repeat: no-repeat;}
+  section.banner-product .i180 {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/180-375.png?17054151450224800146"); background-size: cover; background-repeat: no-repeat;}
+  section.banner-product .sxs {background-position: -75px 0;}
+  section.banner-product .atvr {background-position: -90px 0;}
+	}
