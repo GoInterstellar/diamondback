@@ -1,0 +1,8 @@
+<div class="customer-service-wrapper">
+<h3><i class="fa fa-reorder"></i> Filter</h3>
+<ul class="customer-service left-nav">
+{% for link in linklists.accessories.links %}
+   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
+{% endfor %}
+</ul>
+</div>

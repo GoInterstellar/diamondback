@@ -1,0 +1,8 @@
+<div class="customer-service-wrapper">
+<h3><i class="fa fa-reorder"></i> Filter <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+<ul class="customer-service">
+{% for link in linklists.accessories.links %}
+  <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}{% if link.active %}<a href="/collections/accessories"><img src="{{ 'bullet-sidebar.svg' | asset_url }}" style="max-width:20px; margin-top: 5px; float:right;" /></a>{% endif %}</li>
+{% endfor %}
+</ul>
+</div>

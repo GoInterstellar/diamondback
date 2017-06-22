@@ -1,0 +1,5 @@
+<ul>
+{% for link in linklists.about-menu.links %}
+   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }} / </li>
+{% endfor %}
+</ul>

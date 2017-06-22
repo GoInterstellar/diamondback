@@ -1,0 +1,8 @@
+<div class="customer-service-wrapper">
+<h3><i class="fa fa-reorder"></i> Helpful Links<i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+<ul class="customer-service">
+{% for link in linklists.helpful-links.links %}
+   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
+{% endfor %}
+</ul>
+</div>

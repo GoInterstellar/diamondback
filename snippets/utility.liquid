@@ -1,0 +1,5 @@
+<ul class="utility">
+{% for link in linklists.utility.links %}
+   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
+{% endfor %}
+</ul>

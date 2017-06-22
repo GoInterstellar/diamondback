@@ -1,0 +1,60 @@
+{% unless grid_image_width %}
+  {%- assign grid_image_width = '600x600' -%}
+{% endunless %}
+<div class="grid-view-item{% unless product.available %} product-price--sold-out grid-view-item--sold-out{% endunless %}">
+  <a class="grid-view-item__link" href="{{ product.url | within: collection }}">
+{% assign ImageIndex = 0 %} 
+{% assign ImageClass = '' %}
+{% assign images_count = product.images | size %}
+  {% for image in product.images %}
+  {% assign ImageIndex = ImageIndex | plus:1 %}
+  
+  {% if ImageIndex == 1 %}
+               {% assign ImageClass = ' main_image ' %}			 
+		{% else %}	
+           {% assign ImageClass = ' alt_image ' %} 		
+                {% endif %} 
+  
+  
+  <img class="grid-view-item__image {{ ImageClass }}" data-img-count="{{ productIndex }}" src="{{ product.featured_image.src | img_url: grid_image_width }}" alt="{{ product.featured_image.alt }}">
+ {% endfor %}
+ 
+	
+	
+	
+	
+	<div class="h4 grid-view-item__title">{{ product.title }}</div>
+
+</a>  
+  <span class="cat-compatible-with">For use with: {{ product.metafields.product.cat-compatible-with }}</span>
+    
+    {% if section.settings.show_vendor %}
+      <div class="grid-view-item__vendor">{{ product.vendor }}</div>
+    {% endif %}
+    <div class="grid-view-item__meta">
+      {% include 'product-price' %}
+	  
+	  <div class="product-multi-view">
+	{% if images_count > 1 %}
+	<ul class="product-img-view">
+	{% assign ImageCount = 0 %}
+    {% assign ImageClassCount = '' %} 	
+	 {% for image in product.images %}
+	   {% assign ImageCount = ImageCount | plus:1 %}
+	     {% if ImageCount == 1 %}
+               {% assign ImageClassCount = 'active' %}			 
+		{% else %}	
+           {% assign ImageClassCount = '' %} 		
+                {% endif %} 
+	 <li data-img="{{ image.src | product_img_url: 'large' }}" class="{{ ImageClassCount }}"></li>
+	 {% endfor %}
+	 </ul>
+	{% endif %} 
+	</div>
+	  
+    </div>
+  
+  
+ 
+	
+</div>
