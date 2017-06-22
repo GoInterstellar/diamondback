@@ -1,5 +1,18 @@
-/* GLOBAL ITEMS */
-.filter-result-content {display:none!important;}
+/* PAGE: HELP */
+.help-banner h1{font-size:48px!important; text-transform: capitalize!important; font-weight:800!important; margin-bottom:50px!important;}
+.help-banner h2{font-size:26px!important; text-transform: capitalize!important;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+.help-banner h1{font-size:35px!important; text-transform: capitalize!important; font-weight:800!important; margin-top:50px!important;}
+.help-banner h2{font-size:18px!important; text-transform: capitalize!important;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+.help-banner h1{font-size:35px!important; text-transform: capitalize!important; font-weight:800!important;}
+.help-banner h2, .help-banner h2.help-first{font-size:16px!important; text-transform: capitalize!important; text-align:left!important; padding-top:25px; padding-bottom:10px;}
+}
 
 /* SIDEBAR LINK */
 .customer-service li a{font-family: "Vitesse SSm A", "Vitesse SSm B"!important; font-style: normal; font-weight: 700;}
@@ -164,6 +177,7 @@ ul.slider-bullets {font-family: "Conv_ForzaSSm-Bold",sans-serif;font-size: 17px;
     float: left;
     margin-top: 5px;
   	margin-left: 20px;
+  margin-bottom:25px;
 }
 
 .rear-win span {
@@ -172,7 +186,7 @@ ul.slider-bullets {font-family: "Conv_ForzaSSm-Bold",sans-serif;font-size: 17px;
     font-family: "Conv_ForzaSSm-Bold",sans-serif;
     font-size: 16px;
     margin-top: 5px;
-  	margin-left: 100px;
+  	margin-left: 0;
 }
 .rear-win span img {max-width:15px; max-height:15px; margin-right:8px;}
 .price-label {margin-right:57px!important;}
@@ -221,6 +235,7 @@ section.dcovers h2.reverse {margin-bottom: 5px !important;}
 section.dcovers h1.reverse {margin-bottom: 25px !important;}
 li.get-ready-icon {max-width:170px; margin: 50px auto 0 auto;}
 li.get-ready-icon-3{margin: 25px auto 0 auto; max-width:80px; }
+.cms-up-sell h1 {text-align:left;}
 
 /***** PAGE: COVERS DETAIL */
 .upload-title-gray {color:#2d2d2d!important;}
@@ -381,3 +396,4 @@ li.get-ready-icon-3{margin: 25px auto 0 auto; max-width:80px; }
 }
 
 #bazaar {display:block;}
+.bv-curations-cleanslate .fm-carousel .fm-header .fm-title {display:none!important;}
