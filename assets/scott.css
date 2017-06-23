@@ -768,6 +768,16 @@ div.bv-curations-cleanslate.bv-carousel-wrapper {
     margin-left: 0 !important;
 }
 
+
+/*** BAZAARVOICE OTB RATINGS & REVIEWS DISPLAY ***********************************************************************************************/
+
+#BVRRContainer {
+    width:80%; 
+    margin: 0 auto; 
+    padding: 40px 0;
+}
+
+
 /*** RATINGS & REVIEWS SNAPSHOT ***********************************************************************************************/
 
 .clr {
