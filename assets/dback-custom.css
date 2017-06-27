@@ -45,8 +45,6 @@
   .hex-col-xs-sxs {width: 50%; float:left;}
 }
 
-/***** SECTION: SHIPPING */
-section.shipping {margin-top:75px;}
 
 /***** SECTION: GET READY */
 
@@ -123,7 +121,7 @@ section.why-buy .wrapper{width:80%; margin: 0 auto; padding: 40px 0;}
 section.why-buy .column {width: 33%; display: inline-block; vertical-align: top;}
 section.why-buy h1 {color: #2d2d2d; font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 43px; text-transform: uppercase; text-align: center; margin: 0; padding: 0;}
 section.why-buy .spacer {width: 100%; height: 30px; display: block;}
-section.why-buy .title {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-size: 19px; font-weight:800; text-transform: uppercase;}
+section.why-buy .title {font-family: "Conv_Forza-Bold", sans-serif; font-size: 18px; text-transform: uppercase;}
 section.why-buy .content {font-family: "Conv_ForzaSSm-Book", sans-serif; font-size: 15px;}
 section.why-buy .img-wrapper {width: 130px; height: 130px; margin: 5px auto;}
 section.why-buy .img-fist {padding-top: 15px;}

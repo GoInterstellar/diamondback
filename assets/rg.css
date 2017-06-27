@@ -47,30 +47,25 @@ ul.manuals li a, ul.manuals li a:visited, ul.manuals li a:active{color:#4F5150; 
 ul.manuals li a:hover{color:#06b9e4; text-decoration:none!important;}
 span.small{font-size:24px;}
 
-/* Tablet 1024px */
-@media (max-width:1024px) {
+@media screen and (max-width: 1388px) {
   ul.manuals li.title {font-size:28px;}
   ul.manuals li {font-size:16px;}
 }
-/* Tablet 768px */
-@media (max-width:768px) {
-  ul.manuals li.title {font-size:24px;}
+@media screen and (max-width: 1253px) {
+  ul.manuals li.title {font-size:26px;}
   ul.manuals li {font-size:14px;}
 }
-/* Tablet 667px */
-@media (max-width:667px) {
+@media screen and (max-width: 1122px) {
   ul.manuals {width:100%;}
+  ul.manuals li.title {font-size:30px;}
+  ul.manuals li {font-size:18px;}
 }
-
-/* Tablet 375px */
-@media (max-width:375px) {
-	}
 
 /* PAGE: SHIPPING PAGE */
 /*section.shipping {margin-left:150px;}*/
 section.shipping h3 {font-family: "Conv_Vitesse-Book", sans-serif; font-size:30px;}
-section.shipping h4 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-size: 22px; font-weight:800;}
-section.shipping h4 span {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-size:15px; font-weight:400;}
+section.shipping h4 {font-family: "Conv_Vitesse-Bold", sans-serif; font-size: 22px;}
+section.shipping h4 span {font-family: "Conv_Vitesse-Book", sans-serif; font-size:15px;}
 section.shipping p {font-size:18px; color:#4F5150;}
 .shipping-info {
     margin-bottom: 50px;
@@ -395,9 +390,9 @@ li.get-ready-icon-3{margin: 25px auto 0 auto; max-width:80px; }
 
 }
   
-  /* Installation Guides
+  /* Installation Guides */
   ul.manuals li {font-size:12px;}
-  ul.manuals li.title {font-size:22px;}*/
+  ul.manuals li.title {font-size:22px;}
 }
 
 #bazaar {display:block;}
