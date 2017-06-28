@@ -661,8 +661,8 @@ section.banner-product .sxs {background-image: url("https://cdn.shopify.com/s/fi
 
 
 
-/* Tablet 1024px */
-@media (max-width:1024px) {
+/* Tablet 1440px */
+@media (max-width:1440px) {
 	section.banner-product h1 {font-size:24px;}
 	section.banner-product h2 {font-size:24px;}
 	section.banner-product h3 {font-size:110px;}
@@ -672,8 +672,8 @@ section.banner-product .sxs {background-image: url("https://cdn.shopify.com/s/fi
 	section.banner-product .image {height:380px;}
 	}
 	
-	/* Tablet 768px */
-@media (max-width:768px) {
+	/* Tablet 988px */
+@media (max-width:988px) {
   	section.banner-product h1 {font-size:27px;}
 	section.banner-product h2 {font-size:27px;}
 	section.banner-product h1, section.banner-product h2, section.banner-product h3, section.banner-product h4 {text-align:center;}
