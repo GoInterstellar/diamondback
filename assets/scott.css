@@ -2,6 +2,256 @@
     color: #06b9e4;
 }
 
+
+/*** BAZAARVOICE OTB REVIEWS SECTION ****************************************************************************************/
+
+.bv-cv2-cleanslate .bv-core-container-67 .bv-action-bar .bv-action-bar-header {
+    font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif !important;
+    font-weight: 800 !important;
+}
+
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-summary .bv-content-summary-body-text p {
+    color: #2d2d2d !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    font-family: "Forza SSm A", "Forza SSm B", sans-serif !important;
+    line-height: 1.4 !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-title-container .bv-content-title {
+    color: #2d2d2d !important;
+    font-size: 22px !important;
+    line-height: 32px !important;
+    font-family: "Conv_Forza-Black",sans-serif !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-item .bv-content-feedback-vote .bv-content-feedback-vote-request h4 {
+    padding-left: 0 !important;
+    color: #808285 !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-btn, 
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-report-btn,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-btn:hover, 
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-report-btn:hover,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-btn[type="button"]:focus, 
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-report-btn[type="button"]:focus,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-item:hover .bv-content-feedback-btn-container > .bv-content-btn[type="button"],
+.bv-cv2-cleanslate .bv-core-container-67 .bv-mbox-need-user .bv-content-feedback-btn-container > .bv-content-btn[type="button"],
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-item:hover .bv-secondary-content-actions-container > .bv-content-btn[type="button"], 
+.bv-cv2-cleanslate .bv-core-container-67 .bv-mbox-need-user .bv-secondary-content-actions-container > .bv-content-btn[type="button"],
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-vote .bv-content-btn,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-vote .bv-content-report-btn,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-author-name .bv-author,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-popup-profull .bv-content-item .bv-content-author-name .bv-author,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-author-name .bv-content-datetime {
+    color: #808285 !important;
+    border-style: solid !important;
+    font-size: 14px !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-secondary-ratings .bv-content-secondary-ratings-label {
+    color: #2d2d2d !important;
+    font-family: "Conv_Forza-Bold",sans-serif !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-secondary-ratings-container .bv-content-secondary-ratings-value,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-secondary-rating-summary-container .bv-secondary-rating-summary-value,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-secondary-rating-summary-container .bv-secondary-slider-summary-value,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-secondary-rating-summary-container .bv-content-slider-value {
+    background-color:#808285 !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-control-bar-count span.bv-content-pagination-pages-current,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-control-bar-count span.bv-content-pagination-pages-current:hover,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-header .bv-control-bar,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-header .bv-content-pagination,
+.bv-absolute-top-container.bv-popup-in *,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-rating-stars-container .bv-rating-stars-on {
+    color: #808285 !important;
+}
+.bv-absolute-top-container.bv-popup-in * {
+    color: #4F5150 !important;
+    font-size: 16px;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-dropdown-container .bv-dropdown ul.bv-dropdown-active .bv-dropdown-item.bv-focusable:hover {
+    background-color: #06B9E4 !important;    
+}
+.bv-filters .bv-dropdown-target > .bv-focusable > .bv-dropdown-title {
+    font-family: "Conv_Forza-BookItalic",sans-serif !important;
+}
+.bv-cv2-cleanslate .bv-filters .bv-content-filter-select .bv-dropdown-target > .bv-focusable > .bv-dropdown-title {
+    font-style: normal !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-header .bv-control-bar,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-header .bv-content-pagination {
+    background-color: #fff !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 button.bv-write-review.bv-submission-button,
+.bv-cv2-cleanslate .bv-core-container-67 button.bv-read-review,
+.bv-cv2-cleanslate .bv-core-container-67 button.bv-ask-question,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-button,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets > .bv-form-actions .bv-actions-container .bv-submission-button-submit {
+    background-color: #06B9E4 !important;
+    background: -webkit-linear-gradient(#06b6e1, #04829f) !important;
+    background: linear-gradient(#06b6e1, #04829f) !important;
+    border: 0px !important;
+    border-radius: 2px !important;
+    color: #fff !important;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400 !important;
+    min-width: 200px;
+    padding: 10px 15px;
+    text-transform: uppercase !important;
+    font-family: "Conv_Forza-Black",sans-serif !important;
+    padding: 10px 25px !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 button.bv-write-review.bv-submission-button:hover,
+.bv-cv2-cleanslate .bv-core-container-67 button.bv-read-review:hover,
+.bv-cv2-cleanslate .bv-core-container-67 button.bv-ask-question:hover,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-button:hover,
+.bv-cv2-cleanslate .bv-core-container-67 button.bv-write-review.bv-submission-button:focus,
+.bv-cv2-cleanslate .bv-core-container-67 button.bv-read-review:focus,
+.bv-cv2-cleanslate .bv-core-container-67 button.bv-ask-question:focus,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-button:focus,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets > .bv-form-actions .bv-actions-container .bv-submission-button-submit:hover,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets > .bv-form-actions .bv-actions-container .bv-submission-button-submit:focus {
+    background-color: #04829f !important;
+    background: -webkit-linear-gradient(#04829f, #06b6e1) !important;
+    background: linear-gradient(#04829f, #06b6e1) !important;
+    border: 0px !important;
+    border-radius: 2px !important;
+    color: #fff !important;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400 !important;
+    min-width: 200px;
+    padding: 10px 15px ;
+    text-transform: uppercase !important;
+    font-family: "Conv_Forza-Black",sans-serif !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-section-summary .bv-inline-histogram-header .bv-content-title, .bv-cv2-cleanslate .bv-core-container-67 .bv-section-summary .bv-secondary-rating-summary-header .bv-content-title {
+    font-family: "Conv_Vitesse-Medium",sans-serif !important;
+    text-transform: uppercase !important;
+    font-size: 19px !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-section-summary .bv-section-summary-inline .bv-secondary-rating-summary .bv-secondary-rating-summary-list .bv-rating-ratio.bv-td .bv-secondary-rating-summary-rating {
+    color: #808285 !important;
+    font-family: Conv_ForzaSSm-Black, sans-serif !important;
+    font-size: 13px !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-section-summary .bv-section-summary-inline .bv-secondary-rating-summary .bv-secondary-rating-summary-list .bv-secondary-rating-summary-stars .bv-secondary-rating-summary-id {
+    color: #808285 !important;    
+    font-family: Conv_ForzaSSm-Bold, sans-serif !important
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-inline-histogram-ratings-star-container .bv-inline-histogram-ratings-star,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-inline-histogram-ratings-star-container .bv-inline-histogram-ratings-score,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-popup-histogram-ratings td,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-section-summary .bv-section-summary-inline .bv-inline-histogram-ratings caption.bv-histogram-filter-helper {
+    color: #808285 !important;  
+}
+#BVRRContainer {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 40px 5px;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-header .bv-section-summary,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-header .bv-action-bar {
+    display: none !important;
+}
+.bv-mbox-breadcrumb .bv-mbox-breadcrumb-item {
+    font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif !important;
+    font-weight: 800 !important;
+}
+.bv-content-btn.bv-content-btn-feedback-yes.bv-focusable:hover > span,
+.bv-content-btn.bv-content-btn-feedback-no.bv-focusable:hover > span {
+    color: #fff !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-media-viewer .bv-media-viewer-stack .bv-media-viewer-inner .bv-media-viewer-canvas > .bv-media-viewer-caption {
+    font-size: 18px !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-media-viewer .bv-media-viewer-stack .bv-media-viewer-ribbon p.bv-media-viewer-ribbon-summary {
+    font-family: "Conv_Forza-Bold",sans-serif !important;
+}
+.bv-fieldset-label .bv-fieldset-label-text {
+    color: #4F5150 !important;
+    font-family: "Conv_Forza-Bold",sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-item .bv-content-feedback-vote .bv-content-feedback-vote-request h4,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-btn, 
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-report-btn,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-btn:hover, 
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-report-btn:hover,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-btn[type="button"]:focus, 
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-btn-container .bv-content-report-btn[type="button"]:focus,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-item:hover .bv-content-feedback-btn-container > .bv-content-btn[type="button"],
+.bv-cv2-cleanslate .bv-core-container-67 .bv-mbox-need-user .bv-content-feedback-btn-container > .bv-content-btn[type="button"],
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-item:hover .bv-secondary-content-actions-container > .bv-content-btn[type="button"], 
+.bv-cv2-cleanslate .bv-core-container-67 .bv-mbox-need-user .bv-secondary-content-actions-container > .bv-content-btn[type="button"],
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-vote .bv-content-btn,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-feedback-vote .bv-content-report-btn,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-author-name .bv-author,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-popup-profull .bv-content-item .bv-content-author-name .bv-author,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-content-author-name .bv-content-datetime,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-control-bar-count span.bv-content-pagination-pages-current,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-control-bar-count span.bv-content-pagination-pages-current:hover,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-dropdown-container .bv-dropdown ul .bv-dropdown-item.bv-focusable,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-header .bv-control-bar,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-header .bv-content-pagination,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-section-summary .bv-section-summary-inline .bv-secondary-rating-summary .bv-secondary-rating-summary-list .bv-secondary-rating-summary-stars .bv-secondary-rating-summary-id,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-section-summary .bv-section-summary-inline .bv-secondary-rating-summary .bv-secondary-rating-summary-list .bv-secondary-rating-summary-bars-container .bv-secondary-rating-summary-id,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-section-summary .bv-section-summary-inline .bv-inline-histogram-ratings caption.bv-histogram-filter-helper,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-inline-histogram-ratings-star-container .bv-inline-histogram-ratings-star,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-inline-histogram-ratings-star-container .bv-inline-histogram-ratings-score,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-popup-histogram-ratings td,
+.bv-mbox-wrapper.bv-mbox-content-submission-review.bv-mbox-wide.bv-mbox-box,
+.bv-mbox-sidebar.bv-sidebar-enabled,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-media-viewer .bv-media-viewer-stack .bv-media-viewer-inner .bv-media-viewer-canvas > .bv-media-viewer-caption,
+.bv-rating-helper.bv-rating-helper-1,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldset input.bv-text,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldset textarea,
+.bv-review-media > .bv-review-media-actions > .bv-content-btn,
+.bv-review-media > .bv-review-media-actions > .bv-content-btn:hover,
+.bv-review-media > .bv-review-media-actions > .bv-content-btn:focus,
+.bv-review-media > .bv-review-media-actions > .bv-content-btn.bv-btn-add-video,
+.bv-review-media > .bv-review-media-actions > .bv-content-btn.bv-btn-add-video:hover,
+.bv-review-media > .bv-review-media-actions > .bv-content-btn.bv-btn-add-video:focus,
+.bv-review-media > .bv-review-media-actions > .bv-content-btn > span,
+.bv-review-media > .bv-review-media-actions > .bv-content-btn:hover > span,
+.bv-review-media > .bv-review-media-actions > .bv-content-btn:focus > span,
+.bv-review-media-actions .bv-review-photo-actions-label,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-radio-isrecommended .bv-radio-wrapper-label,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets .bv-fieldset-secondary-rating .bv-focusable .bv-rating-helper,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets .bv-fieldset.bv-fieldset-netpromoterscore span.bv-rating-helper,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets .bv-form-actions p.bv-fieldset-casltext {
+    font-family: Conv_ForzaSSm-Book, sans-serif !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets fieldset.bv-fieldset.bv-fieldset-active {
+    background-color: #fff9eb !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets .bv-fieldset.bv-fieldset-active.bv-select-field .bv-fieldset-select-wrapper > .bv-select.bv-select-cleanslate, .bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets .bv-fieldset.bv-select-field .bv-fieldset-select-wrapper > .bv-select.bv-select-cleanslate {
+    color: #2d2d2d !important;
+    font-family: "Conv_Forza-BookItalic", sans-serif !important;
+    font-style: normal !important;
+    padding-top: 3px !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets .bv-fieldset.bv-fieldset-netpromoterscore .bv-radio-group label.bv-radio-wrapper-label {
+    font-family: "Conv_Forza-Bold",sans-serif !important;
+    font-weight: 400 !important;
+}
+.bv-rating-helper.bv-rating-helper-1,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-dropdown-container .bv-dropdown ul .bv-dropdown-item.bv-focusable,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets .bv-fieldset-secondary-rating .bv-focusable .bv-rating-helper,
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets .bv-fieldset.bv-fieldset-netpromoterscore span.bv-rating-helper {
+    color: #4F5150 !important;
+}
+.bv-cv2-cleanslate .bv-core-container-67 .bv-submission .bv-fieldsets .bv-form-actions p.bv-fieldset-casltext {
+    font-size: 10px !important;
+}
+
+
 /*** CONTACT PAGE ****************************************************************************************/
 
 .message-form-container {
@@ -766,15 +1016,6 @@ div.bv-curations-cleanslate.bv-carousel-wrapper {
 }
 .page-product div.bv-curations-cleanslate.bv-carousel-wrapper div.fm-carousel.bv-carousel-theme-modern.fm-push-right a.fm-btn-left {
     margin-left: 0 !important;
-}
-
-
-/*** BAZAARVOICE OTB RATINGS & REVIEWS DISPLAY ***********************************************************************************************/
-
-#BVRRContainer {
-    width:80%; 
-    margin: 0 auto; 
-    padding: 40px 0;
 }
 
 
