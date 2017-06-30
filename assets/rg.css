@@ -313,6 +313,11 @@ li.get-ready-icon-3{margin: 25px auto 0 auto; max-width:80px; }
   .specs-content-wrapper {font-size:13px!important;}
   .product-section  .atv-options-content-wrapper h2.product-slide-title, .product-section h1.product-slide-title {font-size:28px!important;}
   
+  /* Accessories Collection */
+  #Collection .grid__item {border-right:1px solid #ccc;}
+  #Collection .grid-view-item {min-height:350px!important;}
+  #Collection .h4.grid-view-item__title {font-size:25px!important;}
+  
 }
 
 /* Tablet 768px */
@@ -356,6 +361,20 @@ li.get-ready-icon-3{margin: 25px auto 0 auto; max-width:80px; }
   /* SXS Detail */
   .product-cms-wrapper h1 {font-size:32px!important;}
   .product-cms-wrapper h2 {font-size:23px!important;}
+  
+  /* Accessory Collection */
+  #Collection .grid-view-item {min-height:275px!important;}
+   #Collection .h4.grid-view-item__title {font-size:18px!important;}
+}
+
+@media (max-width:749px){
+  #Collection .grid-view-item {min-height:325px!important;}
+}
+
+@media (max-width:700px){
+  #Collection .grid__item {border-left:none!important;}
+  #Collection .grid__item {border-right:none!important;}
+  #Collection .h4.grid-view-item__title {font-size:29px!important;}
 }
 
 
@@ -376,6 +395,9 @@ li.get-ready-icon-3{margin: 25px auto 0 auto; max-width:80px; }
   
   /* ATV PARENT */
   .banner.atv-banner .banner-sm-title {font-size:16px!important;}
+  
+  /* Accessories Collection */
+  #Collection .grid-view-item {min-height:0!important;}
  
 }
 
@@ -399,6 +421,8 @@ li.get-ready-icon-3{margin: 25px auto 0 auto; max-width:80px; }
   
   /* Cart */
   div.cart-grid .qmain-title {font-size:25px;}
+  
+  /* Accessories Collection */
 
 }
   
