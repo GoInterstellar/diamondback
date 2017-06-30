@@ -569,7 +569,7 @@ section.banner .always-ready {background: url("https://cdn.shopify.com/s/files/1
 section.banner .still-playing {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-10_50e52107-c9be-44ec-989a-daef62f33a80.png?13012381318366980262"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
 section.banner .finally-reach {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-12_ef99dee8-41f5-45f8-8e3e-b01db0aa98fb.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
 section.banner .durability {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-13_b5d2ef98-e8c2-48b4-a55e-b2edb2b9e193.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}section.banner .protection {background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-11_edb839cc-fd0d-44ea-9ce7-1d4871875e62.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px;}
-section.banner .be-ready {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/home-1_67c3514d-6f8a-4e24-b836-43af06d489bf.png?2294898553019570319"); background-size: cover; background-repeat: no-repeat; background-position: -25px 0; height:623px; width:60%;}
+section.banner .be-ready {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/be-ready_2x_ac7197c6-7f9a-4519-9e17-af2598bb7788.png?6271390151144493410"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
 section.banner .be-ready h1 {font-size:48px;} 
 
 /* Unique Images with Overlays */
@@ -591,8 +591,8 @@ section.banner .protection {background-image: linear-gradient(to right, rgba(0, 
   section.banner .honey-done, section.banner .we-built, section.banner .still-playing, section.banner .durability {height:470px;}
   section.banner .dry-gear {height:500px;}
   section.banner .always-ready, section.banner .still-playing, section.banner .finally-reach, section.banner .be-ready {height:520px;}
-  section.banner .always-ready, section.banner .still-playing, section.banner .be-ready {background-position: -220px 0;}
-  section.banner .finally-reach {background-position: -75px 0;}
+  section.banner .always-ready, section.banner .still-playing {background-position: -220px 0;}
+  section.banner .finally-reach, section.banner .be-ready {background-position: -75px 0;}
   section.banner .we-built {background-position: center;}
 }
 
