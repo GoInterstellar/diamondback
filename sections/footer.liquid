@@ -373,7 +373,7 @@ var inbed = getCookies('inbed');
   
   
   if (pageurl.indexOf('?variant')>-1){
-  $('.product-price__price').after('<div class="configured-product">'+resulttitleproduct+'</div>');
+  $('.product-single__title').after('<div class="configured-product">'+resulttitleproduct+'</div>');
   $('.change').bind('click', function(ev){
   ev.preventDefault();
   ev.stopPropagation();   

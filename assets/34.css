@@ -3467,9 +3467,10 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 }
 .configured-product {
     border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
+    /*border-top: 1px solid #ccc;*/
     color: #06b9e4;
-    padding: 10px;
+    padding: 5px 0 10px 0;
+  margin-bottom: 10px;
 }
 #truck-form select {
 background:  url("https://cdn.shopify.com/s/files/1/1571/5355/files/select-ff_0e6bba8f-2aee-42e0-8cee-291193ff7680.png?15195730741428915661") no-repeat scroll right center !important
