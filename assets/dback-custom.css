@@ -566,7 +566,7 @@ section.banner .white {color:#fff;}
 section.banner .honey-done {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/HD-1.png?14675765856015483689"); background-size: cover; background-repeat: no-repeat; display:inline-block; background-position:0 50px; width:60%; height:623px;}
 section.banner .we-built {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/banner-we-built_1_5x.png?8321588178314262560"); background-size: cover; background-repeat: no-repeat; width:60%; display:inline-block; height:623px;}
 section.banner .always-ready {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-1_b1da0e55-d8b9-451d-a8d6-166c886d3d43.png?4092405501371076944"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
-section.banner .still-playing {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-10_50e52107-c9be-44ec-989a-daef62f33a80.png?13012381318366980262"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
+section.banner .still-playing {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-270_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
 section.banner .finally-reach {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-12_ef99dee8-41f5-45f8-8e3e-b01db0aa98fb.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
 section.banner .durability {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-13_b5d2ef98-e8c2-48b4-a55e-b2edb2b9e193.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}section.banner .protection {background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-11_edb839cc-fd0d-44ea-9ce7-1d4871875e62.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px;}
 section.banner .be-ready {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/be-ready_2x_ac7197c6-7f9a-4519-9e17-af2598bb7788.png?6271390151144493410"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
@@ -576,6 +576,15 @@ section.banner .be-ready h1 {font-size:48px;}
 section.banner .dry-gear {background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/hd-desction-3_710844cc-a5dc-4625-91fc-ab2dc0fc0b07.png?48076164648996798"); background-size: cover; background-repeat: no-repeat; height:623px;}
 section.banner .protection {background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-11_edb839cc-fd0d-44ea-9ce7-1d4871875e62.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px;}
 
+/* Desktop 1600px  */
+@media (max-width:1600px) {
+	section.banner .still-playing {background-position: -150px 0;}
+}
+
+/* Desktop 1440px  */
+@media (max-width:1440px) {
+	section.banner .still-playing {background-position: -220px 0;}
+}
 
 /* Tablet 1024px */
 @media (max-width:1024px) {
