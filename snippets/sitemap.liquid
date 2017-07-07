@@ -1,13 +1,13 @@
 <ul>
-  <h3>Covers</h3>
-{% for link in linklists.covers.links %}
+  <h3>Truck Covers</h3>
+{% for link in linklists.sitemap-truck-covers.links %}
    <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
 {% endfor %}
 </ul>
 
 <ul>
-  <h3>ATV/SXS</h3>
-{% for link in linklists.atv-sxs.links %}
+  <h3>ATV/SXS Carriers</h3>
+{% for link in linklists.sitemap-atv-sxs.links %}
    <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
 {% endfor %}
 </ul>
@@ -18,3 +18,32 @@
    <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
 {% endfor %}
 </ul>
+
+<ul>
+  <h3>Help</h3>
+{% for link in linklists.sitemap-help.links %}
+   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
+{% endfor %}
+</ul>
+
+<ul>
+  <h3>Learn</h3>
+{% for link in linklists.sitemap-learn.links %}
+   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
+{% endfor %}
+</ul>
+
+<ul>
+  <h3>DiamondBack Store</h3>
+{% for link in linklists.sitemap-diamondback-store.links %}
+   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
+{% endfor %}
+</ul>
+
+<!--ul>
+  <h3>More DiamondBack</h3>
+{% for link in linklists.sitemap-more-diamondback.links %}
+   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
+{% endfor %}
+</ul-->
+<br />

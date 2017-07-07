@@ -96,7 +96,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .header-info ul li,
 .header-info ul li a   {
     color: #a7a9ac;
-    font-size: 15px;
+    font-size: 13px;
 
 }
 .header-info ul li a.configure_by_collection {
@@ -459,7 +459,7 @@ font-weight: 800;
 	margin-top: 10px;
 }
 .footer .batches {
-    margin-left: -10px;
+    /* margin-left: -10px; */
     margin-top: 40px;
 }
 .footer .batches {
@@ -472,10 +472,12 @@ font-weight: 800;
 }
 .footer .batches li {
     /* float: left; RG */
-    max-width: 120px;
+    margin-right: 25px;
+    max-width: 75px;
     /* width: 30%; RG */
     display: inline-block; /* RG added */
 }
+@media 
 .footer .batches li img{
     width: 80%; /* RG was 100% */
 	max-width: 100px;
@@ -1938,18 +1940,24 @@ font-weight: 800;
 #Collection .grid-view-item{
 	padding: 0 20px 0px;
     text-align: center;
+  	min-height:400px;
+    border-bottom: 1px solid #ccc;
+  margin:0 25px;
 }
 #Collection .grid-view-item__meta {
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; RG */ 
     margin-top: 8px;
     padding-bottom: 30px;
 }
 #Collection .grid__item {
     padding-left: 0;
+  border-left: 1px solid #ccc;
 }
 #Collection .h4.grid-view-item__title {
     color: #2d2d2d;
-    font-family: "Conv_Vitesse-Book",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif;
+  	font-style: normal; 
+  	font-weight: 400;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -1974,15 +1982,15 @@ font-weight: 800;
     margin-bottom: 20px;
 }
 .center_item .grid-view-item {
-	border-right: 1px solid #ccc;
-	border-left: 1px solid #ccc;
+	/*border-right: 1px solid #ccc;*/
+	/*border-left: 1px solid #ccc;*/
 	
 }
 #collection-accessories .customer-service {
     border-right: 0;
 }
 #shopify-section-accessories-template {
-    border-left: 1px solid #ccc;
+    /*border-left: 1px solid #ccc;*/
     margin-bottom: 100px;
 }
 .EmptyCollection #shopify-section-accessories-template {
@@ -2467,7 +2475,7 @@ font-weight: 800;
 }
 .haul-opt {
     float: left;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .haul-opt span {
@@ -3458,9 +3466,10 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 }
 .configured-product {
     border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
+    /*border-top: 1px solid #ccc;*/
     color: #06b9e4;
-    padding: 10px;
+    padding: 5px 0 10px 0;
+  margin-bottom: 10px;
 }
 #truck-form select {
 background:  url("https://cdn.shopify.com/s/files/1/1571/5355/files/select-ff_0e6bba8f-2aee-42e0-8cee-291193ff7680.png?15195730741428915661") no-repeat scroll right center !important
@@ -5568,7 +5577,7 @@ h1.product-single__title, .product-single__title.h1 {
 }
 .footer-mobile-batches .batches li {
     text-align: center;
-    width: 20% !important;
+    width: 12% !important;
 }
 .footer-mobile-batches .batches li.social {
     width: 10% !important;
@@ -6015,7 +6024,7 @@ h1.product-single__title, .product-single__title.h1 {
     width: 50%;
 }
 .mobile-logos li img {
-    max-width: 115px;
+    max-width: 75px;
     width: 100%;
 }
 
