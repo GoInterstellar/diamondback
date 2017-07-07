@@ -232,6 +232,11 @@ div.order-summary.order-summary--is-collapsed {background-color: #faf8f9; paddin
 #Collection .h4.grid-view-item__title {font-size:29px!important;}
 span.cat-compatible-with {font-size: 15px; color: #808285;}
 .product-multi-view {display:none;}
+.available-colors{display:block; font-size: 85%; color: #555; margin-bottom:25px;}
+
+@media (max-width:768px) {
+  #Collection .h4.grid-view-item__title {font-size:20px!important;}
+}
 
 @media (max-width:768px) {
   #Collection .h4.grid-view-item__title {font-size:20px!important;}

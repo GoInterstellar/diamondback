@@ -1,0 +1,59 @@
+{% comment %}
+  Do we have a Color option?
+  If so, is it the first, second or third option of that product?
+  We will need to access values so we need that color index.
+{% endcomment %}
+
+{% assign has_color = false %}
+{% assign color_option_index = 0 %}
+{% for option in product.options %}
+  {% assign downcased_option = option | downcase %}
+  {% if downcased_option contains 'color' or downcased_option contains 'colour'  %}
+    {% assign color_option_index = forloop.index0 %}
+    {% assign has_color = true %}
+  {% endif %}
+{% endfor %}
+
+{% comment %}
+  If we have a Color option, let's create a list of
+  all available colors for that product, ordered alphabetically.
+  Let's not include the color featured on the collection page.
+  Let's not include colors that are sold out.
+{% endcomment %}
+
+{% if has_color %}
+  {% assign featured_color = product.images.first.variants.first.options[color_option_index] %}
+  {% assign colors = '' %}
+  {% for variant in product.variants %}
+    {% if variant.available %}
+      {% assign color = variant.options[color_option_index] %}
+      {% unless featured_color != blank and color == featured_color %}
+        {% if colors == blank %}
+          {% assign colors = color %}
+        {% else %}
+          {% assign colors = colors | join: '|' | append: '|' | append: color | split: '|' | uniq | sort %}
+        {% endif %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+
+  {% comment %}
+    If the product is available in any color other than the one featured on the collection page.
+  {% endcomment %}
+
+  {% if colors.size > 0 %}
+<div class="available-colors">
+  <small>
+    {% if featured_color == blank %}    
+    Available in
+    {% else %}
+    <img src="{{ 'color-rugged-black.png' | asset_url }}" width="16" height="16" />
+    <img src="{{ 'color-aluminum.png' | asset_url }}" width="16" height="16" />
+    {% endif %}
+    <!--{ % for color in colors %}{ % if forloop.first %}{ % elsif forloop.last %} and { % else %}, { % endif %}{{ color }}{ % endfor %}-->
+  </small>
+</div>
+
+  {% endif %}
+
+{% endif %}

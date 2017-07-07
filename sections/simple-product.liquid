@@ -169,7 +169,7 @@
             {% endif %}
 
             <!-- ORIGINAL BUTTON CODE, COMMENTED OUT FOR P1 LAUNCH -->
-            <!--div class="product-form__item product-form__item--submit">
+            <div class="product-form__item product-form__item--submit">
               <button type="submit" name="add" id="AddToCart-{{ section.id }}" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="btn product-form__cart-submit{% if product.options.size == 1 and product.variants[0].title == 'Default Title' %} product-form__cart-submit--small{% endif %}">
                 <span id="AddToCartText-{{ section.id }}">
                   {% unless current_variant.available %}
@@ -179,11 +179,6 @@
                   {% endunless %}
                 </span>
               </button>
-            </div-->
-            
-            <!-- REMOVE THIS CODE BELOW FOR P2, UNCOMMENT ABOVE SNIPPET -->
-            <div class="product-form__item product-form__item--submit">
-              <a href="tel:800-935-4002" class="btn">Call to Order</a>
             </div>
           </form>
 
