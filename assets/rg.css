@@ -238,6 +238,10 @@ span.cat-compatible-with {font-size: 15px; color: #808285;}
   #Collection .h4.grid-view-item__title {font-size:20px!important;}
 }
 
+@media (max-width:768px) {
+  #Collection .h4.grid-view-item__title {font-size:20px!important;}
+}
+
 /***** PAGE: COVERS */
 section.dcovers .collection-item-wrapper h1, section.dcovers .collection-item-wrapper h2 {font-size: 34px!important;}
 section.dcovers .collection-item-wrapper h2 {margin-bottom: 25px !important;}
