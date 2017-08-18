@@ -35,17 +35,17 @@
                 </div>
                 {% unless item.variant.title contains 'Default' %}
                   <div class="cart__meta-text">
-                    <span class="cart-var-label"> Part#:</span>  {{ item.sku }} <br/>
-          			<span class="cart-var-label">Ships:</span> <span class="shipDate"></span><br/>
                     {% for option in item.product.options %}
                     {% assign optionname = option | replace: "Color", "Finish" %}
                     <!--{ % assign optionname = option | replace: "Rear-Window Protection", "Protection" % } -->
-                    {% assign optionname = optionname | replace: "Vehicle", "Fit" %}
+                    {% assign optionname = optionname | replace: "Vehicle", "Fits" %}
                     {% assign variantval = item.variant.options[forloop.index0] | replace: ", ,", "," %}
                     {% assign variantval = variantval | replace: ",", "  " %} 
                     
-                    <span class="cart-var-label"> {{ optionname }}:</span>   {{ variantval }}  <br/>
+                    <span class="cart-var-label"> {{ optionname }}:</span>   {{ variantval }}<br/>                   
                     {% endfor %}
+                    <span class="cart-var-label"> Part#:</span>  {{ item.sku }} <br/>
+          			<span class="cart-var-label">Ships:</span> <span class="shipDate"></span><br/>
                   </div>
                 {% endunless %}
 
