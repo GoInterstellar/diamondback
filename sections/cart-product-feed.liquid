@@ -11,7 +11,7 @@
   <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />    
   <a class="title" href="{{ product.url }}">{{ product.title | escape  }}</a>
     <a class="price" href="{{ product.url }}"><sup>$</sup>{{ product.price | money_without_currency | remove: '.00' }}</a>
-    <a href="{{ product.url }}"><input type="submit" name="update" class="btn btn--secondary cart__update cart__update--large small--hide" value="Add To Cart"></a>
+    <a href="{{ product.url }}"><input type="submit" name="update" class="btn btn--secondary cart__update cart__update--large" value="Add To Cart"></a>
   </li>  
 
 {% endfor %}

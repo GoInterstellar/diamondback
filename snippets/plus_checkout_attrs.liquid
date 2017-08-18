@@ -1,0 +1,107 @@
+{% if plus_checkout_attrs %}
+// Part 1:
+// code for defining various attribute inputs...
+<script>
+(function($) {
+// Part 2:
+// code for required field function...
+// code for function inserting new attribute fields...
+// code for form submission event listeners...
+// code for page/step listeners...
+})(jQuery, Plus.func);
+</script>
+{% endif %}
+
+
+{% if settings.attr_1_enable %}
+{% assign attr_1_step = 'contact_information' | json %}
+{% assign attr_1_section = settings.attr_1_title | default: 'Liftgate needed?' | handle %}
+{% assign attr_1_sibling = '.section--contact-information' | json %}
+{% assign attr_title = settings.attr_1_title | default: 'Liftgate needed?' %}
+{% assign attr_explanation = settings.attr_1_section_explanation | default: false %}
+{% assign attr_label = settings.attr_1_label | default: 'Notes' %}
+{% assign attr_attribute = settings.attr_1_attribute | default: 'Liftgate needed?' %}
+{% assign attr_required = settings.attr_1_required | default: false %}
+{% assign attr_error_msg = settings.attr_1_error_msg | default: 'Error' | escape %}
+{% capture attr_store %}checkout[attributes][{{ attr_attribute }}]{% endcapture %}
+{% include 'plus_attr_text' with attr_section: attr_1_section %}
+{% endif %}
+
+
+(function ($) {
+        "use strict"
+        var selectors = {
+            required: '.field--required',
+            input: '.field__input',
+            wrapper: '.field__input-wrapper',
+            error_message: '.field__message--error',
+            checkout_form: '.main form'
+        }
+        var classes = {
+            error_message: 'field__message field__message--error',
+            field_error: 'field--error',
+        }
+        var requiredField = function requiredField(value, err_msg) {
+            this.value = value;
+            this.error_message = err_msg;
+        }
+        var requiredFieldCheck = function(form) {
+            var $required_fields = $(form).find('.section--custom-attribute').find(selectors.required);
+            var isValid = true;
+            $required_fields.each(function() {
+                    var $field = $(this);
+                    var field_value = $field.find(selectors.input).val();
+                    var error_message = $field.data('error');
+                    var field = new requiredField(field_value, error_message);
+                    if (field.value === '') {
+                        isValid = false;
+                        if (!$field.hasClass(classes.field_error)) {
+                            $field.addClass(classes.field_error);
+                        }
+                        if ($field.find(selectors.error_message).length < 1) {
+                            $field.find(selectors.wrapper).after("<p class='" + classes.error_message + "'>" + field
+                            }
+                        } else {
+                            if ($field.hasClass(classes.field_error)) {
+                                $field.removeClass(classes.field_error);
+                            }
+                            if ($field.find(selectors.error_message).length > 0) {
+                                $field.find(selectors.error_message).remove();
+                            }
+                        }
+                    });
+                return isValid;
+            };
+            var insertField = function(section, sibling) {
+                var fieldSection = $('#attr-' + section).html();
+                $(sibling).after(fieldSection);
+            };
+            Checkout.$(document).on('submit', selectors.checkout_form, function() {
+                return requiredFieldCheck(this);
+            });
+            $(document).on('page:load page:change', function() {
+                { % comment %
+                }
+                Since insertField() uses the after() method, adding fields needs
+                to be reverse order to match theme settings. { % endcomment %
+                }
+
+                { %
+                    if settings.attr_1_enable %
+                }
+                if (Shopify.Checkout.step === {
+                        {
+                            attr_1_step
+                        }
+                    }) {
+                    Plus.func('{{ attr_1_section }}', 'main', function() {
+                        insertField('{{ attr_1_section }}', {
+                            {
+                                attr_1_sibling
+                            }
+                        });
+                    });
+                } { % endif %
+                }
+            });
+        })(jQuery, Plus.func);

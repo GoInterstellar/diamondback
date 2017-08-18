@@ -12,11 +12,14 @@
 
     {{ checkout_stylesheets }}
     {{ checkout_scripts }}
+    {{ '//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js' | script_tag }}
+{% include 'plus_func' %}
     <link href="{{ 'main.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
   <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/VB.css" rel="stylesheet" type="text/css" media="all" />
   <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/VM.css" rel="stylesheet" type="text/css" media="all" />
   <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/VL.css" rel="stylesheet" type="text/css" media="all" />
   <link href="{{ 'rg.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{{ 'dback-custom.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
 
    <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/ForzaSSm-Medium.css" rel="stylesheet" type="text/css" media="all" />
    <link href="https://cdn.shopify.com/s/files/1/1643/4699/t/3/assets/Forza-Bold.css" rel="stylesheet" type="text/css" media="all" />
@@ -36,6 +39,7 @@
   <link href="{{ '34.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
   <link href="{{ 'truck-form.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6667956/7877772/css/fonts.css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
   </head>
   <body>
     <section class="cart_header">
@@ -52,15 +56,19 @@
 
     <div class="content" data-content>
       <div class="checkout-wrap">
-        <div class="sidebar" role="complementary" style="width:40%;">
+        <div class="sidebar" role="complementary">
           <div class="sidebar__header">
             {{ content_for_logo }}
           </div>
           <div class="sidebar__content">
             {{ content_for_order_summary }}
+            <script>
+              $('.product__description__variant').after('<span class="shipDate-cart">Ships:</span> <span class="shipDate2"></span>');                                         
+            </script>
+   
           </div>
         </div>
-        <div class="main" role="main" style="width:60%;">
+        <div class="main" role="main">
           <div class="main__header">
             <h1 style="text-align:left!important;">Checkout</h1>
             {{ breadcrumb }}
@@ -69,7 +77,6 @@
           </div>
           <div class="main__content">
             {{ content_for_layout }}
-           
           </div>
           <div class="main__footer">
             {{ content_for_footer }}
@@ -83,5 +90,29 @@
     <section class="cart_footer">
 {% section 'footer' %}
     </section>
+    
+    <!-- Begin Cart Shipping Calculation -->
+  <script>
+  	var shipDate = new Date(); /* Date() = today's date */
+	var numberOfDaysToAdd = 23;
+	shipDate.setDate(shipDate.getDate() + numberOfDaysToAdd); 
+  	var dd = shipDate.getDate();
+	var mm = shipDate.getMonth() + 1;
+	var yyyy = shipDate.getFullYear();
+		if(dd<10){
+    		dd='0'+dd;
+		} 
+		if(mm<10){
+    		mm='0'+mm;
+		}
+  
+	var shipDate = mm + '/'+ dd + '/'+ yyyy;
+    $(".shipDate2").html(shipDate);
+</script>
+<!-- End Cart Shipping Calculation -->
+    <script>
+    $('.section--shipping-address').after('<br><input type="checkbox" class="input-checkbox" value="YES" name="checkout[attributes] [Liftgate needed?]" id="Customer-notes"> <strong>Address needs liftgate?</strong><section class="liftgate"><p>A liftgate assists in getting product off the truck. If needed, the shipment will typically take 1-2 days longer due to a limited number of delivery trucks equipped with liftgate.</p><p><strong>The driver is unable to help unload a product which is banded to a pallet. Average shipment weight is 250 lbs.</strong></p><br><h3>DiamondBack Freight Shipping Policy</h3><p><strong>Signature required for delivery.</strong></p><p>For residential deliveries, the local freight service terminal will call you to schedule a half-day time slot when you know you will be home so they can deliver your DiamondBack.</p></section>');
+    </script>
   </body>
+  {% include 'plus_checkout_attrs' with settings.enable_checkout_attrs %}
 </html>

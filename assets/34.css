@@ -3,7 +3,7 @@ body, html {
 }
  body {
 	 color: #2d2d2d;
-	 font-family: "Conv_Forza-Book",sans-serif;
+	 font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
 	 min-width: 320px;
 }
 h2, .h2 {
@@ -30,7 +30,7 @@ a:hover {
     max-width: 1500px!important;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
 }
 
 .logo,
@@ -74,7 +74,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 		list-style: none;
 	}
 .header-info ul li a {
-    font-family: "Conv_ForzaSSm-Medium",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 500;
     font-weight: normal;
     margin: 0 10px;
     text-transform: uppercase;
@@ -173,7 +173,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .site-nav__dropdown li a {
     color: #fff !important;
     display: block;
-    font-family: "Conv_Forza-Book",sans-serif !important;
+    font-family: "Forza SSm A", "Forza SSm B"!important; font-style: normal; font-weight: 400;
     font-size: 12px !important;
     padding: 5px 0 !important;
 }
@@ -214,13 +214,13 @@ font-weight: 800;
 }
 .home-b-sub {
     color: #fff;
-    font-family: "Conv_Sentinel-BlackItal",sans-serif;
+    font-family: "Sentinel SSm A", "Sentinel SSm B"; font-style: italic; font-weight: 800;
     font-size: 30px;
     line-height: 10px;
 }
 .home-h-sub {
     color: #fff;
-    font-family: "Conv_Sentinel-BlackItal",sans-serif;
+    font-family: "Sentinel SSm A", "Sentinel SSm B"; font-style: italic; font-weight: 800;
     font-size: 30px;
 }
 .banner.atv-banner .banner-title {  
@@ -234,7 +234,7 @@ font-weight: 800;
 }
 .banner.atv-banner .banner-sm-title {
     color: #fff;
-    font-family: "Conv_Vitesse-Book",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 400;
     font-size: 24px;
     margin-top: 5px;
 }
@@ -251,7 +251,7 @@ font-weight: 800;
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-family: "Conv_Forza-Bold",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
     font-size: 20px;
     margin-top: 50px;
     padding: 8px 35px;
@@ -334,7 +334,7 @@ font-weight: 800;
     text-transform: uppercase;
 }
 .home-cms-about h2 {
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 50px;
     line-height: 46px;
     letter-spacing: -2px;
@@ -349,7 +349,7 @@ font-weight: 800;
 }
 .home-about-content {
     color: #4f5150;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 18px;
     line-height: 29px;
     margin-top: 25px;
@@ -369,7 +369,7 @@ font-weight: 800;
     min-width: 200px;
     padding: 10px 15px;
     text-transform: uppercase;
-	font-family: "Conv_Forza-Black",sans-serif;
+	font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
 }
 .btn:hover{
 	opacity: 100!important;
@@ -388,7 +388,7 @@ font-weight: 800;
     color: #fff !important;
     cursor: pointer;
     display: inline-block;
-    font-family: "Conv_Forza-Bold",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
     font-size: 15px;
     font-weight: normal;
     padding: 5px 25px;
@@ -441,7 +441,7 @@ font-weight: 800;
 }
 .footer ul li, .footer ul li a {
     color: #a0a1a2;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 15px;
     line-height: 26px;
 	transition: all 0.3s ease 0s;
@@ -452,7 +452,7 @@ font-weight: 800;
 	text-decoration: none!important;
 }
 .footer .footer-titles {
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -522,7 +522,7 @@ font-weight: 800;
 
 .contact-wrapper {
     color: #2d2d2d;
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     text-align: center;
 }
 
@@ -547,7 +547,7 @@ font-weight: 800;
 
 
 .contact-wrapper h1 {
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 40px;
 }
 .contact-sections {
@@ -578,7 +578,7 @@ font-weight: 800;
     min-width: 180px;
     padding: 8px 35px;
     text-decoration: none !important;
-	font-family: "Conv_Forza-Black",sans-serif;
+	font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
 }
 .contact-sections a:hover{
 	opacity: 100!important;
@@ -592,11 +592,11 @@ font-weight: 800;
 
 
 .sm-instr {
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     /*font-weight: bold;*/
 }
 .time-instr {
-    font-family: "Conv_Forza-Black",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
     font-size: 20px;
 }
 .template-index .email-wrapper {
@@ -617,13 +617,13 @@ font-weight: 800;
 
 .email-title {
     color: #fff;
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 30px;
     margin-bottom: 20px;
 }
 .email-note {
     color: #a0a1a2;
-    font-family: "Conv_Forza-BookItalic",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: italic; font-weight: 400;
     font-size: 13px;
     margin-top: 11px;
 }
@@ -684,7 +684,7 @@ font-weight: 800;
 
 .cont-title-2 {
     color: #2d2d2d;
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 25px;
     font-weight: bold;
     margin-top: -30px;
@@ -697,7 +697,7 @@ font-weight: 800;
 .covers-collection .cont-title-2,
 .atv-collection .cont-title-2  {
     color: #2d2d2d;
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 24px;
     font-weight: normal;
     margin-top: -35px;
@@ -756,7 +756,7 @@ font-weight: 800;
 .tst-content {
     color: #d5d7d8;
     float: left;
-    font-family: "Conv_Sentinel-Book",sans-serif;
+    font-family: "Sentinel SSm A", "Sentinel SSm B"; font-style: normal; font-weight: 400;
     font-size: 20px;
     width: 75%;
 }
@@ -805,14 +805,14 @@ font-weight: 800;
 }	
 	
 .cms-content-wrap .main-title {
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
     text-transform: none;
 }
 .home-section-points .cms-content-wrap .main-title {
-    font-family: "Conv_ForzaSSm-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
@@ -826,7 +826,7 @@ font-weight: 800;
     margin: 0 auto;
     max-width: 200px;
     text-align: center;
-	font-family: "Conv_Forza-Book",sans-serif;
+	font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
 }
 .cms-content-wrap .btn-wrapper {
     margin-top: 30px;
@@ -861,7 +861,7 @@ font-weight: 800;
 }
 .cart th {
     color: #949597 !important;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 15px;
     padding: 5px !important;
 }
@@ -871,7 +871,7 @@ font-weight: 800;
 .cart td .list-view-item__title a, .cart td .subtotal-cart,
 .cart__subtotal {
     color: #000 !important;
-    font-family: "Conv_Forza-Black",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
     font-size: 18px;
 	 vertical-align: top;
 }
@@ -908,7 +908,7 @@ font-weight: 800;
 }
 .btn--small-shop,
 .cart__chat {
-    font-family: "Conv_ForzaSSm-Medium";
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 500;
 }
 .js-edit-toggle {
     background: transparent none repeat scroll 0 0 !important;
@@ -1102,7 +1102,7 @@ min-height: 587px;
 }
 .comp-name {
     color: #000;
-    font-family: "Conv_Vitesse-Book",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 400;
     font-size: 25px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -1128,7 +1128,7 @@ font-weight: 800;
     text-transform: uppercase;
 }
 .atv-collection .group-name span {
-    font-family: Conv_Vitesse-Book,serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 400;
 }
 .atv-collection .group-name span.copy {
     font-family: arial;
@@ -1164,7 +1164,7 @@ font-weight: 800;
 }
 .collection-item-wrapper h2 {
     color: rgb(45, 45, 45);
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 30px;
     letter-spacing: 0px;
     margin-top: 0;
@@ -1172,7 +1172,7 @@ font-weight: 800;
 }
 .covers-collection .collection-item-wrapper h2 {
     color: rgb(45, 45, 45);
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 34px;
     letter-spacing: 0px;
     margin-top: 5px;
@@ -1181,7 +1181,7 @@ font-weight: 800;
 }
 .price-tag{
     color: #808285;
-    font-family: "Conv_ForzaSSm-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 15px;
     margin-top: 0;
     text-transform: none;
@@ -1197,7 +1197,7 @@ font-weight: 800;
 }
 .collection-btn-wrapper {
     color: rgb(79, 81, 80);
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 25px;
     margin-bottom: 5px;
     margin-top: 30px;
@@ -1206,7 +1206,7 @@ font-weight: 800;
 }
 .collection-btn-wrapper a {
     color: #06b9e4;
-    font-family: "Conv_ForzaSSm-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 20px;
     margin-bottom: 5px;
     margin-right: 10px;
@@ -1219,7 +1219,7 @@ font-weight: 800;
     margin-left: 10px;
 }
 .cover-more-info-atv .link span {
-    font-family: "Conv_ForzaSSm-Bold",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
 }
 
 .template-collection .blue-zubzi-top-in {
@@ -1232,19 +1232,19 @@ font-weight: 800;
 
 
 .template-collection .main-title span {
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 40px;
     font-weight: bold;
 }
 .template-collection .main-title span {
     display: inline-block;
-    font-family: "Conv_Forza-Bold",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
     font-size: 50px;
     font-weight: bold;
     margin-right: 10px;
 }
 .template-collection .main-title b {
-    font-family: "Conv_Forza-Bold",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
 }
 .atv-more-info-last h1 {
     padding-top: 60px;
@@ -1266,7 +1266,7 @@ font-weight: 800;
 }
 .cover-more-info h2 {
     color: #fff;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     margin-bottom: 20px;
     margin-top: 0;
     text-transform: none;
@@ -1275,14 +1275,14 @@ font-weight: 800;
    padding: 60px 0;
  }
 .cms-up-sell h1 {
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 35px;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
 }
 .cms-up-sell h2 {
-    font-family: "Conv_ForzaSSm-Light",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300;
     font-size: 20px;
     letter-spacing: 0;
     margin: 0 0 30px;
@@ -1293,7 +1293,7 @@ font-weight: 800;
     width: 50%;
 }
 .cms-upsell-content h2 b {
-    font-family: "Conv_Forza-Black",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
 }
 .cms-up-sell img {
     float: left;
@@ -1308,7 +1308,7 @@ font-weight: 800;
 } 
 
 .cms-upsell-text {
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     margin-bottom: 10px;
 }
 .atv-banner {
@@ -1324,18 +1324,18 @@ font-weight: 800;
 }
 .section-link {
     color: #06b9e4;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 21px;
 }
  .cover-more-info-atv h1 {
     color: #fff;
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 50px;
     margin-bottom: 10px;
 }
 .cover-more-info-atv h2 {
     color: #fff;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 24px;
     text-transform: none;
 }
@@ -1353,7 +1353,7 @@ font-weight: 800;
 
 .cover-more-info-atv .link {
    color: #fff;
-  font-family: "Conv_ForzaSSm-Light",sans-serif;
+  font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300;
   text-decoration: none;
   transition: all 0.3s ease 0s;
   font-size: 18px;
@@ -1367,7 +1367,7 @@ font-weight: 800;
     max-width: 40px;
 }
 .atv-more-info-last h1 {
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 43px;
     margin: 0 auto 20px;
     max-width: 1100px;
@@ -1381,7 +1381,7 @@ font-weight: 800;
     padding-top: 10px;
  }
   .customer-service li a {
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 20px;
  }
  .customer-service li a:hover{
@@ -1393,7 +1393,7 @@ font-weight: 800;
 }
  .customer-service-wrapper h3 {
     color: #4f5150;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 15px;
 	margin-bottom: 20px;
 }
@@ -1492,7 +1492,7 @@ font-weight: 800;
 		display: none;
 }
 .compare-collection-atv h1 {
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
 }
 .collection-atv-wrapper img {
 		width: 90%;
@@ -1501,7 +1501,7 @@ font-weight: 800;
     height: 81px;
 }
 .sp-h-p {
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 12px;
 }
 #customer-service .email-wrapper h1, .email-wrapper h1 {
@@ -1524,7 +1524,7 @@ font-weight: 800;
 }
 #customer-service .customer-service-item h1 {
     color: #2d2d2d;
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 20px;
     margin-bottom: 20px;
     text-align: left;
@@ -1536,7 +1536,7 @@ font-weight: 800;
     border: 0 none !important;
     color: #06b9e4;
     display: inline-block;
-    font-family: "Conv_ForzaSSm-Light",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300;
     text-decoration: none !important;
 }
 .customer-service-item li a.selected,
@@ -1552,7 +1552,7 @@ font-weight: 800;
 	}
 .customer-service-item li .answer {
     display: none;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     margin: 10px 0;
 }
 ul.customer-service {
@@ -1562,7 +1562,7 @@ ul.customer-service {
 	padding-bottom: 60px;
 }
 .help-content {
-    font-family: "Conv_ForzaSSm-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 18px;
     line-height: 25px;
 }
@@ -1576,13 +1576,13 @@ ul.customer-service {
 }
 .warranty-info .item {
     float: left;
-    font-family: "Conv_ForzaSSm-Medium",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 500;
     font-size: 18px;
     overflow: hidden;
     width: 50%;
 }
 .warranty-info .title {
-    font-family: "Conv_Forza-Bold",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
     font-size: 24px;
 }
 .warranty-info .info-wrap {
@@ -1636,7 +1636,7 @@ font-weight: 800;
 }
 .help-links-wrapper a {
     color: #fff;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 14px;
 }
 .help-links-wrapper a:hover {
@@ -1644,14 +1644,14 @@ font-weight: 800;
 	text-decoration: none;
 }
 .help-commitment h1 {
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 40px;
     margin-top: 0;
     padding-top: 0;
     text-align: center;
 }
 .help-commitment .main-content {
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 18px;
     margin: 0 auto;
     max-width: 800px;
@@ -1680,14 +1680,14 @@ font-weight: 800;
 }
 .cms-content {
     color: #fff;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 17px;
     padding: 20% 0;
     text-align: center;
 }
 .built-usa .cms-content {
     color: #fff;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 17px;
     margin: 0 auto;
     max-width: 350px;
@@ -1710,7 +1710,7 @@ font-weight: 800;
 }
 .banner-founders h1 {
     color: #fff;
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 40px;
     margin: 65px auto 0;
     max-width: 520px;
@@ -1718,7 +1718,7 @@ font-weight: 800;
 
 .cms-content-founders {
     color: #fff;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 17px;
     margin-top: 30px;
     text-align: left;
@@ -1731,7 +1731,7 @@ font-weight: 800;
     padding-left: 30px;
 }
 .built-usa-loc h1 {
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 40px;
     margin-bottom: 10px;
     text-align: left;
@@ -1749,7 +1749,7 @@ font-weight: 800;
 }
 .cms-content-loc {
     color: #2d2d2d;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 17px;
     margin-top: 30px;
     max-width: 500px;
@@ -1757,7 +1757,7 @@ font-weight: 800;
 }
 .tt{
     color: #fff;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 17px;
     margin-top: 30px;
     text-align: left;
@@ -1772,7 +1772,7 @@ font-weight: 800;
 }
 .culture h1 {
     color: #fff;
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 40px;
     max-width: 100% !important;
     text-align: center;
@@ -1780,7 +1780,7 @@ font-weight: 800;
 }
 .culture h2 {
     color: #fff;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 17px;
     margin-top: 20px;
     padding-top: 0;
@@ -1789,7 +1789,7 @@ font-weight: 800;
 }
 .team h1 {
     color: #2d2d2d;
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 40px;
     text-align: center;
     width: 100%;
@@ -1807,7 +1807,7 @@ font-weight: 800;
 }
 .culture .slogan {
     color: #fff;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 17px;
     margin: 20px auto 0;
     max-width: 180px;
@@ -1833,7 +1833,7 @@ font-weight: 800;
 .about-menu li a {
     color: #4f5150;
     display: inline-block;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     margin-left: 10px;
     margin-right: 10px;
     text-transform: uppercase;
@@ -1876,7 +1876,7 @@ font-weight: 800;
 }
 .banner.accessories h2 {
     color: #fff;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 21px;
     margin-bottom: 100px;
     text-transform: none;
@@ -1969,7 +1969,7 @@ font-weight: 800;
 }
 #Collection .grid-view-item__meta .product-price__price, .grid-view-item__meta .product__price {
     color: #4f5150;
-    font-family: Conv_ForzaSSm-Black,sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
     font-size: 23px;
     text-decoration: none !important;
 }
@@ -2081,7 +2081,7 @@ font-weight: 800;
 h1.product-single__title, .product-single__title.h1 {
     border-bottom: 1px solid #ccc;
     color: #2d2d2d;
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 40px;
     margin-bottom: 10px;
     padding-bottom: 5px;
@@ -2152,7 +2152,7 @@ h1.product-single__title, .product-single__title.h1 {
     float: left;
     font-size: 25px;
     padding: 8px 40px 8px 15px;
-	font-family: "Conv_Vitesse-Medium",sans-serif;
+	font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
 }
 .product-additional-description {
 		font-size: 16px;
@@ -2248,12 +2248,12 @@ h1.product-single__title, .product-single__title.h1 {
     text-align: right;
 }
 .comp-content li {
-    font-family: "Conv_Vitesse-Light",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 22px;
     line-height: 35px;
 }
 .comp-content span {
-    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;
 }
 
 .doc-desc-tab {
@@ -2316,7 +2316,7 @@ h1.product-single__title, .product-single__title.h1 {
 
 .doc-desc {
     color: #fff;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 17px;
     margin-left: 10px;
     max-width: 110px;
@@ -2327,7 +2327,7 @@ h1.product-single__title, .product-single__title.h1 {
     display: block;
     font-size: 15px;
     font-weight: bold;
-	font-family: "Conv_Forza-Bold",sans-serif;
+	font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
 }
 .document-item {
     float: left;
@@ -2407,7 +2407,7 @@ font-weight: 800;
     text-transform: uppercase;
 }
 .full-width-atvr-bkg h1 {
-      font-family: "Conv_Vitesse-Light",sans-serif;
+      font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 300;
     font-size: 28px;
     letter-spacing: 0;
     line-height: 1.1em;
@@ -2418,10 +2418,10 @@ font-weight: 800;
 
 
 .product-section .atv-options-content-wrapper h2 {
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
 }
 .product-section  .atv-options-content-wrapper h2.product-slide-title {
-    font-family: "Conv_Vitesse-Book",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 400;
     font-size: 40px;
     text-transform: none !important;
 }
@@ -2443,7 +2443,7 @@ font-weight: 800;
 		width: 20%;
 }
 .opt-main-content strong {
-    font-family: "Conv_Forza-Black",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
     letter-spacing: 0.5px;
 }
 .slider-bullets li {
@@ -2482,7 +2482,7 @@ font-weight: 800;
 .haul-opt span {
     color: #4f5150;
     display: block;
-    font-family: "Conv_Forza-Black",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
     font-size: 18px;
     margin-top: 5px;
 }
@@ -2514,7 +2514,7 @@ font-weight: 800;
 }
 .product-section a.link {
     color: #4f5150;
-    font-family: "Conv_ForzaSSm-Light",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300;
     font-size: 17px;
 }
 
@@ -2567,7 +2567,7 @@ font-weight: 800;
 
 }
 .product-custom-link a span {
-    font-family: "Conv_ForzaSSm-Bold",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
 }
 .product-main-specs {
     border-bottom: 1px solid #ccc;
@@ -2607,7 +2607,7 @@ font-weight: 800;
 }
 .spec-data .data-val {
     color: #4f5150;
-    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;
     font-size: 22px;
     line-height: 22px;
 }
@@ -2725,7 +2725,7 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 	padding: 0!important;
 }
 .product-single__title span {
-    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;
 }
 .product-single__title .copy {
     font-family: arial;
@@ -2930,7 +2930,7 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 .contact-section-title {
     border-bottom: 2px solid #ccc;
     color: #000;
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -3038,7 +3038,7 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 }
 .compare-make-info .title {
     color: #4f5150;
-    font-family: "Conv_Vitesse-Medium",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 500;
     font-size: 35px;
     max-width: 550px;
 	line-height: 40px;
@@ -3099,7 +3099,7 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 }
 .table-title {
     color: #505251;
-    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -3162,7 +3162,7 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 }
 .table-title-seporator {
     color: #000;
-    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;
     font-size: 20px;
     line-height: 20px;
     padding: 15px 0;
@@ -3243,7 +3243,7 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 }
 .compare-collection .price-label {
     color: #808285;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 12px;
     margin-right: 0;
     margin-top: 5px;
@@ -3251,7 +3251,7 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 }
 .compare-collection .prod-price {
     color: #4f5150;
-    font-family: "Conv_Forza-Black",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
     font-size: 30px;
      margin-bottom: 5px;
     margin-top: 0;
@@ -3312,14 +3312,14 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 }
 .spec-title {
     color: #a1a1a1;
-    font-family: "Conv_ForzaSSm-Bold",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
 }
 .spec-value {
     color: #4f5150;
-    font-family: "Conv_Forza-Black",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
     font-size: 23px;
 }
 .spec-measure {
@@ -3355,7 +3355,7 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 }
 .compare-atv-spec {
     color: #4f5150;
-    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;
     font-size: 18px;
     padding: 15px 15px 15px 10%;
     text-align: left;
@@ -3398,13 +3398,13 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 .filter-result-content {
     color: #cfd1d2;
     float: right;
-    font-family: "Conv_ForzaSSm-Medium";
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 500;
     font-size: 13px;
     padding-bottom: 5px;
     padding-right: 5px;
 }
 .filter-result-content b {
-    font-family: "Conv_ForzaSSm-Bold";
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
 }
 .filter-result-content a {
 	color: #cfd1d2;
@@ -3549,7 +3549,7 @@ background:  url("https://cdn.shopify.com/s/files/1/1571/5355/files/select-on_c0
 	display: none!important;
 }
 .q-content b {   
-    font-family: "Conv_Forza-Black",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
 }
 
 .atvs-gallery  .slick-slider .slick-dots {
@@ -3561,16 +3561,16 @@ background:  url("https://cdn.shopify.com/s/files/1/1571/5355/files/select-on_c0
 }
 [class^="upload-title"] {
     color: #fff;
-    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;
     font-size: 38px;
     text-transform: uppercase;
 }
 [class^="upload-title"] span {
-    font-family: "Conv_Vitesse-Book",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 400;
 }
 /*.upload-title {
     color: #fff;
-    font-family: "Conv_Vitesse-Black",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;
     font-size: 38px;
     text-transform: uppercase;*/
 }
@@ -3580,7 +3580,7 @@ background:  url("https://cdn.shopify.com/s/files/1/1571/5355/files/select-on_c0
   font-size: 20px;
 }
 .upload-title span {
-    font-family: "Conv_Vitesse-Book",sans-serif;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 400;
 }
 .file-upload, .file-upload-gray {
     color: #fff;
@@ -3601,7 +3601,7 @@ background:  url("https://cdn.shopify.com/s/files/1/1571/5355/files/select-on_c0
     display: inline-block;
     margin-right: 20px;
     text-align: right;
-    width: 50px;
+    width: 60px;
 }
 .cart__meta-text {
     font-size: 14px;
@@ -5272,7 +5272,7 @@ h1.product-single__title, .product-single__title.h1 {
 }
 .customer-service li a {
     color: #949597;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 14px;
     text-indent: 15px;
 }
@@ -5353,7 +5353,7 @@ h1.product-single__title, .product-single__title.h1 {
 	margin-top: 40px;
 }
 .footer .footer-titles {
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
 	text-indent: 0px !important;
 }
 .footer ul li, .footer ul li a {
@@ -5498,7 +5498,7 @@ h1.product-single__title, .product-single__title.h1 {
     color: #fff;
     cursor: pointer;
     float: right;
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 20px;
     font-weight: bold;
     margin-right: 8px;
@@ -5547,7 +5547,7 @@ h1.product-single__title, .product-single__title.h1 {
     margin-left: 50px;
 }
 .footer-email-subtitle {
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     font-size: 15px;
     margin-bottom: 30px;
     margin-top: -20px;
@@ -5592,7 +5592,7 @@ h1.product-single__title, .product-single__title.h1 {
     width: 70% !important;
 }
 .footer-copy {
-    font-family: "Conv_Forza-Book",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
     margin: 30px auto 0;
     max-width: 260px;
     width: 100%;

@@ -207,7 +207,16 @@
         </div>
 		<div class="product-main-specs atv">
 		<div class="custom-prod-spec-content">
-    Max wheelbase of ATV: <a href="/pages/atv-fit-guide">Truck-bed specific</a>
+		<table class="multiple-maxes">
+		<tr>
+		<td>Max distance,<br>nose of SXS to rear axle:</td>
+		<td><a href="/pages/atv-fit-guide">Truck-bed specific</a></td>
+		</tr>
+		<tr>
+		<td>Max SXS width:</td> 
+		<td>60"</td>
+		</tr>
+		</table>
 		</div>
 		</div>
 		
@@ -261,10 +270,6 @@
 
 </section>
 
-<!--section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center">
-<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-left-background_55497052-2b73-4607-a309-fdabdb155795.png?7826891482510995792" class="hidden-lg" style="float: left">
-</section-->
-
 <section class="go-where">
 	<div class="row">
 		<div class="column one sxs leave-trailer"></div>
@@ -281,52 +286,6 @@
 		</div>
 	</div>
 </section>
-
-<!--section class="product-section section-product-img-left atv prod-sxs-bkg-left-1 product-sxs">
-<div class="container">
-        <div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		</div>		
-		<div class="col-md-6 col-lg-6">
-		 <div class="product-cms-wrapper">
-		 <h2>LEAVE THE</h2>
-		 <h1>TRAILER BEHIND.</h1>
-		 <div class="product-content-section">
-		With the DiamondBack SXS Carrier you can forget about the added expenses of buying a trailer and keeping it registered, maintained, and stored.<br/><br/>
-		You can also say goodbye to all those frustrations of using a trailer.
-		<br/><br/>
-		<ul class="product-content-list">
-		<li>Speed limit restrictions</li>
-		<li>Increased tools</li>
-		<li>Parking constraints</li>
-		<li>Difficulty getting to off-road trailheads</li>
-		</ul>
-		
-		</div>
-		</div>
-          
-	  </div>
-	 
-	  	 
- </div> 
- </div>
-</section-->
-
-<section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center">
-<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-prod-bkg.png?61942114016695599" class="hidden-lg" style="float: right">
-</section>
-
-<!--section class="protect-your-gear">
-	<div class="row sxs">
-		<div class="column one"></div>
-		<div class="column two"><h2>PROTECT YOUR GEAR</h2>
-           <h1>FROM WEATHER AND THEFT.</h1>
-		<p>Peace of mind is knowing your gear is safe when you’re out riding or away from your truck while traveling to ATV trails.</p>
-		</div>
-	</div>
-  </section-->
-
-
 
 <section class="product-section  section-product-img-right section-sxs-bkg-2 more">
 <div class="container">
@@ -414,7 +373,7 @@
 </div>
 </div>
 <div class="desc-2 product-data-desc">
-<div class="opt-main-content"><strong>The extra length you need</strong> enabling you to side load two ATVs on a full-size standard short bed truck by giving you those extra 18-21”. Installs easily and detaches when not in use.
+<div class="opt-main-content"><strong>The extra length you need</strong> to load a SXS up to 60" wide onto a full-size standard short bed by giving you up to 26" in added length. Detaches when not in use.
 <a href="/products/rear-extension">Learn More ></a>
 </div>
 </div>
@@ -470,10 +429,23 @@
 		   </div>
 		   </div>
 		   <div class="specs-content-wrapper">
-		   {% assign productspecs = product.metafields.productspecs %}
-{% assign key = 'desc' %}
-<div class="specs-content">{{ productspecs[key] }}</div>
-		   </div>
+	<div class="specs-content">
+		<table>
+	<tr><td class="title">Hauling Capacity</td>
+	<td>{{ product.metafields.product.hauling }}</td></tr>
+	<tr><td class="title">Dimensions</td>
+	<td>{{ product.metafields.product.dimensions }}</td></tr>
+	<tr><td class="title">Construction</td>
+	<td>{{ product.metafields.product.construction }}</td></tr>
+	<tr><td class="title">Components</td>
+	<td>{{ product.metafields.product.components }}</td></tr>
+	<tr><td class="title">Installation Time</td>
+	<td>{{ product.metafields.product.installtime }}</td></tr>
+	<tr><td class="title">Removal Time</td>
+	<td>{{ product.metafields.product.removaltime }}</td></tr>
+	</table>
+	</div>
+</div>
 </div>
            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 desc-split  desc-right">
 		 <div class="tab-desc-line-wrapper">
@@ -531,7 +503,7 @@ manuallink[key] != blank %}
 		   
 </div>
 
-<!--{ % include 'product-reviews' % }-->
+{% include 'reviews-sxs' %}
 {% unless product.empty? %}
   <script type="application/json" id="ProductJson-{{ section.id }}">
     {{ product | json }}

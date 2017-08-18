@@ -331,18 +331,6 @@
 	</div>
 </section>
 
-<!--section class="hdn-img hidden-md hidden-lg">
-<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/HD-1.png?14675765856015483689" class="hidden-lg" style="margin-top: 20px;" />
-</section-->
-
-<div class="zubriki-wrapper hidden-md hidden-lg zubriki-hd-sec-2">
-		<div class="zibra-grey-bottom-in"></div>
-		</div>
-		
-<!--section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center">
-<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/HD-3.png?10582643554896036167" class="hidden-lg">
-</section-->
-
 <div class="product-additional-description">
 <div class="container">
         <div class="row product-secondary-desc-wrapper">	 
@@ -352,11 +340,24 @@
 			<div class="tab-title">PRODUCT SPECS</div>
 		   </div>
 		   </div>
-		   <div class="specs-content-wrapper">
-		   {% assign productspecs = product.metafields.productspecs %}
-{% assign key = 'desc' %}
-<div class="specs-content">{{ productspecs[key] }}</div>
-		   </div>
+		  <div class="specs-content-wrapper">
+	<div class="specs-content">
+		<table>
+	<tr><td class="title">Hauling Capacity</td>
+	<td>{{ product.metafields.product.hauling }}</td></tr>
+	<tr><td class="title">Dimensions</td>
+	<td>{{ product.metafields.product.dimensions }}</td></tr>
+	<tr><td class="title">Construction</td>
+	<td>{{ product.metafields.product.construction }}</td></tr>
+	<tr><td class="title">In the Box</td>
+	<td>{{ product.metafields.product.components }}</td></tr>
+	<tr><td class="title">Installation Time</td>
+	<td>{{ product.metafields.product.installtime }}</td></tr>
+	<tr><td class="title">Removal Time</td>
+	<td>{{ product.metafields.product.removaltime }}</td></tr>
+	</table>
+	</div>
+</div>
 </div>
            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 desc-split  desc-right">
 		 <div class="tab-desc-line-wrapper">
@@ -412,7 +413,7 @@
 		   
 </div>
 
-<!--{ % include 'product-reviews' % }-->
+{% include 'reviews-hd' %}
 <div class="product-upsell-wrapper">
 <section class="cms-up-sell section-wrapper">
    <div class="container">

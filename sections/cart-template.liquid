@@ -35,15 +35,17 @@
                 </div>
                 {% unless item.variant.title contains 'Default' %}
                   <div class="cart__meta-text">
+                    <span class="cart-var-label"> Part#:</span>  {{ item.sku }} <br/>
+          			<span class="cart-var-label">Ships:</span> <span class="shipDate"></span><br/>
                     {% for option in item.product.options %}
                     {% assign optionname = option | replace: "Color", "Finish" %}
-                    {% assign optionname = optionname | replace: "Vehicle", "Fit" %} 
+                    <!--{ % assign optionname = option | replace: "Rear-Window Protection", "Protection" % } -->
+                    {% assign optionname = optionname | replace: "Vehicle", "Fit" %}
                     {% assign variantval = item.variant.options[forloop.index0] | replace: ", ,", "," %}
-                    {% assign variantval = variantval | replace: ",", " / " %} 
+                    {% assign variantval = variantval | replace: ",", "  " %} 
                     
-                    <span class="cart-var-label"> {{ optionname }}:</span>   {{ variantval }}</br>                    
+                    <span class="cart-var-label"> {{ optionname }}:</span>   {{ variantval }}  <br/>
                     {% endfor %}
-                    <span class="cart-var-label"> Part#:</span>  {{ item.sku }} </br>
                   </div>
                 {% endunless %}
 
@@ -123,7 +125,6 @@
           {% endfor %}
         </tbody>
       </table>
-
       <footer class="cart__footer">
         <div class="grid">
           {% if section.settings.cart_notes_enable %}
@@ -137,7 +138,7 @@
             <div>
 			<div class="cart-subtotal-wrapper">
               <span class="cart__subtotal-title">Cart Subtotal</span>
-			  <div class="cart__shipping">All prices are USD. Canadian orders, final price will vary due to the exchange rate.</div>
+			  <div class="cart__shipping">All prices are USD. For Canadian orders, final price will vary due to the exchange rate.</div>
 			 </div>
               <span class="cart__subtotal">{{ cart.total_price | money | remove: '.00'}}</span>
             </div>
@@ -148,14 +149,15 @@
               </div>
             {% endif %}  
 		</div>	
-		
+           
+            
 		<div class="cart-btn-left hidden-xs hidden-sm">				
            <input type="submit" name="CHAT NOW" class="btn btn--secondary cart__chat small--hide" value="CHAT NOW">
            <a href="/" name="shop-more" class="btn btn--small-shop">CONTINUE SHOPPING</a>
 			</div>
 		
 		
-              <div class="cart-btn-right">				
+              <div class="cart-btn">				
             <input type="submit" name="update" class="btn btn--secondary cart__update cart__update--large small--hide" value="{{ 'cart.general.update' | t }}">
             <input type="submit" name="checkout" class="btn btn--small-wide" value="{{ 'cart.general.checkout' | t }}">
 			</div>
@@ -193,3 +195,4 @@
 <style>
 .email-wrapper .container .contact-wrapper{border:0px !important;}
 </style>
+

@@ -25,12 +25,12 @@
     </div>
 </section>
 <footer>
+  <div class="tabs"></div>
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-lg-3 footer-item email-item">
                     <div class="footer-email-wrapper">
-                        <div class="grey-zubriki-top"></div>
                         <div class="cmApp_embedFormContainer" style="display:none"></div><!--div class="email-title">Get Connected</div>
      <div class="footer-email-subtitle hidden-large">DiamondBack updates &amp; specials.</div>
      <div class="email-form">
@@ -309,7 +309,8 @@ document.cookie=c_name + "=" + c_value + '; path=/';
    data =replaceAll(data, '%u2013',"-");
    data =replaceAll(data, '%28',"(");
    data =replaceAll(data, '%29',")");
-   data =replaceAll(data, '%22','"');  
+   data =replaceAll(data, '%22','"');
+   data = data.trim();  
     
    return data; 
   }
@@ -351,13 +352,35 @@ var inbed = getCookies('inbed');
     bed =  replaceHTMLSYMB(bed);
     inbed =  replaceHTMLSYMB(inbed);
     
-    
+    year = year.replace('%20', ' ');
+	year = year.replace('%20', ' ');
+	make = make.replace('%20', ' ');
+	make = make.replace('%20', ' ');
+	model = model.replace('%20', ' ');
+	model = model.replace('%20', ' ');
+	bed = bed.replace('%20', ' ');
+	bed = bed.replace('%20', ' ');
+	inbed = inbed.replace('%20', ' ');
+	inbed = inbed.replace('%20', ' ');
     
     
   var resulttitlebar = "<b>CONFIGURE RESULTS:</b> " + make + " / " + model + " / " + year + " / " + bed;
   var resulttitle = "Make: " + make + " | Model: " + model + " | Year Range: " + year + " |  Bed Length: " + bed;
   //var resulttitleproduct = "Make: " + make + "<br/>Model: " + model + "<br/>Year Range: " + year + "<br/>Bed Length: " + bed;
-  var resulttitleproduct = 'FITS: ' + year + ' ' + make + " " + model +  " " + bed + '   <a href="#" class="change">&#62; Change</a>';
+    year = year.replace('%20', ' ');		
+  year = year.replace('%20', ' ');	
+  make = make.replace('%20', ' ');		
+  make = make.replace('%20', ' ');		
+  model = model.replace('%20', ' ');		
+  model = model.replace('%20', ' ');		
+  bed = bed.replace('%20', ' ');		
+  bed = bed.replace('%20', ' ');		
+  inbed =inbed.replace('%20', ' ');		
+  inbed = inbed.replace('%20', ' ');
+  var resulttitleproduct = 'FITS: ' + year + ' ' + make + " " + model +  " " + bed + '   <a href="#" class="change" onclick="goBack()">&#62; Clear</a>';
+  resulttitleproduct = replaceAll(resulttitleproduct, '%E2%80%93', '–');
+  resulttitleproduct = replaceAll(resulttitleproduct, '%25E2%2580%2593', '–');
+  
   
   var resulttitleproducthead= ": <span>" + make + " / " + model + " / " + year + " / " + bed +"</span>";
   if ( inbed !='' && inbed !=undefined && inbed !=0){
@@ -377,7 +400,8 @@ var inbed = getCookies('inbed');
   $('.change').bind('click', function(ev){
   ev.preventDefault();
   ev.stopPropagation();   
-  $('.configure_by_collection').click();
+ //$('.configure_by_collection').click();		  $('.configure_by_collection').click();
+  $('.truck-form').click();  
   })
   }
   $('.filter-result').show();
@@ -414,7 +438,7 @@ var inbed = getCookies('inbed');
   var nextselection = $(this).attr('data-next');
   var control = $(this).attr('id');
      
-  
+  if (nextselection != undefined){
     // if ($(this).val()=='') {     
   if (nextselection=='model'){
    
@@ -457,7 +481,7 @@ var inbed = getCookies('inbed');
      
      
      
-  if (nextselection!='' && $(this).val()!=''){
+  if (nextselection!='' && $(this).val()!='' && nextselection!=undefined){
     
     $(this).removeClass('failed');
     
@@ -530,7 +554,7 @@ for (var item, i = 0; item = items[i++];) {
     
     
   }else{
-  var filter = item.inbed;
+  var filter = item.bedin;
   label="In-Bed Track";  
   }
   
@@ -543,7 +567,9 @@ for (var item, i = 0; item = items[i++];) {
 result.sort(); 
 var arrayLength = result.length;
 for (var i = 0; i < arrayLength; i++) {
-  optionselect = optionselect + '<option value="'+result[i]+'">'+result[i]+'</option>';
+var resultVal = result[i];
+resultVal = replaceAll(resultVal, '–', '%E2%80%93');
+  optionselect = optionselect + '<option value="'+resultVal+'">'+result[i]+'</option>';
 }
           optionselect = '<option value="">'+label+'</option>'+optionselect;           
           $('.featherlight #'+nextselection).html(optionselect);
@@ -560,7 +586,7 @@ for (var i = 0; i < arrayLength; i++) {
   }
   
  
-  
+  }
 }); 
     
     
@@ -678,10 +704,14 @@ bed = replaceHTMLSYMB(bed)
 var inbed = getCookies('inbed'); 
 inbed = replaceHTMLSYMB(inbed)   
 
-var searchparam=make+','+model+','+bed+','+','+inbed+','+year;
+//var searchparam=make+','+model+','+bed+','+','+inbed+','+year;		var searchparam=make+','+model+','+bed+','+','+inbed+','+year;
+var searchparam=make+','+model+','+bed+','+inbed+','+year;
   
 var websiteaddress = document.location.host;
 var protocol = document.location.protocol
+
+//alert("/search?view=json&type=product&q="+searchparam)
+
 $.ajax({
 
 		url: protocol + "//" + websiteaddress + "/search?view=json&type=product&q="+searchparam,
@@ -711,6 +741,9 @@ var id;
   var sku;
   var src;
   var variants;
+          
+  var variant_price;		
+  var varian_id;
   
 for (var item, i = 0; item = items[i++];) {
   id = item.id;
@@ -918,4 +951,8 @@ $('.compare-container').html(FilterSection);
 var colHeight = $('.atv-first-data').height();
 $('.collection-atv-wrapper.grid-first-atv-compare').height(colHeight);  
 });
+  
+  function goBack() {
+    window.history.back();
+}
 </script>

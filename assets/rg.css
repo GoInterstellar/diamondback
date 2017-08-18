@@ -1,3 +1,11 @@
+/* GENERAL OVERRIDES */
+.thumbnails-slider--active .grid__item {clear: none!important;}
+.specs-content-wrapper .desc {color:white;}
+
+/* PAGE: PRIVACY */
+section.privacy p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400; font-size: 18px; line-height: 25px;}
+section.privacy a:link {border-bottom:none; color:#06b9e4;}
+
 /* PAGE: HELP */
 .help-banner h1{font-size:48px!important; text-transform: capitalize!important; font-weight:800!important; margin-bottom:50px!important;}
 .help-banner h2{font-size:26px!important; text-transform: capitalize!important;}
@@ -18,7 +26,7 @@
 .customer-service li a{font-family: "Vitesse SSm A", "Vitesse SSm B"!important; font-style: normal; font-weight: 700;}
 
 /***** PAGE: HOMEPAGE */
-.home-section-points .cms-content-wrap .main-title .home {font-family: "Conv_Forza-Bold",sans-serif!important;font-size: 19px!important; text-transform: uppercase!important;}
+.home-section-points .cms-content-wrap .main-title .home {font-family: "Forza SSm A", "Forza SSm B"!important; font-style: normal; font-weight: 700;font-size: 19px!important; text-transform: uppercase!important;}
 
 /***** PAGE: HD DETAIL */
 @media (max-width:1024px) {
@@ -39,10 +47,10 @@ li.video2 {width: 100%; list-style: none;}
 div.manuals {width:100%; clear:both; margin-top:75px;}
 ul.manuals {background-color:#edeceb; width:45%; display:inline-block; vertical-align:top; padding:25px 0 50px 0; margin:0; border-right:thin solid #333333;}
 ul.manuals:nth-child(1){margin-right:5%;}
-ul.manuals li{width:80%; list-style:none; color:#4F5150; font-size:18px; border-bottom: thin solid #D5D7D8; padding:12px 0; margin:0 auto; font-family: "Conv_Forza-Black",sans-serif;}
-ul.manuals li.title{width:80%; list-style:none; font-size:30px; border-bottom: thin solid #A0A1A2; padding:18px 0; margin:0 auto; font-family: "Conv_Vitesse-Book",sans-serif; text-align:center;}
+ul.manuals li{width:80%; list-style:none; color:#4F5150; font-size:18px; border-bottom: thin solid #D5D7D8; padding:12px 0; margin:0 auto; font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;}
+ul.manuals li.title{width:80%; list-style:none; font-size:30px; border-bottom: thin solid #A0A1A2; padding:18px 0; margin:0 auto; font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 400; text-align:center; color:#2d2d2d;}
 ul.manuals img {max-width:31px; margin-right:8px;}
-ul.manuals li.title span {font-family: "Conv_Vitesse-Black",sans-serif;}
+ul.manuals li.title span {font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;}
 ul.manuals li a, ul.manuals li a:visited, ul.manuals li a:active{color:#4F5150; border-bottom:none!important;}
 ul.manuals li a:hover{color:#06b9e4; text-decoration:none!important;}
 span.small{font-size:24px;}
@@ -68,10 +76,10 @@ span.small{font-size:24px;}
 
 /* PAGE: SHIPPING PAGE */
 /*section.shipping {margin-left:150px;}*/
-section.shipping h3 {font-family: "Conv_Vitesse-Book", sans-serif; font-size:30px;}
+section.shipping h3 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-size:30px; font-weight:400; margin-top:35px; margin-bottom:25px;}
 section.shipping h4 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-size: 22px; font-weight:800;}
 section.shipping h4 span {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-size:15px; font-weight:400;}
-section.shipping p {font-size:18px; color:#4F5150;}
+section.shipping p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300;font-size:18px; color:#4F5150;}
 .shipping-info {
     margin-bottom: 50px;
     max-width: 800px;
@@ -79,14 +87,14 @@ section.shipping p {font-size:18px; color:#4F5150;}
 }
 .shipping-info .item {
     float: left;
-    font-family: "Conv_ForzaSSm-Black",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
     font-size: 18px;
     overflow: hidden;
 }
-.shipping-info .item1 {width:60%; float: left; font-family: "Conv_ForzaSSm-Black",sans-serif;font-size: 18px;overflow: hidden;}
-.shipping-info .item2 {width:40%; float: left; font-family: "Conv_ForzaSSm-Black",sans-serif;font-size: 18px;overflow: hidden;}
+.shipping-info .item1 {width:60%; float: left; font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;font-size: 18px;overflow: hidden;}
+.shipping-info .item2 {width:40%; float: left; font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;font-size: 18px;overflow: hidden;}
 .shipping-info .title {
-    font-family: "Conv_Forza-Bold",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
     font-size: 24px;
 }
 .shipping-info .info-wrap {
@@ -125,7 +133,7 @@ a.owners-manual {border-bottom: none!important; padding-bottom: 1px;}
 section.customer-service-item div.answer {margin-left: 25px; color:#4F5150; font-size:20px;}
 .customer-service-item li a {font-size:20px;}
 #customer-service .customer-service-item h1 {
-    font-family: "Conv_Vitesse-Book",sans-serif !important;
+    font-family: "Vitesse SSm A", "Vitesse SSm B"!important; font-style: normal; font-weight: 400;
     font-size: 22px !important;
 }
 #customer-service .customer-service-item h1.fg {
@@ -133,7 +141,27 @@ section.customer-service-item div.answer {margin-left: 25px; color:#4F5150; font
 }
 
 #customer-service .sidebar {margin-top: 100px !important;}
-.customer-service-item li a {font-family:"Conv_ForzaSSm-Book"!important;}
+section.install-guides #customer-service .sidebar {margin-top: 180px !important;}
+.customer-service-item li a {font-family: "Forza SSm A", "Forza SSm B"!important; font-style: normal; font-weight: 400;}
+.owners-doc-img {
+		width: 65px;
+		height: 84px;
+		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/doc-owners-manual.png?16784171699949827067);
+		background-repeat: no-repeat;
+		cursor: pointer;
+}
+
+.owners-doc-img:hover {
+		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/OM-on.png?18263432594265712701);		
+}
+.owners-doc-img.install {
+		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/doc-installation.png?16784171699949827067);		
+}
+.owners-doc-img.install:hover {
+		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/IG-on.png?10209138841215167074);
+		opacity: 1!important;
+}
+.owners-document-item {overflow: hidden;width: 20%; margin-left:auto; margin-right:auto;}
 
 /*#collection-accessories #left_column li::after {
   content: url('//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/sidebar-bullet.svg');
@@ -143,10 +171,10 @@ section.customer-service-item div.answer {margin-left: 25px; color:#4F5150; font
 section.cover-more-info-atv.cover-atv-compare-section a.link.youtube {margin-top:12px;}
 
 /* PAGE: ATVS */
-.opt-main-content span {font-family: "Conv_ForzaSSm-Black",sans-serif; font-size: 16px;} 
-.opt-main-content {font-family: "Conv_ForzaSSm-Book",sans-serif;/*font-size: 20px;*/}
-div.opt-title {font-family: "Conv_ForzaSSm-Black",sans-serif;font-size: 18px;}
-ul.slider-bullets {font-family: "Conv_ForzaSSm-Bold",sans-serif;font-size: 17px;}
+.opt-main-content span {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800; font-size: 16px;} 
+.opt-main-content {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;/*font-size: 20px;*/}
+div.opt-title {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;font-size: 18px;}
+ul.slider-bullets {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;font-size: 17px;}
 .atv-options-items {max-width: 700px!important;}
 .atv-options-items-sxs {max-width: 900px!important; margin: 30px auto 0!important;}
 
@@ -188,7 +216,7 @@ ul.slider-bullets {font-family: "Conv_ForzaSSm-Bold",sans-serif;font-size: 17px;
 .rear-win span {
     color: #4f5150;
     display: block;
-    font-family: "Conv_ForzaSSm-Bold",sans-serif;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;
     font-size: 16px;
     margin-top: 5px;
   	margin-left: 0;
@@ -205,38 +233,35 @@ form.product-form.product-form-ATVRparent {display:inline-block!important;}
 /* PAGE: CART */
 div.cart-grid{margin: 60px auto 0; max-width: 100%; padding-bottom: 60px; background-color:#EDECEB; padding: 40px 0;}
 div.cart-grid ul{width:100%; margin: 0 auto;}
-div.cart-grid li {display:inline-block; text-align:center;}
+div.cart-grid li {display:inline-block; text-align:center; margin-bottom:50px;}
 div.cart-grid .title {display:block; margin-bottom:5px;}
-div.cart-grid a{font-family: "Conv_Vitesse-Book",sans-serif; font-size:22px; text-transform:uppercase;}
+div.cart-grid a{font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 400; font-size:22px; text-transform:uppercase;}
 div.cart-grid img {display:block; margin:0 auto; border-bottom: solid thin #B8B8B9; padding-bottom:15px;}
-div.cart-grid .price {display:block; margin-bottom:5px; font-family: "Conv_ForzaSSm-Black",sans-serif;font-size: 22px; color:#939598;}
+div.cart-grid .price {display:block; margin-bottom:5px; font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;font-size: 22px; color:#939598;}
 
-/* PAGE: CHECKOUT */
-section.cart div.sidebar {width: 40%!important;}
+/* Tablet 375px */
+@media (max-width:375px) {
+.cart-var-label {
+    margin-right: 20px;
+    text-align: center!important;
+  	width: 100%!important;
+	}
+  .cart__meta-text {text-align:center!important;}
+  .cart .cart__meta {padding-right:0!important;}
+  span.cart-var-label {font-weight:bold;}
+  .list-view-item__title {text-align:center;}
+}
 
 /* PAGE: PRODUCTS */
 @media (min-width:1920px) {
 	div.product-single__description.rte {font-size:17px!important;}
 }
 
-/* PAGE: CHECKOUT */
-section.cart {background-color:white!important;}
-div.sidebar__content {margin-top: 120px;}
-h2.section__title.layout-flex__item.layout-flex__item--stretch {text-transform:capitalize; font-family: "Conv_Vitesse-Book", sans-serif;}
-h2.section__title {text-transform:capitalize; font-family: "Conv_Vitesse-Book", sans-serif;}
-.checkout-wrap{padding: 0 5%; width: 80%; margin: 0 auto;}
-div.order-summary.order-summary--is-collapsed {background-color: #faf8f9; padding: 50px;}
-
 /* PAGE: ACCESSORIES CATEGORY */
 .document-desc-content-accessories{background: #2d2d2d; height: 200px; position: absolute; width: 100%;}
 #Collection .h4.grid-view-item__title {font-size:29px!important;}
 span.cat-compatible-with {font-size: 15px; color: #808285;}
 .product-multi-view {display:none;}
-.available-colors{display:block; font-size: 85%; color: #555; margin-bottom:25px;}
-
-@media (max-width:768px) {
-  #Collection .h4.grid-view-item__title {font-size:20px!important;}
-}
 
 @media (max-width:768px) {
   #Collection .h4.grid-view-item__title {font-size:20px!important;}
@@ -420,6 +445,7 @@ li.get-ready-icon-3{margin: 25px auto 0 auto; max-width:80px; }
   .comp-desc-2 {width: 80%!important; padding: 20px; float: none!important; margin: 0 40px;}
   .document-desc-content-main {margin-left:40px!important; margin-right:none;}
   .product-additional-data {font-size:11px!important;}
+  .bv-supercontainer {position:none!important;top:0!important;}
   
   /* ATV Detail */
   .product-section  .atv-options-content-wrapper h2.product-slide-title, .product-section h1.product-slide-title {font-size:20px!important;}

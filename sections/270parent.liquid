@@ -271,10 +271,6 @@
 
 </section>
 
-<!--section class="hdn-img hidden-md hidden-lg">
-<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-10_50e52107-c9be-44ec-989a-daef62f33a80.png?13012381318366980262" class="hidden-lg">
-</section-->
-
 <section class="banner">
 	<div class="wrapper">
 		<div class="column copy-right">
@@ -294,35 +290,6 @@
 	</div>
 </section>
 
-<!--section class="product-section section-product-img-left prod-270-bkg 270">
-<div class="container">
-        <div class="row">
-		<div class="col-md-7 col-lg-7">
-	    </div>		
-		<div class="col-md-5 col-lg-5">
-		 <div class="product-cms-wrapper">
-		 <h2>Still playing hide and seek with your gear?</h2>
-		 <h1>GAME OVER.</h1>
-		 <div class="product-content-section">
-		Three large access panels make for easy access to all your cargo all the way around your truck. You paid for whole bed, so you should be able to access it all too. Optional storage bins underneath the gull-wing doors keep you and your things organized.
-		</div>
-		<ul class="product-content-list">
-<li>Gull-wing access panels up front</li>
-<li>Unique three-hatch design</li>
-<li>Optional storage bins</li>
-        </ul>
-		<div class="product-custom-link">
-		<a href="#" data-youtube="https://www.youtube.com/embed/IDqOLVWQuPM?rel=0" class="link youtube"><img src="https://cdn.shopify.com/s/files/1/1571/5355/files/play.png?4108859132183675603" alt="Play">Watch <span>Easy Bed Access</span></a>
-		</div>
-		</div>
-          
-	  </div>
-	 
-	  	 
- </div> 
- </div>
-</section-->
-
 <section class="banner">
 	<div class="wrapper dry-gear">
 		<div class="column copy-left white">
@@ -340,13 +307,6 @@
 		</div>
 		</div>
 	</div>
-</section>
-
-<div class="zubriki-wrapper hidden-md hidden-lg zubriki-hd-sec-2">
-		<div class="zibra-grey-bottom-in"></div>
-		</div>
-<section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center">
-<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/HD-3.png?10582643554896036167" class="hidden-lg">
 </section>
 
 <section class="banner">
@@ -379,10 +339,23 @@
 		   </div>
 		   </div>
 		   <div class="specs-content-wrapper">
-		   {% assign productspecs = product.metafields.productspecs %}
-{% assign key = 'desc' %}
-<div class="specs-content">{{ productspecs[key] }}</div>
-		   </div>
+	<div class="specs-content">
+		<table>
+	<tr><td class="title">Hauling Capacity</td>
+	<td>{{ product.metafields.product.hauling }}</td></tr>
+	<tr><td class="title">Dimensions</td>
+	<td>{{ product.metafields.product.dimensions }}</td></tr>
+	<tr><td class="title">Construction</td>
+	<td>{{ product.metafields.product.construction }}</td></tr>
+	<tr><td class="title">In the Box</td>
+	<td>{{ product.metafields.product.components }}</td></tr>
+	<tr><td class="title">Installation Time</td>
+	<td>{{ product.metafields.product.installtime }}</td></tr>
+	<tr><td class="title">Removal Time</td>
+	<td>{{ product.metafields.product.removaltime }}</td></tr>
+	</table>
+	</div>
+</div>
 </div>
            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 desc-split  desc-right">
 		 <div class="tab-desc-line-wrapper">
@@ -438,7 +411,7 @@
 		   
 </div>
 
-<!--{ % include 'product-reviews' % }-->
+{% include 'reviews-270' %}
 <div class="product-upsell-wrapper">
 <section class="cms-up-sell section-wrapper">
    <div class="container">

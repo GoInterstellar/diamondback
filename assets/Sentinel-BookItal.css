@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Conv_Sentinel-BookItal';
+	src: url('Sentinel-BookItal.eot');
+	src: local('☺'), url('Sentinel-BookItal.woff') format('woff'), url('Sentinel-BookItal.ttf') format('truetype'), url('Sentinel-BookItal.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

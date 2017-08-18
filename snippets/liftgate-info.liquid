@@ -1,0 +1,15 @@
+<!-- START LIFTGATE CHECKBOX -->
+      <section class="liftgate">
+        {% assign cart_weight = 0 %}
+      	{% for item in cart.items %}
+        {% assign cart_weight = cart_weight | plus: item.variant.weight | times: item.quantity %}
+        {% endfor %}
+      <p>The estimated weight of this shipment is <strong>{{ cart_weight | weight_with_unit }}</strong></p>
+      	<p>A liftgate assists in getting product off the truck. If needed, the shipment will typically take 1-2 days longer due to a limited number of delivery trucks equipped with liftgate.</p>
+      <p><strong>The driver is unable to help unload a product which is banded to a palette.</strong></p>
+      <br><br>
+      <h3>DiamondBack Freight Shipping Policy</h3>
+      <p><strong>Signature required for delivery.</strong></p>
+      <p>For residential deliveries, the local freight service terminal will call you to schedule a half-day time slot when you know you'll be home so they can deliver your DiamondBack.</p>
+      </section>
+        <!-- END LIFTGATE CHECKBOX -->

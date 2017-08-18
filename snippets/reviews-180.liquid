@@ -1,0 +1,53 @@
+<div id="rr-snapshot-container">
+  <section id="rr-snapshot">
+    <div class="rr-summary">
+      <h1>Ratings &amp; Reviews</h1>
+      <a class="btn" onclick="$BV.ui('rr', 'submit_review', { productId : 'PRODUCTID' });">Write a Review</a>
+      <table class="rr-table">
+        <tr>
+          <td class="snapshot-rating-label" id="overall">Average Overall Rating</td>
+          <td class="snapshot-rating overall-average"><span class="stars"></span> <span class="rating"></span></td>
+        </tr>
+        <tr>
+          <td class="snapshot-rating-label">Ease of Installation</td>
+          <td class="snapshot-rating ease-of-installation"><span class="stars"></span> <span class="rating"></span></td>
+        </tr>
+        <tr>
+          <td class="snapshot-rating-label">Appearance</td>
+          <td class="snapshot-rating appearance"><span class="stars"></span> <span class="rating"></span></td>
+        </tr>
+        <tr>
+          <td class="snapshot-rating-label">Versatility</td>
+          <td class="snapshot-rating versatillity"><span class="stars"></span> <span class="rating"></span></td>
+        </tr>
+        <tr>
+          <td class="snapshot-rating-label">Durability</td>
+          <td class="snapshot-rating durability"><span class="stars"></span> <span class="rating"></span></td>
+        </tr>
+        <tr>
+          <td class="snapshot-rating-label">Value</td>
+          <td class="snapshot-rating value"><span class="stars"></span> <span class="rating"></span></td>
+        </tr>
+      </table>
+    </div>
+    <div id="rr-excerpts">
+      <h2>Review Highlights</h2>
+      <figure class="rr-snapshot-quote">
+        <blockquote>
+          <p>A very tough cover that works well. I would recommend this DiamondBack 180 to everyone.</p>
+        </blockquote>
+        <figcaption>Jack from Texas</figcaption>
+      </figure>
+    </div>
+  </section>
+  <div class="clr"></div>
+</div>
+<div id="BVRRContainer"></div>
+<script type="text/javascript">
+   $BV.ui( 'rr', 'show_reviews', {
+      doShowContent : function () { 
+         // If the container is hidden (such as behind a tab), put code here to make it visible 
+         //(open the tab).
+      }
+   });
+</script>

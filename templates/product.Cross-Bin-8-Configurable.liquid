@@ -62,7 +62,31 @@ jQuery('form[action="/cart/add"]').on('change', optionSelect, function() {
       wrapper.hide();
     }
   });
-});    
+});   
+  $('.color-option').click(function(){
+$('.color-option').removeClass('selected');
+$(this).addClass('selected');  
+var color=$(this).attr('data-val');
+$(this).closest('.product-color-wrapper').find('select').val(color);  
+$(this).closest('.product-color-wrapper').find('select').change();
+thumbnails.each(function() {
+    var wrapper = $(this);
+    while ( wrapper.parent().children().length === 1 ) {
+      wrapper = wrapper.parent();
+    }
+    if ( jQuery(this).attr('alt') === color ) {
+      wrapper.show();
+    }
+    else {
+      wrapper.hide();
+    }
+  });
+});  
+  $(document).ready(function(){
+    if ($('.color-option.selected').length){
+     $('.color-option.selected').click(); 
+    }
+  }) 
 </script>
 
 {% endif %}

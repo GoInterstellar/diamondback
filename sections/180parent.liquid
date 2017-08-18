@@ -273,10 +273,6 @@
 {% include 'product-gallery-js' %}
 
 </section>
-
-<!--section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center">
-<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/180-1.png?8334912630805942452" class="hidden-lg">
-</section-->
   
   <section class="banner">
 	<div class="wrapper">
@@ -316,15 +312,6 @@
 		</div>
 	</div>
 </section>
-
-
-<div class="zubriki-wrapper hidden-md hidden-lg zubriki-hd-sec-2">
-		<div class="white-zubriki-top"></div>
-		</div>
-
-<!--section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center">
-<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-13_b5d2ef98-e8c2-48b4-a55e-b2edb2b9e193.png?7214567596613659704" class="hidden-lg" />
-</section-->
   
   <section class="banner">
 	<div class="wrapper">
@@ -342,39 +329,6 @@
 	</div>
 </section>
 
-<!--section class="product-section  section-product-img-left section-180-bkg-2 more">
-<div class="container">
-        <div class="row">
-		<div class="col-md-7 col-lg-7">
-	    </div>
-	 
-		<div class="col-md-5 col-lg-5">
-		<div class="zubriki-wrapper zubriki-right">
-			<div class="white-zubriki-top"></div>
-			</div>
-			
-		 <div class="product-cms-wrapper">
-		 <h2>Durability you can </h2>
-		 <h1>RELY ON.</h1>
-		 <div class="product-content-section">
-		Made of aluminum diamond plate, the DiamondBack 180 tonneau cover can't crack, rip or tear like other tonneau covers providing unmatched durability against everyday abuse.
-		</div>
-		<ul class="product-content-list">
-<li>.080" 3003 alloy aluminum grade</li>
-<li>105 lb. maximum cover weight</li>
-<li>Customize with hooks, lights, racks</li>
-        </ul>
-		<div class="product-custom-link">
-		<!--a href="#" data-youtube="https://www.youtube.com/embed/WoX9cMi7h6s?rel=0" class="btn youtube">Learn More</a>
-		</div>
-		</div>
-          
-	  </div>
-	 
-	  	 
- </div> 
- </div>
-</section-->
 <div class="product-additional-description">
 <div class="container">
         <div class="row product-secondary-desc-wrapper">	 
@@ -385,10 +339,23 @@
 		   </div>
 		   </div>
 		   <div class="specs-content-wrapper">
-		   {% assign productspecs = product.metafields.productspecs %}
-{% assign key = 'desc' %}
-<div class="specs-content">{{ productspecs[key] }}</div>
-		   </div>
+	<div class="specs-content">
+		<table>
+	<tr><td class="title">Hauling Capacity</td>
+	<td>{{ product.metafields.product.hauling }}</td></tr>
+	<tr><td class="title">Dimensions</td>
+	<td>{{ product.metafields.product.dimensions }}</td></tr>
+	<tr><td class="title">Construction</td>
+	<td>{{ product.metafields.product.construction }}</td></tr>
+	<tr><td class="title">In the Box</td>
+	<td>{{ product.metafields.product.components }}</td></tr>
+	<tr><td class="title">Installation Time</td>
+	<td>{{ product.metafields.product.installtime }}</td></tr>
+	<tr><td class="title">Removal Time</td>
+	<td>{{ product.metafields.product.removaltime }}</td></tr>
+	</table>
+	</div>
+</div>
 </div>
            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 desc-split  desc-right">
 		 <div class="tab-desc-line-wrapper">
@@ -444,7 +411,7 @@
 		   
 </div>
 
-<!--{ % include 'product-reviews' % }-->
+{% include 'reviews-180' %}
 <div class="product-upsell-wrapper">
 <section class="cms-up-sell section-wrapper">
    <div class="container">

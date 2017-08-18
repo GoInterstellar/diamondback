@@ -98,7 +98,7 @@
     <div class="col-md-5 col-lg-4">
       <div class="product-single__meta">
          <div class="product-single__meta-content">
-        <h1 itemprop="name" class="product-single__title">DIAMONDBACK<span>ATV</span>S<span class="copy">&reg;</span></h1>
+        <h1 itemprop="name" class="product-single__title">DIAMONDBACK<span>ATV</span>R<span class="copy">&reg;</span></h1>
 
         {% if section.settings.show_vendor %}
           <p itemprop="brand" class="product-single__vendor">{{ product.vendor }}</p>
@@ -130,17 +130,15 @@
               </span>
             {% endif %}
           </p>
-		  <div class="haul-opt">
-		  Hauling Options<br/>
-		  <span>Haul 1 or 2 ATVs</span>
-		  </div>
            <div class="shipping-info-mobile hidden-md hidden-lg">
 		   Ready to ship: {{ product.metafields.product.readytoship }}
 		   </div>
+           <div class="prod-details-row">
           <form action="/cart/add" method="post" enctype="multipart/form-data" class="product-form product-form-{{ section.id }}{% unless section.settings.show_variant_labels %} product-form--hide-variant-labels{% endunless %}" data-section="{{ section.id }}">
             {% unless product.options.size == 1 and product.variants[0].title == 'Default Title' %}
                {% for option in product.options_with_values %}
-                <div class="selector-wrapper js product-form__item">
+                <div class="selector-wrapper js product-form__item prod-col">
+                  <!-- Begin Finish Options -->
                   <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">                    
 					{% if option.name == 'Color' %}
 					Finish Options
@@ -153,25 +151,27 @@
 				  {% for value in option.values %}
                       <div class="color-option {{ value | escape }} {% if option.selected_value == value %} selected{% endif %}" data-val="{{ value | escape }}"></div>
                     {% endfor %}
-					
 				    <select style="display: none;" class="single-option-selector single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
                     {% for value in option.values %}
                       <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
                     {% endfor %}
                   </select>
-				  </div>
+                    </div>
+                  <!-- End Finish Options -->
 				  {% else %}
+                  <!-- Begin Dropdown Options -->
 				   <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
                     {% for value in option.values %}
                       <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
                     {% endfor %}
                   </select>
+                  <!-- End Dropdown Options -->
 				  {% endif %}                 
-                </div>
+                  </div>
               {% endfor %}
             {% endunless %}
             
-            <!-- BEGIN RATINGS CODE SNIPPET HERE -->		
+            <!-- BEGIN RATINGS CODE SNIPPET HERE		
             <div class="bv-supercontainer">		
                 <div class="bv-container">		
                     <label>Customer Reviews</label>		
@@ -211,6 +211,7 @@
               </button>
             </div>
           </form>
+           </div>
 
         </div>
 
@@ -270,90 +271,44 @@
 </section>
 
 
-<section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center">
-<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-bg-atvs-xl.png?12189333916130954735" class="hidden-lg">
+<!--section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center">
+<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR1-800.png?9865851746000911533" class="hidden-lg">
+</section-->
+
+<section class="go-where">
+	<div class="row">
+		<div class="column one atvr"></div>
+		<div class="column two"><h1>GO WHERE NO TRAILER HAS</h1>
+           <h2>GONE BEFORE.</h2>
+		<p>With the DIamondBack ATV Carrier you don’t have to worry about speed limit restrictions, increased tolls, parking constraints and difficulty getting to off-road trailheads. Say goodbye to the added expense of buying a trailer and keeping it registered, maintained, and stored.</p>
+		</div>
+	</div>
 </section>
 
-<section class="product-section section-product-img-left atv prod-atv-bkg-left-1">
-<div class="container">
-        <div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		</div>		
-		<div class="col-md-6 col-lg-6">
-		 <div class="product-cms-wrapper">
-		 <h2>GO WHERE NO TRAILER HAS</h2>
-		 <h1>GONE BEFORE.</h1>
-		 <div class="product-content-section">
-		With the DIamondBack ATV Carrier you don’t have to worry about speed limit restrictions, increased tolls, parking constraints and difficulty getting to off-road trailheads. Say goodbye to the added expense of buying a trailer and keeping it registered, maintained, and stored.
+<section class="free-up">
+	<div class="row atvr">
+		<div class="column"><h1>FREE UP</h1>
+           <h2>YOUR HITCH.</h2>
+		<p>Forget about having to make those hard decisions on what to take. Whether that be more ATVs, a boat, or a camper now you can haul it all with one truck.</p>
 		</div>
-		</div>
-          
-	  </div>
-	 
-	  	 
- </div> 
- </div>
+	</div>
 </section>
 
 
-<section class="product-section product-section-dark section-product-full-width full-width-atv-bkg">
-<div class="container-absolute-content">
-<div class="container">
-        <div class="row">	 
-	  		<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-		<div class="zubriki-wrapper zubriki-left">
-			<div class="white-zubriki-bottom"></div>
-			</div>
-		 <div class="product-cms-wrapper">
-		  <h2>FREE UP</h2>
-		  <h1>YOUR HITCH.</h1>		 
-		 <div class="product-content-section">
-		Forget about having to make those hard decisions on what to take. Whether that be more ATVs, a boat, or a camper now you can haul it all with one truck.
-		</div>
-		</div>          
-	  </div>
-	  	
-<div class="hidden-xs hidden-sm col-md-5  col-lg-5">
-	 </div>
- </div>  
- </div>
-  </div>
-<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-16.png?14833711004349352338" alt="ATV DiamondBack covers" class="bkgimg-full-width bkg-temp" />		
-</section>
+<!--section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center">
+<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR-1.png?5706995955420655820" class="hidden-lg">
+</section-->
 
-<div class="zubriki-wrapper hidden-md hidden-lg zubriki-hd-sec-2">
-		<div class="zibra-grey-bottom-in"></div>
+<section class="protect-your-gear">
+	<div class="row atvr">
+		<div class="column one"></div>
+		<div class="column two"><h2>PROTECT YOUR GEAR</h2>
+           <h1>FROM WEATHER AND THEFT.</h1>
+		<p>Peace of mind is knowing your gear is safe when you’re out riding or away from your truck while traveling to ATV trails.</p>
 		</div>
+	</div>
+  </section>
 
-
-<section class="hdn-img zubriki-custom-show hidden-md hidden-lg img-center" style="margin-bottom: 20px;">
-<img src="https://cdn.shopify.com/s/files/1/1571/5355/files/cover-atv-bkg-xl.png?15101619999279341013" class="hidden-lg">
-</section>
-
-<section class="product-section  section-product-img-left section-atv-bkg-2 more">
-<div class="container">
-        <div class="row">
-		<div class="col-md-6 col-lg-6">
-		   </div>	 
-		<div class="col-md-6 col-lg-6">
-		<div class="zubriki-wrapper zubriki-right hidden-xs hidden-sm zubriki-custom">
-		<div class="zibra-grey-bottom-in"></div>
-		</div>
-		 <div class="product-cms-wrapper">
-		  <h1>PROTECT YOUR GEAR</h1>
-		 <h2>FROM WEATHER AND THEFT.</h2>
-		
-		 <div class="product-content-section">
-		Peace of mind is knowing your gear is safe when you’re out riding or away from your truck while traveling to ATV trails.
-		</div>
-		</div>
-          
-	  </div>
-	 
-	  	 
- </div> 
- </div>
-</section>
 <section class="product-section section-product-type-atvr-facts">
 <div class="atv-options-content-wrapper">
 <div class="container">
@@ -446,7 +401,6 @@
 </section>
 
 
-
 <div class="product-additional-description">
 <div class="container">
         <div class="row product-secondary-desc-wrapper">	 
@@ -456,11 +410,24 @@
 			<div class="tab-title">PRODUCT SPECS</div>
 		   </div>
 		   </div>
-		   <div class="specs-content-wrapper">
-		   {% assign productspecs = product.metafields.productspecs %}
-{% assign key = 'desc' %}
-<div class="specs-content">{{ productspecs[key] }}</div>
-		   </div>
+		  <div class="specs-content-wrapper">
+	<div class="specs-content">
+		<table>
+	<tr><td class="title">Hauling Capacity</td>
+	<td>{{ product.metafields.product.hauling }}</td></tr>
+	<tr><td class="title">Dimensions</td>
+	<td>{{ product.metafields.product.dimensions }}</td></tr>
+	<tr><td class="title">Construction</td>
+	<td>{{ product.metafields.product.construction }}</td></tr>
+	<tr><td class="title">Components</td>
+	<td>{{ product.metafields.product.components }}</td></tr>
+	<tr><td class="title">Installation Time</td>
+	<td>{{ product.metafields.product.installtime }}</td></tr>
+	<tr><td class="title">Removal Time</td>
+	<td>{{ product.metafields.product.removaltime }}</td></tr>
+	</table>
+	</div>
+</div>
 </div>
            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 desc-split  desc-right">
 		 <div class="tab-desc-line-wrapper">
@@ -516,7 +483,7 @@
 		   
 </div>
 
-<!--{ % include 'product-reviews' % }-->
+{% include 'reviews-atvr' %}
 
 {% unless product.empty? %}
   <script type="application/json" id="ProductJson-{{ section.id }}">
