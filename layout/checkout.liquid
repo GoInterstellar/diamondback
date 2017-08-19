@@ -62,9 +62,13 @@
           </div>
           <div class="sidebar__content">
             {{ content_for_order_summary }}
+            {% for line_item in checkout.line_items %}
             <script>
-              $('.product__description__variant').after('<span class="shipDate-cart">Ships:</span> <span class="shipDate2"></span>');                                         
+              $('.product__description__variant').after('<span class="part_no">Part#: {{ line_item.sku }}</span>');
+              $('.part_no').after('<span class="shipDate-cart">Ships:</span> <span class="shipDate2"></span>');                                         
             </script>
+            {% endfor %}
+            <br />
    
           </div>
         </div>

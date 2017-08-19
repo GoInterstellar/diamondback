@@ -30,7 +30,7 @@ footer div.tabs {margin-left:5%;}
 	footer div.tabs, .tabs--left, .tabs--right {margin-left:13%;}
 }
 
-/* PAGE: CHECKOUT */
+/* PAGE: CART & CHECKOUT */
 section.cart {background-color:white!important;}
 section.cart div.banner .wrap {display:none!important;}
 section.cart div.main {width: 60%!important;}
@@ -47,12 +47,14 @@ section.cart h1 {margin-bottom:0!important;}
 .shipDate-cart {margin-left:20px; font-size: 0.85714em;color: #969696;}
 .shipDate2 {font-size: 0.85714em;color: #969696;}
 .part_no {margin-left:20px; font-size: 0.85714em;color: #969696; display:block;}
-
+.cart_cf {width: 70%; vertical-align: top;}
+.cart__qty-input {width:40px!important; border:none;}
 
 /* Tablet 1024px */
 @media (max-width:1024px) {
   .checkout-wrap{width: 90%;}
   div.order-summary.order-summary--is-collapsed {padding: 20px;}
+    .cart_cf {display:inline-block;}
 }
 
 /* Tablet 768px */
@@ -62,6 +64,9 @@ section.cart h1 {margin-bottom:0!important;}
   div.sidebar__content {margin-top:0!important;}
   section.cart div.sidebar {margin-top:0!important;}
   section.cart .main {padding-top:0!important;}
+  section.cart .small--hide {display:none!important;}
+  /*.cart__price-wrapper {flex: 0 1 14%;}*/
+  .cart_cf {width: 60%;
 }
 
 /* Phone 667px */
@@ -70,6 +75,7 @@ section.cart h1 {margin-bottom:0!important;}
 
 /* Phone 375px */
 @media (max-width:375px) {
+  .cart-var-label {width:100%!important;}
 }
 
 

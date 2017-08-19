@@ -33,21 +33,38 @@
                     {% endif %}
                   </a>
                 </div>
-                {% unless item.variant.title contains 'Default' %}
                   <div class="cart__meta-text">
-                    {% for option in item.product.options %}
-                    {% assign optionname = option | replace: "Color", "Finish" %}
-                    <!--{ % assign optionname = option | replace: "Rear-Window Protection", "Protection" % } -->
-                    {% assign optionname = optionname | replace: "Vehicle", "Fits" %}
-                    {% assign variantval = item.variant.options[forloop.index0] | replace: ", ,", "," %}
-                    {% assign variantval = variantval | replace: ",", "  " %} 
-                    
-                    <span class="cart-var-label"> {{ optionname }}:</span>   {{ variantval }}<br/>                   
-                    {% endfor %}
-                    <span class="cart-var-label"> Part#:</span>  {{ item.sku }} <br/>
-          			<span class="cart-var-label">Ships:</span> <span class="shipDate"></span><br/>
+                    {% unless item.variant.metafields.product.fit == blank %}
+                    <div><span class="cart-var-label"> Fit:</span> <span class="cart_cf">{{ item.variant.metafields.product.fit }}<br/></span></div>
+                    {% endunless %}
+                    {% unless item.variant.metafields.product.finish == blank %}
+                    <span class="cart-var-label"> Finish:</span> <span class="cart_cf">{{ item.variant.metafields.product.finish }}<br/></span>
+                    {% endunless %}
+                    {% unless item.sku == blank %}
+                    <span class="cart-var-label"> Part#:</span> <span class="cart_cf">{{ item.sku }}<br/></span>
+                    {% endunless %}
+                    {% unless item.variant.metafields.product.readytoship == blank %}
+                    <span class="cart-var-label"> Ships:</span> <span class="cart_cf">{{ item.variant.metafields.product.readytoship }} <br/></span>
+                    {% endunless %}
+                    {% unless item.variant.metafields.product.hauling-option == blank %}
+                    <span class="cart-var-label"> Hauling:</span> <span class="cart_cf">{{ item.variant.metafields.product.hauling-option }}<br/></span>
+                    {% endunless %}
+                    {% unless item.variant.metafields.product.ramp-length == blank %}
+                    <span class="cart-var-label"> Length:</span> <span class="cart_cf">{{ item.variant.metafields.product.ramp-length }}<br/></span>
+                  {% endunless %}
+                    {% unless item.variant.metafields.product.protection == blank %}
+                    <span class="cart-var-label"> Protection:</span> <span class="cart_cf">{{ item.variant.metafields.product.protection }}<br/></span>
+                  {% endunless %}
+                    {% unless item.variant.metafields.product.cover == blank %}
+                    <span class="cart-var-label"> Cover:</span> <span class="cart_cf">{{ item.variant.metafields.product.cover }}<br/></span>
+                  {% endunless %}
+                    {% unless item.variant.metafields.product.vehicle-side == blank %}
+                    <span class="cart-var-label"> Side:</span> <span class="cart_cf">{{ item.variant.metafields.product.vehicle-side }}<br/></span>
+                  {% endunless %}
+                    {% unless item.variant.metafields.product.carrier == blank %}
+                    <span class="cart-var-label"> Carrier:</span> <span class="cart_cf">{{ item.variant.metafields.product.carrier }}<br/></span>
+                  {% endunless %}
                   </div>
-                {% endunless %}
 
                 {% comment %}
                   Optional, loop through custom product line items if available

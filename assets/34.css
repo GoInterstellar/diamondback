@@ -881,7 +881,7 @@ font-weight: 800;
 .cart-subtotal-wrapper {
     color: #949597 !important;
     display: inline-block;
-    max-width: 260px;
+    max-width: 265px;
 }
 .cart__shipping {
     font-style: normal !important;
@@ -3599,9 +3599,9 @@ background:  url("https://cdn.shopify.com/s/files/1/1571/5355/files/select-on_c0
 }
 .cart-var-label {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
     text-align: right;
-    width: 60px;
+    width: 75px;
 }
 .cart__meta-text {
     font-size: 14px;
