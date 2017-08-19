@@ -43,27 +43,27 @@
                     {% unless item.sku == blank %}
                     <span class="cart-var-label"> Part#:</span> <span class="cart_cf">{{ item.sku }}<br/></span>
                     {% endunless %}
-                    {% unless item.variant.metafields.product.readytoship == blank %}
-                    <span class="cart-var-label"> Ships:</span> <span class="cart_cf">{{ item.variant.metafields.product.readytoship }} <br/></span>
-                    {% endunless %}
                     {% unless item.variant.metafields.product.hauling-option == blank %}
                     <span class="cart-var-label"> Hauling:</span> <span class="cart_cf">{{ item.variant.metafields.product.hauling-option }}<br/></span>
                     {% endunless %}
                     {% unless item.variant.metafields.product.ramp-length == blank %}
                     <span class="cart-var-label"> Length:</span> <span class="cart_cf">{{ item.variant.metafields.product.ramp-length }}<br/></span>
-                  {% endunless %}
+                  	{% endunless %}
                     {% unless item.variant.metafields.product.protection == blank %}
                     <span class="cart-var-label"> Protection:</span> <span class="cart_cf">{{ item.variant.metafields.product.protection }}<br/></span>
-                  {% endunless %}
+                  	{% endunless %}
                     {% unless item.variant.metafields.product.cover == blank %}
                     <span class="cart-var-label"> Cover:</span> <span class="cart_cf">{{ item.variant.metafields.product.cover }}<br/></span>
-                  {% endunless %}
+                  	{% endunless %}
                     {% unless item.variant.metafields.product.vehicle-side == blank %}
                     <span class="cart-var-label"> Side:</span> <span class="cart_cf">{{ item.variant.metafields.product.vehicle-side }}<br/></span>
-                  {% endunless %}
+                  	{% endunless %}
                     {% unless item.variant.metafields.product.carrier == blank %}
                     <span class="cart-var-label"> Carrier:</span> <span class="cart_cf">{{ item.variant.metafields.product.carrier }}<br/></span>
-                  {% endunless %}
+                  	{% endunless %}
+                    {% unless item.variant.metafields.product.readytoship == blank %}
+                    <span class="cart-var-label"> Ships:</span> <span class="cart_cf">{{ item.variant.metafields.product.readytoship }} <br/></span>
+                    {% endunless %}
                   </div>
 
                 {% comment %}
