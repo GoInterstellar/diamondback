@@ -63,6 +63,14 @@ jQuery('form[action="/cart/add"]').on('change', optionSelect, function() {
       wrapper.hide();
     }
   });
+   $('.product-single__thumbnails li a img').each(function(){
+  var ImgAlt = $(this).attr('alt');
+    if (ImgAlt == color) {
+    $(this).closest('li').show();   
+    } else {
+    $(this).closest('li').hide();   
+    } 
+  });
 });  
     
 $('.color-option').click(function(){
