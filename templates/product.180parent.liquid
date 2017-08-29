@@ -64,6 +64,7 @@ jQuery('form[action="/cart/add"]').on('change', optionSelect, function() {
       wrapper.hide();
     }
   });
+  
 }); 
   
 $('.color-option').click(function(){
@@ -83,6 +84,14 @@ thumbnails.each(function() {
     else {
       wrapper.hide();
     }
+  });
+  $('.product-single__thumbnails li a img').each(function(){
+  var ImgAlt = $(this).attr('alt');
+    if (ImgAlt == color) {
+    $(this).closest('li').show();   
+    } else {
+    $(this).closest('li').hide();   
+    } 
   });
 });  
   $(document).ready(function(){
