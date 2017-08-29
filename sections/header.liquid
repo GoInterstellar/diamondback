@@ -75,10 +75,10 @@
 	 </a> / </li> 	
 	 <li id="header-phone"><a href="tel:8009354002">800.935.4002</a></li>
         <li id="header-chat"><a id="header-chat-link" href="javascript:void(0);" onclick="olark('api.box.expand')">Live Chat</a> / 
-            <ul>
+            {% comment %}<ul>
                 <li><a id="header-chat-sales" href="javascript:void(0);">Sales</a></li>
                 <li><a id="header-chat-support" href="javascript:void(0);">Support</a></li>
-            </ul>
+            </ul>{% endcomment %}
         </li>
         <!--li><a href="/pages/built-in-the-usa">About</a> / </li-->  
 	 <li class="header-cart"><a href="/cart"><span id="CartCount">{{ cart.item_count }}</span><img src="{{ 'utilbar-01.svg' | asset_url }}" alt="Shopping Cart" /></a></li>
