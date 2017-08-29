@@ -1,5 +1,5 @@
 <script>
-  var productId = 'CVR-180'
+  var productId = 'ATV-SIDE'
   var bvURL = "https://api.bazaarvoice.com/data/reviews.json?apiversion=5.4&passkey=cadXfi6RaIIC4IZBzydqjxUM14WwFqTquPlBTv9hcK8r0&Filter=ProductId:"+ productId + "&Include=Products&Stats=Reviews#"
   var bvResults = {}
   var bvRequest = $.ajax({
@@ -13,12 +13,12 @@
 
   function bvPackageData(data) {
     var secondaryGroup = data.Includes.Products[productId].ReviewStatistics.SecondaryRatingsAverages;
-    bvResults.AverageOverallRatings = data.Includes.Products[productId].ReviewStatistics.AverageOverallRating;
-    bvResults.EaseOfInstallation = secondaryGroup.EaseOfInstallation.AverageRating;
-    bvResults.Appearance = secondaryGroup.Appearance.AverageRating;
-    bvResults.Versatillity = secondaryGroup.Versatillity.AverageRating;
-    bvResults.Durability = secondaryGroup.Durability.AverageRating;
-    bvResults.Value = secondaryGroup.Durability.AverageRating;
+    if (bvResults.AverageOverallRatings) {bvResults.AverageOverallRatings = data.Includes.Products[productId].ReviewStatistics.AverageOverallRating;};
+    if (bvResults.EaseOfInstallation) {bvResults.EaseOfInstallation = secondaryGroup.EaseOfInstallation.AverageRating;};
+    if (bvResults.Appearance) {bvResults.Appearance = secondaryGroup.Appearance.AverageRating;};
+    if (bvResults.Versatillity) {bvResults.Versatillity = secondaryGroup.Versatillity.AverageRating;};
+    if (bvResults.Durability) {bvResults.Durability = secondaryGroup.Durability.AverageRating;};
+    if (bvResults.Value) {bvResults.Value = secondaryGroup.Durability.AverageRating;};
     
   function bvClass(value) {
     if (value >= 5.0) {
