@@ -1,4 +1,4 @@
-/* ELEMENT: TABS */
+/***** ELEMENT: TABS */
 .tabs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/grey-zubzi-top-in.png?7608419114768359779"); background-repeat:no-repeat; background-position:0 0; height: 20px; position: absolute; width: 300px;}
 footer div.tabs {margin-left:5%;}
 .tabs .light {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/grey-zubzi-top-in.png?7608419114768359779"); background-repeat:no-repeat; background-position:0 0; height: 20px; position: absolute; width: 300px;}
@@ -30,7 +30,49 @@ footer div.tabs {margin-left:5%;}
 	footer div.tabs, .tabs--left, .tabs--right {margin-left:13%;}
 }
 
-/* PAGE: CART & CHECKOUT */
+/***** PAGE: HOW WE DO IT */
+section.how-we-do-it {background-color:#06b9e4; padding: 3% 0;}
+section.how-we-do-it .content {width:90%; margin: 0 auto;}
+section.how-we-do-it h1 {font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800; font-size:52px;}
+section.how-we-do-it h2 {font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800; font-size:40px; text-transform:none;}
+section.how-we-do-it p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300; font-size:20px; color:#2d2d2d;}
+section.how-we-do-it .center {text-align:center; padding:0 25%;}
+section.how-we-do-it ul {width:100%; display:inline-block; margin-top:-250px;}
+section.how-we-do-it li {width:33%; float:left; padding:0 5%}
+section.how-we-do-it ul p {font-size:17px;}
+section.how-we-do-it li:nth-child(2) {margin-left:2%;}
+section.how-we-do-it li:nth-child(3) {margin-left:-6%;}
+
+/* FIX Tablet 1690px */
+@media (max-width:1690px) {
+  section.how-we-do-it ul {margin-top:-225px;}
+}
+
+/* FIX Tablet 1440px */
+@media (max-width:1440px) {
+  section.how-we-do-it ul {margin-top:-190px;}
+  section.how-we-do-it h2 {font-size:30px;}
+}
+
+/* FIX Tablet 1280px */
+@media (max-width:1280px) {
+  section.how-we-do-it ul {margin-top:-180px;}
+}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+  section.how-we-do-it ul {margin-top:-140px;}
+  section.how-we-do-it h2 {font-size:24px;}
+  section.how-we-do-it ul p {font-size:15px;
+}
+  
+  /* Tablet 768px */
+@media (max-width:768px) {
+  section.how-we-do-it li {width:100%; margin-left:0!important;}
+}
+
+
+/***** PAGE: CART & CHECKOUT */
 section.cart {background-color:white!important;}
 section.cart div.banner .wrap {display:none!important;}
 section.cart div.main {width: 60%!important;}

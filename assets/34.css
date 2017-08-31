@@ -3244,7 +3244,7 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 .compare-collection .price-label {
     color: #808285;
     font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     margin-right: 0;
     margin-top: 5px;
     width: 100%;
@@ -3355,13 +3355,14 @@ background-image:url(//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/comp-07.sv
 }
 .compare-atv-spec {
     color: #4f5150;
-    font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;
-    font-size: 18px;
+    font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
+    font-size: 23px;
     padding: 15px 15px 15px 10%;
     text-align: left;
 }
 .header-spec {
     color: #4f5150;  
+  	font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;
     font-size: 18px;
     padding: 15px;
     text-align: left;
