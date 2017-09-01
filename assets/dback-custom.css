@@ -63,7 +63,7 @@ section.how-we-do-it li:nth-child(3) {margin-left:-6%;}
 @media (max-width:1024px) {
   section.how-we-do-it ul {margin-top:-140px;}
   section.how-we-do-it h2 {font-size:24px;}
-  section.how-we-do-it ul p {font-size:15px;
+  section.how-we-do-it ul p {font-size:15px;}
 }
   
   /* Tablet 768px */
