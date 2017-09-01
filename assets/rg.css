@@ -6,6 +6,13 @@
 section.privacy p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400; font-size: 18px; line-height: 25px;}
 section.privacy a:link {border-bottom:none; color:#06b9e4;}
 
+/* PAGE: BUILT IN THE USA */
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+.cms-content-founders {width:75%;}
+}
+
 /* PAGE: HELP */
 .help-banner h1{font-size:48px!important; text-transform: capitalize!important; font-weight:800!important; margin-bottom:50px!important;}
 .help-banner h2{font-size:26px!important; text-transform: capitalize!important;}

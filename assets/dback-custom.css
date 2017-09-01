@@ -30,6 +30,107 @@ footer div.tabs {margin-left:5%;}
 	footer div.tabs, .tabs--left, .tabs--right {margin-left:13%;}
 }
 
+/* SECTION: FOUNDERS (BUILT IN THE USA PAGE) */
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+	section.banner-founders .col-md-3 {width:100%; text-align:center;}
+}
+
+/* Tablet 991px */
+@media (max-width:991px) {
+  .cms-content-loc {text-align:center!important; margin: 0 auto;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+  section.banner-founders .col-md-3 {margin-top:25px;}
+}
+/* Tablet 375px */
+@media (max-width:375px) {
+  section.banner-founders .contact-wrapper {padding:0 2%;}
+}
+
+
+/***** PAGE: DEALER LOCATOR */
+section.banner-locator {width:100%; height:auto; display:block; overflow:hidden;}
+section.banner-locator .wrapper {width:100%; display:inline-block; margin-bottom: 10px;}
+section.banner-locator .column {display: block;}
+section.banner-locator .image {width:55%; height:471px; float:left;}
+section.banner-locator .copy {width:45%; display:inline-block; padding: 5% 15% 0 5%;}
+section.banner-locator .left {float:left;}
+section.banner-locator .right {float:right;}
+section.banner-locator h1 {text-align:left; font-size:46px;}
+section.banner-locator .help {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/img-locator-help_1x.png?17649931766991063093"); background-size: cover; background-repeat: no-repeat;}
+section.banner-locator .get {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/img-locator-get_1x.png?17649931766991063093"); background-size: cover; background-repeat: no-repeat;}
+.addresses ul {background:#2d2d2d!important; padding:15%!important;}
+#directions_text #direction_destination .name, .addresses li a .name {color:#fff!important; font-weight:800; font-size:17px;}
+.addresses li a span {color:#a0a1a2!important; font-weight:400; font-size:17px; line-height:1.7em;}
+.addresses li a {color:#06b9e4!important; font-weight:300; font-size:14px;}
+#store-locator-title {display:none;}
+.addresses {padding-right:0!important; width:33%!important; height:779px!important;}
+p.footnote {text-align: center; width: 400px; margin: 0 auto;}
+.addresses li:nth-child(1) {margin-top:15px;}
+div.store_website {display:none;}
+
+.addresses ul::before { 
+    content: "Part of our team.";
+	color: #fff;
+  	font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif;
+  	font-style: normal;
+  	font-weight: 800;
+  	font-size:46px;
+  	padding-bottom:50px;
+}
+
+
+section.header-locator {height: 590px; background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/banner-locator_2ce2d947-26df-457d-9481-decc364b8bcf.png?11673685048784089864"); background-size: cover; background-repeat: no-repeat; text-align: center;}
+section.header-locator h1{color: #fff; font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size:56px; text-align: center; margin: 18px 0; padding: 0;}
+section.header-locator h2 {color: #fff; font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 400; font-size: 21px; text-transform: none; margin: 0; padding: 0;}
+section.header-locator p {color:#fff; font-size:20px; width:70%; margin:0 auto;}
+section.header-locator .row {padding: 8% 25%; margin:0;}
+section.header-locator .row img {margin-top:50px!important;}
+section.header-locator .icon {width:140px; height:73px; vertical-align: bottom; margin-bottom: 10px;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+section.header-locator {height: 327px;}
+section.header-locator h1 {font-size:28px;}
+section.header-locator h2 {font-size:16px;}
+section.header-locator .row {padding: 5% 25%;}
+section.header-locator .row img {margin-top:25px!important;}
+section.header-locator p {font-size:15px; width:100%;}
+section.header-locator .icon {width:100px; margin-bottom:-5px;}
+.addresses ul::before {font-size:26px;}
+  .addresses li a span {font-size:15px;}
+  section.banner-locator h1 {font-size:28px;}
+  section.banner-locator .image {height:320px;}
+}
+
+/* Tablet 768px */
+@media (max-width:768px) {
+  section.banner-locator .image {width:100%;}
+  section.banner-locator .copy {width: 100%; display: inline-block; padding: 5% 15% 5% 15%; text-align:center;}
+  section.banner-locator h1 {text-align:center;}
+  #store_map {width: 100%!important; height: 350px !important; float: none;}
+  .addresses {width:100%!important;}
+  .addresses li a {width:80%!important;}
+}
+
+/* Phone 667px */
+@media (max-width:667px) {
+}
+/* FIX Phone 400px */
+@media (max-width:400px) {
+  .addresses li a {width:70%!important;}
+}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.header-locator {height: 244px;}
+  section.header-locator .row {padding: 5% 10%;}
+}
+
 /***** PAGE: HOW WE DO IT */
 section.how-we-do-it {background-color:#06b9e4; padding: 3% 0;}
 section.how-we-do-it .content {width:90%; margin: 0 auto;}
@@ -37,38 +138,61 @@ section.how-we-do-it h1 {font-family: "Vitesse SSm A", "Vitesse SSm B"; font-sty
 section.how-we-do-it h2 {font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800; font-size:40px; text-transform:none;}
 section.how-we-do-it p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300; font-size:20px; color:#2d2d2d;}
 section.how-we-do-it .center {text-align:center; padding:0 25%;}
-section.how-we-do-it ul {width:100%; display:inline-block; margin-top:-250px;}
-section.how-we-do-it li {width:33%; float:left; padding:0 5%}
-section.how-we-do-it ul p {font-size:17px;}
-section.how-we-do-it li:nth-child(2) {margin-left:2%;}
-section.how-we-do-it li:nth-child(3) {margin-left:-6%;}
+section.how-we-do-it ul {width:100%; display:inline-block; margin-top:-220px;}
+section.how-we-do-it li {width:33%; float:left; padding:0 0 0 8%;}
+section.how-we-do-it ul p {font-size:17px; margin-top:8%;}
+section.how-we-do-it li:nth-child(2) {margin-left: -1%; padding-right: 3%;}
+section.how-we-do-it li:nth-child(3) {margin-left: -6%;}
+section.how-we-do-it .patent {margin:40px auto; max-width:182px; display:block;}
+section.how-we-do-it div.bullets {margin-top:25px;}
+section.how-we-do-it .bullets ul {width: 80%; display: inline-block; margin-top: 4%; margin-left: 2%;}
+section.how-we-do-it .bullets li {width: 100%; padding: 0; margin: 0 0 2% 0; font-size: 15px;}
+section.how-we-do-it .bullets li strong {font-weight: 800;}
+section.how-we-do-it .bullets .icon {width:32px; height:32px; vertical-align:top;}
+section.how-we-do-it .no-lines {display:none;}
+
 
 /* FIX Tablet 1690px */
 @media (max-width:1690px) {
-  section.how-we-do-it ul {margin-top:-225px;}
+  section.how-we-do-it ul {margin-top:-200px;}
+    section.how-we-do-it .center {padding:0 20%;}
 }
 
 /* FIX Tablet 1440px */
 @media (max-width:1440px) {
-  section.how-we-do-it ul {margin-top:-190px;}
+  section.how-we-do-it ul {margin-top:-170px;}
   section.how-we-do-it h2 {font-size:30px;}
 }
 
 /* FIX Tablet 1280px */
 @media (max-width:1280px) {
-  section.how-we-do-it ul {margin-top:-180px;}
+  section.how-we-do-it ul {margin-top:-150px;}
 }
 
 /* Tablet 1024px */
 @media (max-width:1024px) {
-  section.how-we-do-it ul {margin-top:-140px;}
+  section.how-we-do-it h1 {font-size:42px;}
+  section.how-we-do-it .center {padding: 0 5%;}
+  section.how-we-do-it ul {margin-top:-75px;}
   section.how-we-do-it h2 {font-size:24px;}
-  section.how-we-do-it ul p {font-size:15px;}
+  section.how-we-do-it ul p {font-size:15px; margin-top: 2%;}
+  section.how-we-do-it p {font-size:17px;}
+  section.how-we-do-it li {width:100%; margin-left:0!important; padding:0 5% 5% 5%;}
+  section.how-we-do-it .bullets ul {margin-top: 2%;}
+  section.how-we-do-it .no-lines {display:block;}
+  section.how-we-do-it .lines {display:none;}
+  section.how-we-do-it .bullets li {margin: 0 0 .5% 0;}
 }
   
   /* Tablet 768px */
 @media (max-width:768px) {
-  section.how-we-do-it li {width:100%; margin-left:0!important;}
+  section.how-we-do-it ul {margin-top:0;}
+  section.how-we-do-it .bullets ul {margin-top: 3%;}
+}
+
+/* Phone 375px */
+@media (max-width:375px) {
+  section.how-we-do-it .bullets ul {margin-top: 6%;}
 }
 
 
@@ -316,6 +440,9 @@ section.compare-atv .column {display:inline-block; margin-right:120px;}
 section.compare-atv .link {color: #fff; font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300; text-decoration: none; transition: all 0.3s ease 0s; font-size: 18px;}
 section.compare-atv .link span {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;}
 
+.header-spec, .compare-atv-spec {min-height:80px;}
+.sp-h-p {display:block;}
+
 /* Tablet 1024px */
 @media (max-width:1024px) {
 section.compare-atv {height:auto;}
@@ -326,6 +453,7 @@ section.compare-atv .row-btn {margin: 50px auto 0 auto;}
 section.compare-atv .column {display:block; text-align:center; margin-bottom:25px; margin-right:0;}
 .link.youtube {padding:20px!important;}
 section.compare-atv .tabs {width: 300px; height: 20px; background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/zubzi-bottom-blue-in.png?8983740209328410719); background-repeat: no-repeat; margin: 0 auto;}
+.header-spec, .compare-atv-spec {min-height:100px;}
 }
 
 /* Phone 375px */
