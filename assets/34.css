@@ -6848,7 +6848,7 @@ font-size: 16px;
 	margin-bottom: 20px;
 }
 .culture h2 {
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 500px;
     padding-top: 0;
     text-align: center;
@@ -7002,7 +7002,7 @@ font-size: 16px;
 @media (max-width:640px){
 .culture h2,
 .compare-content {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .full-width-atv-bkg .product-cms-wrapper, .full-width-atvr-bkg .product-cms-wrapper {

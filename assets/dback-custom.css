@@ -61,6 +61,7 @@ section.banner-locator .copy {width:45%; display:inline-block; padding: 5% 15% 0
 section.banner-locator .left {float:left;}
 section.banner-locator .right {float:right;}
 section.banner-locator h1 {text-align:left; font-size:46px;}
+section.banner-locator p {font-size:17px;}
 section.banner-locator .help {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/img-locator-help_1x.png?17649931766991063093"); background-size: cover; background-repeat: no-repeat;}
 section.banner-locator .get {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/img-locator-get_1x.png?17649931766991063093"); background-size: cover; background-repeat: no-repeat;}
 .addresses ul {background:#2d2d2d!important; padding:15%!important;}
@@ -69,9 +70,41 @@ section.banner-locator .get {background-image: url("https://cdn.shopify.com/s/fi
 .addresses li a {color:#06b9e4!important; font-weight:300; font-size:14px;}
 #store-locator-title {display:none;}
 .addresses {padding-right:0!important; width:33%!important; height:779px!important;}
-p.footnote {text-align: center; width: 400px; margin: 0 auto;}
+p.footnote {text-align: center; width: 475px; margin: 0 auto; font-size:17px;}
 .addresses li:nth-child(1) {margin-top:15px;}
-div.store_website {display:none;}
+.search_bar .search_within_distance, .search_bar .search_limit, .main_search_label {display:none!important;}
+.search_bar {text-align:center!important;}
+.search_bar .main_search_bar {width: 50%!important; float: none!important; display: inline!important;}
+.addresses li {background:url("https://cdn.shopify.com/s/files/1/1571/5355/files/icon-locator_1.5x.png?17645736435141788644") no-repeat scroll 12px 17px transparent!important; background-size: 30px!important;}
+.distance {margin-top:40px!important;}
+.custom_searches select, .main_search_bar input {width:20%!important;}
+
+.search_bar button {
+    background: #06b9e4!important;
+	background-color: #06b6e1!important;
+    background: -webkit-linear-gradient(#06b6e1, #04829f)!important;
+    background: linear-gradient(#06b6e1, #04829f)!important;
+    border: 0px!important;
+    border-radius: 2px!important;	
+    color: #fff !important;
+    cursor: pointer;
+    font-size: 15px!important;
+    font-weight: normal;
+    min-width: 150px;
+    padding: 10px 15px;
+    text-transform: uppercase!important;
+	font-family: "Forza SSm A", "Forza SSm B"!important; font-style: normal!important; font-weight: 800!important;
+  	height:40px;
+}
+.search_bar button:hover{
+	opacity: 100!important;
+	background-color: #04829f;
+    background: -webkit-linear-gradient(#04829f, #06b6e1);
+    background: linear-gradient(#04829f, #06b6e1);	
+	border: 0px!important;
+    border-radius: 2px!important;	
+}
+
 
 .addresses ul::before { 
     content: "Part of our team.";
@@ -92,6 +125,21 @@ section.header-locator .row {padding: 8% 25%; margin:0;}
 section.header-locator .row img {margin-top:50px!important;}
 section.header-locator .icon {width:140px; height:73px; vertical-align: bottom; margin-bottom: 10px;}
 
+/* FIX Desktop 1440px */
+@media (max-width:1440px) {
+  section.banner-locator .copy {padding: 5% 12% 0 5%;}
+}
+
+/* FIX Desktop 1280px */
+@media (max-width:1280px) {
+  section.banner-locator .copy {padding: 5% 10% 0 5%;}
+}
+
+/* FIX Desktop 1200px */
+@media (max-width:1200px) {
+  section.banner-locator .copy {padding: 5% 6% 0 5%;}
+}
+
 /* Tablet 1024px */
 @media (max-width:1024px) {
 section.header-locator {height: 327px;}
@@ -102,9 +150,11 @@ section.header-locator .row img {margin-top:25px!important;}
 section.header-locator p {font-size:15px; width:100%;}
 section.header-locator .icon {width:100px; margin-bottom:-5px;}
 .addresses ul::before {font-size:26px;}
-  .addresses li a span {font-size:15px;}
-  section.banner-locator h1 {font-size:28px;}
-  section.banner-locator .image {height:320px;}
+.addresses li a span {font-size:15px;}
+section.banner-locator h1 {font-size:28px;}
+section.banner-locator .image {height:320px;}
+section.banner-locator p {font-size:15px;}
+p.footnote {font-size:15px;}
 }
 
 /* Tablet 768px */
@@ -119,6 +169,9 @@ section.header-locator .icon {width:100px; margin-bottom:-5px;}
 
 /* Phone 667px */
 @media (max-width:667px) {
+  .search_bar {text-align:left!important;}
+  .main_search_bar input {width:100%!important;}
+  .search_bar button {margin-left:0!important; margin-top:1%!important;}
 }
 /* FIX Phone 400px */
 @media (max-width:400px) {
@@ -127,14 +180,13 @@ section.header-locator .icon {width:100px; margin-bottom:-5px;}
 
 /* Phone 375px */
 @media (max-width:375px) {
-  section.header-locator {height: 244px;}
   section.header-locator .row {padding: 5% 10%;}
 }
 
 /***** PAGE: HOW WE DO IT */
 section.how-we-do-it {background-color:#06b9e4; padding: 3% 0;}
 section.how-we-do-it .content {width:90%; margin: 0 auto;}
-section.how-we-do-it h1 {font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800; font-size:52px;}
+section.how-we-do-it h1 {font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800; font-size:48px;}
 section.how-we-do-it h2 {font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800; font-size:40px; text-transform:none;}
 section.how-we-do-it p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300; font-size:20px; color:#2d2d2d;}
 section.how-we-do-it .center {text-align:center; padding:0 25%;}
@@ -171,7 +223,6 @@ section.how-we-do-it .no-lines {display:none;}
 
 /* Tablet 1024px */
 @media (max-width:1024px) {
-  section.how-we-do-it h1 {font-size:42px;}
   section.how-we-do-it .center {padding: 0 5%;}
   section.how-we-do-it ul {margin-top:-75px;}
   section.how-we-do-it h2 {font-size:24px;}
@@ -188,11 +239,13 @@ section.how-we-do-it .no-lines {display:none;}
 @media (max-width:768px) {
   section.how-we-do-it ul {margin-top:0;}
   section.how-we-do-it .bullets ul {margin-top: 3%;}
+  section.how-we-do-it h1 {font-size:45px;}
 }
 
 /* Phone 375px */
 @media (max-width:375px) {
   section.how-we-do-it .bullets ul {margin-top: 6%;}
+  section.how-we-do-it h1 {font-size:35px;}
 }
 
 
@@ -439,6 +492,7 @@ section.compare-atv .row-btn {width:80%; margin: 100px auto 0 auto; text-align: 
 section.compare-atv .column {display:inline-block; margin-right:120px;}
 section.compare-atv .link {color: #fff; font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300; text-decoration: none; transition: all 0.3s ease 0s; font-size: 18px;}
 section.compare-atv .link span {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;}
+.compare-collection-atv .collection-atv-wrapper {height:352px!important;}
 
 .header-spec, .compare-atv-spec {min-height:80px;}
 .sp-h-p {display:block;}
