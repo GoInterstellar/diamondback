@@ -240,12 +240,19 @@ section.how-we-do-it .no-lines {display:none;}
   section.how-we-do-it ul {margin-top:0;}
   section.how-we-do-it .bullets ul {margin-top: 3%;}
   section.how-we-do-it h1 {font-size:45px;}
+  section.how-we-do-it .no-lines {max-width: 150%!important; margin-left: -185px;}
+}
+
+/* FIX Phone 425px */
+@media (max-width:425px) {
+  section.how-we-do-it .no-lines {margin-left: -105px;}
 }
 
 /* Phone 375px */
 @media (max-width:375px) {
   section.how-we-do-it .bullets ul {margin-top: 6%;}
   section.how-we-do-it h1 {font-size:35px;}
+  section.how-we-do-it .no-lines {margin-left: -83px;}
 }
 
 
@@ -268,6 +275,11 @@ section.cart h1 {margin-bottom:0!important;}
 .part_no {margin-left:20px; font-size: 0.85714em;color: #969696; display:block;}
 .cart_cf {width: 70%; vertical-align: top;}
 .cart__qty-input {width:40px!important; border:none;}
+.os-order-number {display:none;}
+div.thank-you__additional-content {margin-top:10px; font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400; font-size: 20px;}
+div.thank-you__additional-content p {margin:25px 0;}
+.os-header__title {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 46px;}
+
 
 /* Tablet 1024px */
 @media (max-width:1024px) {
@@ -285,7 +297,7 @@ section.cart h1 {margin-bottom:0!important;}
   section.cart .main {padding-top:0!important;}
   section.cart .small--hide {display:none!important;}
   /*.cart__price-wrapper {flex: 0 1 14%;}*/
-  .cart_cf {width: 60%;}
+  .cart_cf {width: 50%;}
 }
 
 /* Phone 667px */
