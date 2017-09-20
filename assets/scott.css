@@ -2,6 +2,30 @@
 	color: #06b9e4;
 }
 
+.template-page .main-content > .override-page-top-margin {
+	margin-top: -55px;
+}
+.override-page-top-margin .banner-content {
+	margin: 6.1% auto;
+}
+.override-page-top-margin .banner-title {
+	border-bottom: 0;
+	line-height: 1.31;
+	margin-bottom: 0;
+}
+.override-page-top-margin .banner-sub-title {
+	font-size: 31px;
+}
+.override-page-top-margin .home-h-sub {
+	font-size: 28px;
+	letter-spacing: -1px;
+	line-height: 1.85;
+}
+.override-page-top-margin .btn {
+	letter-spacing: 0;
+	margin-top: 72px;
+}
+
 /*** BAZAARVOICE OTB REVIEWS SECTION ****************************************************************************************/
 
 .bv-cv2-cleanslate [class*="bv-core-container"] .bv-action-bar .bv-action-bar-header {
@@ -152,6 +176,22 @@
 .bv-cv2-cleanslate [class*="bv-core-container"] .bv-submission .bv-fieldsets .bv-form-actions p.bv-fieldset-casltext {
 	font-size: 10px!important
 }
+.bv-cv2-cleanslate [class*="bv-core-container"] .bv-content-secondary-ratings-container .bv-content-secondary-ratings-value {
+	background-color: #04829f !important;
+	background: -webkit-linear-gradient(#06b6e1, #04829f) !important;
+	background: linear-gradient(#06b6e1, #04829f) !important;
+}
+.bv-cv2-cleanslate .bv-core-container-88 .bv-content-item span.bv-content-secondary-ratings-container {
+	background-color: #EDECEB !important	
+}
+abbr.bv-rating-max.bv-rating-stars.bv-rating-stars-on,
+abbr.bv-rating.bv-rating-stars.bv-rating-stars-off {
+	font-family: arial, helvetica, sans-serif !important;
+}
+.bv-cv2-cleanslate [class*="bv-core-container"] .bv-rating-stars-container abbr.bv-rating-stars-on {
+	color: #0191B2 !important;
+}
+
 
 /*** CONTACT PAGE ****************************************************************************************/
 
@@ -828,14 +868,13 @@ div.bv-curations-cleanslate.bv-carousel-wrapper.bv-modern {
 	width: 100%!important
 }
 .bv-curations-cleanslate a.fm-btn-left::before, .bv-curations-cleanslate a.fm-btn-right::before, .bv-curations-cleanslate a.fm-update-next::before {
-	background: no-repeat #4F5150!important;
-	content: url(https://cdn.shopify.com/s/files/1/1656/2795/t/4/assets/curations-slider-next.svg)!important;
+	content: url(https://cdn.shopify.com/s/files/1/1571/5355/t/11/assets/curations-slider-next.svg?10936692913038884202)!important;
 	display: block;
 	position: relative;
 	width: 13px
 }
 .bv-curations-cleanslate a.fm-btn-left::before {
-	content: url(https://cdn.shopify.com/s/files/1/1656/2795/t/4/assets/curations-slider-prev.svg)!important
+	content: url(https://cdn.shopify.com/s/files/1/1571/5355/t/11/assets/curations-slider-prev.svg?10936692913038884202)!important
 }
 div.bv-curations-cleanslate.bv-carousel-wrapper .fm-carousel.bv-carousel-theme-modern a.fm-btn-left, div.bv-curations-cleanslate.bv-carousel-wrapper .fm-carousel.bv-carousel-theme-modern a.fm-btn-right {
 	background: #4F5150!important
@@ -857,6 +896,9 @@ div.bv-curations-cleanslate.bv-carousel-wrapper div.fm-carousel.bv-carousel-them
 div.bv-curations-cleanslate.bv-carousel-wrapper {
 	overflow: visible!important
 }
+.template-index #bv-carousel > a.fm-btn-left {
+    left: -25px !important;
+}
 
 /*** MODS TO PRODUCT-PAGE BAZAARVOICE CURATION CAROUSEL *****************************************************************************/
 
@@ -864,10 +906,10 @@ div.bv-curations-cleanslate.bv-carousel-wrapper {
 	background-color: #fff!important
 }
 .page-product .bv-curations-cleanslate a.fm-btn-right::before {
-	content: url(https://cdn.shopify.com/s/files/1/1656/2795/t/4/assets/curations-slider-next-gray.svg)!important
+	content: url(https://cdn.shopify.com/s/files/1/1571/5355/t/11/assets/curations-slider-next-gray.svg?12123019090291115828) !important
 }
 .page-product .bv-curations-cleanslate a.fm-btn-left::before {
-	content: url(https://cdn.shopify.com/s/files/1/1656/2795/t/4/assets/curations-slider-prev-gray.svg)!important
+	content: url(https://cdn.shopify.com/s/files/1/1571/5355/t/11/assets/curations-slider-prev-gray.svg?1302730815504238101) !important
 }
 .page-product div.bv-curations-cleanslate.bv-carousel-wrapper .fm-carousel.bv-carousel-theme-modern a.fm-btn-right {
 	border-right: 16px solid #fff!important
@@ -1362,7 +1404,7 @@ div.bv-curations-cleanslate.bv-carousel-wrapper {
 	}
 	.stars, .stars::after {
 		background-position: 0 2px;
-		background-size: 90px auto;
+		background-size: 90px 16px;
 		width: 90px
 	}
 	.five-zero::after {
