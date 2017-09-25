@@ -50,37 +50,6 @@ li.video1 {width: 100%; list-style: none;}
 li.video2 {width: 100%; list-style: none;}
 }
 
-/* PAGE: INSTALLATION GUIDES */
-div.manuals {width:100%; clear:both; margin-top:75px;}
-ul.manuals {background-color:#edeceb; width:45%; display:inline-block; vertical-align:top; padding:25px 0 50px 0; margin:0; border-right:thin solid #333333;}
-ul.manuals:nth-child(1){margin-right:5%;}
-ul.manuals li{width:80%; list-style:none; color:#4F5150; font-size:18px; border-bottom: thin solid #D5D7D8; padding:12px 0; margin:0 auto; font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;}
-ul.manuals li.title{width:80%; list-style:none; font-size:30px; border-bottom: thin solid #A0A1A2; padding:18px 0; margin:0 auto; font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 400; text-align:center; color:#2d2d2d;}
-ul.manuals img {max-width:31px; margin-right:8px;}
-ul.manuals li.title span {font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;}
-ul.manuals li a, ul.manuals li a:visited, ul.manuals li a:active{color:#4F5150; border-bottom:none!important;}
-ul.manuals li a:hover{color:#06b9e4; text-decoration:none!important;}
-span.small{font-size:24px;}
-
-/* Tablet 1024px */
-@media (max-width:1024px) {
-  ul.manuals li.title {font-size:28px;}
-  ul.manuals li {font-size:16px;}
-}
-/* Tablet 768px */
-@media (max-width:768px) {
-  ul.manuals li.title {font-size:24px;}
-  ul.manuals li {font-size:14px;}
-}
-/* Tablet 667px */
-@media (max-width:667px) {
-  ul.manuals {width:100%;}
-}
-
-/* Tablet 375px */
-@media (max-width:375px) {
-	}
-
 /* PAGE: SHIPPING PAGE */
 /*section.shipping {margin-left:150px;}*/
 section.shipping h3 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-size:30px; font-weight:400; margin-top:35px; margin-bottom:25px;}
@@ -135,44 +104,6 @@ img.map {margin-top: -190px; margin-left: -100px; min-width: 450px;}
 
 /* PAGE: OWNERS MANUAL & INSTALLATION GUIDE */
 a.owners-manual {border-bottom: none!important; padding-bottom: 1px;}
-
-/* PAGE: FAQs */
-section.customer-service-item div.answer {margin-left: 25px; color:#4F5150; font-size:20px;}
-.customer-service-item li a {font-size:20px;}
-#customer-service .customer-service-item h1 {
-    font-family: "Vitesse SSm A", "Vitesse SSm B"!important; font-style: normal; font-weight: 400;
-    font-size: 22px !important;
-}
-#customer-service .customer-service-item h1.fg {
-    font-size: 30px !important;
-}
-
-#customer-service .sidebar {margin-top: 100px !important;}
-section.install-guides #customer-service .sidebar {margin-top: 180px !important;}
-.customer-service-item li a {font-family: "Forza SSm A", "Forza SSm B"!important; font-style: normal; font-weight: 400;}
-.owners-doc-img {
-		width: 65px;
-		height: 84px;
-		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/doc-owners-manual.png?16784171699949827067);
-		background-repeat: no-repeat;
-		cursor: pointer;
-}
-
-.owners-doc-img:hover {
-		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/OM-on.png?18263432594265712701);		
-}
-.owners-doc-img.install {
-		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/doc-installation.png?16784171699949827067);		
-}
-.owners-doc-img.install:hover {
-		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/IG-on.png?10209138841215167074);
-		opacity: 1!important;
-}
-.owners-document-item {overflow: hidden;width: 20%; margin-left:auto; margin-right:auto;}
-
-/*#collection-accessories #left_column li::after {
-  content: url('//cdn.shopify.com/s/files/1/1571/5355/t/4/assets/sidebar-bullet.svg');
-}*/
 
 /* PAGE: ATV CAT */
 section.cover-more-info-atv.cover-atv-compare-section a.link.youtube {margin-top:12px;}

@@ -124,6 +124,7 @@ section.header-locator p {color:#fff; font-size:20px; width:70%; margin:0 auto;}
 section.header-locator .row {padding: 8% 25%; margin:0;}
 section.header-locator .row img {margin-top:50px!important;}
 section.header-locator .icon {width:140px; height:73px; vertical-align: bottom; margin-bottom: 10px;}
+div#col-main {margin-top:-30px;}
 
 /* FIX Desktop 1440px */
 @media (max-width:1440px) {
@@ -564,11 +565,6 @@ section.go-where h1 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; 
 section.go-where h2 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 48px; line-height: 0.9em; text-transform: uppercase; margin-top: 0; letter-spacing: 0; text-align:left;}
 section.go-where p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300; font-size:17px; margin-top:15px; color:#2d2d2d;}
 
-/* Background Images */
-section.go-where .atvs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-bg-atvs-xl.png?12189333916130954735"); background-repeat: no-repeat; background-size:contain;}
-section.go-where .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR1-800.png?9865851746000911533"); background-repeat: no-repeat; background-size:contain;}
-section.go-where .sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-left-background_55497052-2b73-4607-a309-fdabdb155795.png?7826891482510995792"); background-repeat: no-repeat; background-size:contain;}
-
 /* Tablet 1024px */
 @media (max-width:1024px) {
   section.go-where h1 {font-size:23px;}
@@ -617,7 +613,6 @@ section.protect-your-gear h2 {font-family: "Vitesse SSm A", "Vitesse SSm B", san
 section.protect-your-gear p {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300; font-size:17px; margin-top:15px;}
 
 /* Background Images */
-section.protect-your-gear .atvs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/cover-atv-bkg-xl.png?15101619999279341013"); background-repeat: no-repeat; background-size:contain;}
 section.protect-your-gear .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR-1.png?5706995955420655820"); background-repeat: no-repeat; background-size:contain; background-position: -125px 0;}
 section.protect-your-gear .sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-bkg-2_aba0e95b-bb60-4159-ba71-facff42f29c9.png?7826891482510995792"); background-repeat: no-repeat; background-size:contain;}
 
@@ -786,65 +781,6 @@ section.we-built .sxs {background-image: url("https://cdn.shopify.com/s/files/1/
   section.we-built .bullets {margin: 30px auto!important; padding: 0 5%;}
 }
 
-
-
-/***** SECTION: ALWAYS READY */
-section.always-ready {width:100%; display:inline-block;}
-section.always-ready .row {width:100%; margin-left:0; margin-right:0;}
-section.always-ready .column {display: inline-block; float: left;}
-section.always-ready .one {width: 60%; height:693px;}
-section.always-ready .two {width:40%; padding: 6% 10% 0 0;}
-section.always-ready h1 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 400; font-size: 28px; line-height: 1.1em; letter-spacing: 0; margin: 0; padding: 0; text-align:left!important;}
-section.always-ready h2 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; font-weight: 800; font-size: 48px; line-height: 0.9em; text-transform: uppercase; margin-top: 0; letter-spacing: 0; text-align:left;}
-section.always-ready p {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 300; font-size:17px; margin-top:25px;}
-section.always-ready .custom-link {}
-section.always-ready .custom-link span {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 700;}
-section.always-ready .link.youtube {background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/play.png?4108859132183675603); background-repeat: no-repeat; cursor: pointer; display: inline-block; height: 60px; padding-top: 20px; text-indent: 65px;}
-section.always-ready .bullets {margin: 30px auto; overflow: hidden;}
-section.always-ready .bullets li {background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/list-item-light.png?17198230689133276032); background-position: 3px center; background-repeat: no-repeat; font-size: 17px; font-weight: bold; line-height: 30px; padding-left: 30px; text-align: left;}
-
-/* Background Images */
-section.always-ready .se {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-1_b1da0e55-d8b9-451d-a8d6-166c886d3d43.png?4092405501371076944"); background-repeat: no-repeat; background-size:contain;}
-section.always-ready .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR1-800.png?9865851746000911533"); background-repeat: no-repeat; background-size:contain;}
-section.always-ready .sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-left-background_55497052-2b73-4607-a309-fdabdb155795.png?7826891482510995792"); background-repeat: no-repeat; background-size:contain;}
-
-/* Tablet 1024px */
-@media (max-width:1024px) {
-  section.always-ready h1 {font-size:23px;}
-  section.always-ready h2 {font-size:32px;}
-  section.always-ready p {font-size:13px;}
-  section.always-ready .one {height:493px;}
-  section.always-ready .two {padding: 6% 6% 0 1%;}
-  section.always-ready .bullets li {font-size:15px;}
-}
-
-/* Phone 768px */
-@media (max-width:768px) {
-  section.always-ready .one {width: 100%; height:573px;}
-  section.always-ready .two {width:100%;}
-  section.always-ready .column {display: block;}
-  section.always-ready h1, section.always-ready h2, section.always-ready p {text-align:center!important;}
-  section.always-ready .two {padding: 2% 20% 12% 20%;}
-  section.always-ready .custom-link {text-align:center;}
-  section.always-ready .bullets {padding:0 15%;}
-}
-
-/* Phone 667px */
-@media (max-width:667px) {
-  section.always-ready .one {width: 100%; height:493px;}
-}
-
-/* Phone 375px */
-@media (max-width:375px) {
-  section.always-ready .one {height:293px;}
-  section.always-ready h1 {font-size:18px;}
-  section.always-ready h2 {font-size:30px;}
-  section.always-ready .two {padding: 2% 8% 12% 8%;}
-  section.always-ready .bullets {margin: 30px auto!important; padding: 0 5%;}
-}
-
-
-
 /***** SECTION: SEE HOW */
 
 /* Desktop 1920px */
@@ -875,11 +811,12 @@ section.see-how .row {padding: 5% 25%;}
 section.banner {width:100%; display:block;}
 section.banner h1 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-style: normal; font-weight: 400; font-size: 28px; line-height: 1.1em; text-transform: uppercase; letter-spacing: 0; margin: 0; padding: 0; text-align:left;}
 section.banner h2 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans-serif; font-style: normal; font-weight: 800; font-size: 48px; line-height: 0.9em; text-transform: uppercase; letter-spacing: 0; margin-top: 0;  text-align:left;}
-section.banner p {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 300; font-size:17px; line-height:1.5em; margin-top:15px;}
+section.banner p {font-family: "Forza SSm A", "Forza SSm B", sans-serif; font-style: normal; font-weight: 300; font-size:17px; line-height:1.5em; margin-top:15px; color:#2d2d2d;}
 section.banner .wrapper {margin-left:0; margin-right:0; display:inline-block; width:100%;}
 section.banner .column {display: inline-block;}
-section.banner .copy-left {width:40%; float:left; padding:5% 5% 0 8%;}
-section.banner .copy-right {width:40%; float:right; padding:5% 12% 0 0;}
+section.banner .copy-left {width:40%; float:left; padding:5%;}
+section.banner .copy-right {width:40%; float:right; padding:5%;}
+section.banner .image {width:60%; height:623px; display:inline-block; background-size:cover!important; background-repeat:no-repeat!important;}
 section.banner .bullets, section.banner .bullets-white {margin: 30px auto; overflow: hidden;}
 section.banner .bullets li {background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/list-item-light.png?17198230689133276032); background-position: 3px top; background-repeat: no-repeat; font-size: 17px; font-weight: bold; line-height: 1.5em; padding-left: 30px; text-align: left; margin-bottom: 8px;}
 section.banner .bullets-white li {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/list-item-dark.png?17198230689133276032"); background-position: 3px top; background-repeat: no-repeat; font-size: 17px; font-weight: bold; line-height: 1.5em; padding-left: 30px; text-align: left; margin-bottom: 8px;}
@@ -891,28 +828,28 @@ section.banner .link.youtube {background-image: url(https://cdn.shopify.com/s/fi
 section.banner .white {color:#fff;}
 
 /* Unique Images */
-section.banner .honey-done {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/HD-1.png?14675765856015483689"); background-size: cover; background-repeat: no-repeat; display:inline-block; background-position:0 50px; width:60%; height:623px;}
-section.banner .we-built {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/banner-we-built_1_5x.png?8321588178314262560"); background-size: cover; background-repeat: no-repeat; width:60%; display:inline-block; height:623px; background-position:-150px 0;}
-section.banner .always-ready {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-1_b1da0e55-d8b9-451d-a8d6-166c886d3d43.png?4092405501371076944"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
-section.banner .still-playing {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-270_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
-section.banner .finally-reach {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-12_ef99dee8-41f5-45f8-8e3e-b01db0aa98fb.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
-section.banner .durability {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-13_b5d2ef98-e8c2-48b4-a55e-b2edb2b9e193.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}section.banner .protection {background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-11_edb839cc-fd0d-44ea-9ce7-1d4871875e62.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px;}
-section.banner .be-ready {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/be-ready_2x_ac7197c6-7f9a-4519-9e17-af2598bb7788.png?6271390151144493410"); background-size: cover; background-repeat: no-repeat; height:623px; width:60%;}
+section.banner .honey-done {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/HD-1.png?14675765856015483689"); background-position:left;}
+section.banner .we-built {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/banner-we-built_1_5x.png?8321588178314262560"); background-position: center;}
+section.banner .always-ready {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-1_b1da0e55-d8b9-451d-a8d6-166c886d3d43.png?4092405501371076944"); background-position:right;}
+section.banner .still-playing {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-270_1_5x.png?4512121769328318696"); background-position: center;}
+section.banner .finally-reach {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-12_ef99dee8-41f5-45f8-8e3e-b01db0aa98fb.png?7214567596613659704");background-position:top right;}
+section.banner .durability {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-13_b5d2ef98-e8c2-48b4-a55e-b2edb2b9e193.png?7214567596613659704"); background-position:top right;}
+section.banner .protection {background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-11_edb839cc-fd0d-44ea-9ce7-1d4871875e62.png?7214567596613659704"); background-repeat: no-repeat; height:623px;}
+section.banner .be-ready {background: url("https://cdn.shopify.com/s/files/1/1571/5355/files/be-ready_2x_ac7197c6-7f9a-4519-9e17-af2598bb7788.png?6271390151144493410");}
+section.banner .go-where {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-bg-atvs-xl.png?12189333916130954735"); background-position:top right;}
+section.banner .go-where-atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR1-800.png?9865851746000911533"); background-position:right;}
+section.banner .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR1-800.png?9865851746000911533");}
+section.banner .sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-left-background_55497052-2b73-4607-a309-fdabdb155795.png?7826891482510995792");}
+section.banner .protect-your-gear-atvs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/cover-atv-bkg-xl.png?15101619999279341013"); background-position:top right;}
+section.banner .protect-your-gear-atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/ATVR-1.png?5706995955420655820"); background-position:right;}
+section.banner .go-where-sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-left-background_55497052-2b73-4607-a309-fdabdb155795.png?7826891482510995792"); background-position:right;}
+section.banner .protect-sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs-prod-bkg.png?61942114016695599");}
+
 section.banner .be-ready h1 {font-size:48px;} 
 
 /* Unique Images with Overlays */
 section.banner .dry-gear {background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/hd-desction-3_710844cc-a5dc-4625-91fc-ab2dc0fc0b07.png?48076164648996798"); background-size: cover; background-repeat: no-repeat; height:623px;}
 section.banner .protection {background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-11_edb839cc-fd0d-44ea-9ce7-1d4871875e62.png?7214567596613659704"); background-size: cover; background-repeat: no-repeat; height:623px;}
-
-/* Desktop 1600px  */		
-@media (max-width:1600px) {		
-section.banner .still-playing {background-position: -150px 0;}		
- }		
-		
-/* Desktop 1440px  */		
-@media (max-width:1440px) {		
-section.banner .still-playing {background-position: -220px 0;}		
-}
 
 /* Tablet 1024px */
 @media (max-width:1024px) {
@@ -921,20 +858,20 @@ section.banner .still-playing {background-position: -220px 0;}
   section.banner p {font-size:13px;}
   section.banner .bullets li, section.banner .bullets-white li {font-size:15px;}
   section.banner .custom-link {font-size:13px;}
-  section.banner .copy-left {padding: 5% 0 0 8%;}
+  section.banner .copy-left {padding: 5%;}
   section.banner .link.youtube {text-indent:45px;}
+  section.banner .image {height:520px;}
   
   /* Unique Images */
-  section.banner .honey-done, section.banner .we-built, section.banner .still-playing, section.banner .durability {height:470px;}
+  section.banner .go-where-atvr, section.banner .protect-your-gear-atvr, section.banner .protect-sxs {height:400px;}
   section.banner .dry-gear {height:500px;}
-  section.banner .always-ready, section.banner .still-playing, section.banner .finally-reach, section.banner .be-ready {height:520px;}
-  section.banner .always-ready, section.banner .still-playing {background-position: -220px 0;}
   section.banner .finally-reach, section.banner .be-ready {background-position: -75px 0;}
   section.banner .we-built {background-position: center;}
 }
 
 /* Tablet 768px */
 @media (max-width:768px) {
+  section.banner .image {width:100%;}
   section.banner .column {width:100%; padding:10%;}
   section.banner h1, section.banner h2, section.banner p, section.banner .custom-link {text-align:center;}
   section.banner .link.youtube {margin-left:0!important;}
@@ -942,7 +879,6 @@ section.banner .still-playing {background-position: -220px 0;}
   section.banner .always-ready, section.banner .be-ready {background-position:0;}
   section.banner .dry-gear {background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/dry-gear-768.png?2866073418324721280");}
   section.banner .protection {background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/Cover-background-11_edb839cc-fd0d-44ea-9ce7-1d4871875e62.png?7214567596613659704");}
-  section.banner .still-playing {background-position: -100px 0;}
   section.banner .finally-reach {background-position: 0;}
   section.banner .protection {background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/protection-768.png?8648014835025993817"); background-position: right;}
   section.banner .btn-wrapper {text-align:center!important;}
@@ -959,21 +895,18 @@ section.banner .still-playing {background-position: -220px 0;}
   section.banner .bullets, section.banner .bullets-white {margin: 30px 15px!important;}
   section.banner .protection {background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/protection-375.png?5494689429686404100"); background-position:left;}
   section.banner .dry-gear {background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://cdn.shopify.com/s/files/1/1571/5355/files/dry-gear-375.png?13314591307011974515");}
-  section.banner .still-playing {background-position: -275px 0;}
   section.banner .we-built {height:270px;}
 }
-      
-
 
 
 /***** CATEGORY: COVERS & ATV */
-section.banner-product {width:100%; height:auto; display:block; overflow:hidden;}
+section.banner-product {width:100%; display:block; overflow:hidden;}
 section.banner-product .gray {background-color: #f6f5f5;}
 section.banner-product .wrapper {width:100%; display:inline-block; margin-bottom: 10px;}
 section.banner-product .column {display: block;}
 section.banner-product .column-hidden {display: none;}
-section.banner-product .image {width:55%; height:564px; float:left;}
-section.banner-product .copy {display:inline-block; padding: 5% 0 0 5%;}
+section.banner-product .image {width:60%; float:left;}
+section.banner-product .copy {display:inline-block; padding: 5%; width:40%;}
 section.banner-product .left {float:left;}
 section.banner-product .right {float:right;}
 section.banner-product h1, section.banner-product h2, section.banner-product h3, section.banner-product h4 {font-family: "Vitesse SSm A", "Vitesse SSm B", sans_serif; font-style: normal; text-align:left;}
@@ -988,15 +921,13 @@ section.banner-product .btns {font-family: "Forza SSm A", "Forza SSm B", sans-se
 section.banner-product .btns a {color:#06b9e4; text-transform: uppercase; text-decoration: none;}
 section.banner-product .btns a:hover {text-decoration:underline;}
 
-section.banner-product .hd {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-hd_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat; background-position: right;}
-section.banner-product .se {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-se_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat;}
-section.banner-product .i270 {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-270_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat;}
-section.banner-product .i180 {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-180_1_5x.png?15976954353574770196"); background-size: cover; background-repeat: no-repeat;}
-section.banner-product .atvs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/atvs_1_5x.png?7485904071159953320"); background-size: cover; background-repeat: no-repeat;}
-section.banner-product .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/atvr_1_5x.png?7485904071159953320"); background-size: cover; background-repeat: no-repeat; background-position: right;}
-section.banner-product .sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs_1_5x.png?7485904071159953320"); background-size: cover; background-repeat: no-repeat;}
-
-
+section.banner-product .hd {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-hd_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat; background-position: right; height:570px;}
+section.banner-product .se {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-se_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat; height:570px;}
+section.banner-product .i270 {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-270_1_5x.png?4512121769328318696"); background-size: cover; background-repeat: no-repeat; height:570px;}
+section.banner-product .i180 {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/covers-180_1_5x.png?15976954353574770196"); background-size: cover; background-repeat: no-repeat; height:570px;}
+section.banner-product .atvs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/atvs_1_5x.png?7485904071159953320"); background-size: cover; background-repeat: no-repeat; height:570px;}
+section.banner-product .atvr {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/atvr_1_5x.png?7485904071159953320"); background-size: cover; background-repeat: no-repeat; background-position: right; height:570px;}
+section.banner-product .sxs {background-image: url("https://cdn.shopify.com/s/files/1/1571/5355/files/sxs_1_5x.png?7485904071159953320"); background-size: cover; background-repeat: no-repeat; height:570px;}
 
 /* Tablet 1440px */
 @media (max-width:1440px) {
@@ -1006,7 +937,7 @@ section.banner-product .sxs {background-image: url("https://cdn.shopify.com/s/fi
 	section.banner-product h4 {font-size:18px; text-transform:uppercase;}
 	section.banner-product .price {font-size: 15px; text-transform:uppercase; margin:5% 0 0 0;}
 	section.banner-product .price span {font-size:33px;}
-	section.banner-product .image {height:380px;}
+	section.banner-product .image {height:445px;}
 	}
 	
 	/* Tablet 988px */
@@ -1032,7 +963,7 @@ section.banner-product .sxs {background-image: url("https://cdn.shopify.com/s/fi
   section.banner-product .price {margin: 5% 0 0 0;}
 }
 
-	/* Phone 375px */
+/* Phone 375px */
 @media (max-width:375px) {
   section.banner-product .copy {padding:15% 3%;}
   section.banner-product .image {height:392px;}
@@ -1045,3 +976,78 @@ section.banner-product .sxs {background-image: url("https://cdn.shopify.com/s/fi
   section.banner-product .sxs {background-position: -75px 0;}
   section.banner-product .atvr {background-position: -90px 0;}
 	}
+
+
+/* PAGE: INSTALLATION GUIDES */
+div.manuals {width:100%; clear:both; margin-top:75px;}
+ul.manuals {background-color:#edeceb; width:45%; display:inline-block; vertical-align:top; padding:25px 0 50px 0; margin:0; border-right:thin solid #333333;}
+ul.manuals:nth-child(1){margin-right:5%;}
+ul.manuals li{width:80%; list-style:none; color:#4F5150; font-size:18px; border-bottom: thin solid #D5D7D8; padding:12px 0; margin:0 auto; font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 800;}
+ul.manuals li.title{width:80%; list-style:none; font-size:30px; border-bottom: thin solid #A0A1A2; padding:18px 0; margin:0 auto; font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 400; text-align:center; color:#2d2d2d; line-height:1em;}
+ul.manuals img {max-width:31px; margin-right:8px;}
+ul.manuals li.title span {font-family: "Vitesse SSm A", "Vitesse SSm B"; font-style: normal; font-weight: 800;}
+ul.manuals li a, ul.manuals li a:visited, ul.manuals li a:active{color:#4F5150; border-bottom:none!important;}
+ul.manuals li a:hover{color:#06b9e4; text-decoration:none!important;}
+span.small{font-size:24px;}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+  ul.manuals li.title {font-size:28px;}
+  ul.manuals li {font-size:16px;}
+}
+/* Tablet 768px */
+@media (max-width:768px) {
+  ul.manuals li.title {font-size:24px;}
+  ul.manuals li {font-size:14px;}
+}
+/* Tablet 667px */
+@media (max-width:667px) {
+  ul.manuals {width:100%;}
+}
+
+/* Tablet 375px */
+@media (max-width:375px) {
+	}
+
+
+/* PAGE: WARRANTY */
+#customer-service .customer-service-item h1.pr {
+    font-size: 30px !important;
+}
+.font16 {font-size:16px!important;}
+
+
+/* PAGE: FAQs */
+section.customer-service-item div.answer {margin-left: 25px; color:#4F5150; font-size:20px;}
+.customer-service-item li a {font-size:20px;}
+#customer-service .customer-service-item h1 {
+    font-family: "Vitesse SSm A", "Vitesse SSm B"!important; font-style: normal; font-weight: 400;
+    font-size: 22px !important;
+}
+#customer-service .customer-service-item h1.fg {
+    font-size: 30px !important;
+}
+
+
+#customer-service .sidebar {margin-top: 100px !important;}
+section.install-guides #customer-service .sidebar {margin-top: 180px !important;}
+.customer-service-item li a {font-family: "Forza SSm A", "Forza SSm B"!important; font-style: normal; font-weight: 400;}
+.owners-doc-img {
+		width: 65px;
+		height: 84px;
+		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/doc-owners-manual.png?16784171699949827067);
+		background-repeat: no-repeat;
+		cursor: pointer;
+}
+
+.owners-doc-img:hover {
+		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/OM-on.png?18263432594265712701);		
+}
+.owners-doc-img.install {
+		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/doc-installation.png?16784171699949827067);		
+}
+.owners-doc-img.install:hover {
+		background-image: url(https://cdn.shopify.com/s/files/1/1571/5355/files/IG-on.png?10209138841215167074);
+		opacity: 1!important;
+}
+.owners-document-item {overflow: hidden;width: 20%; margin-left:auto; margin-right:auto;}
