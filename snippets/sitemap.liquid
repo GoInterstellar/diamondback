@@ -40,11 +40,11 @@
 {% endfor %}
 </ul>
 
-<ul>
+<!--ul>
   <h3>More DiamondBack</h3>
-{% for link in linklists.sitemap-more-diamondback.links %}
-   <li {% if link.active %} class="active"{% endif %}>{{ link.title | link_to: link.url }}</li>
-{% endfor %}
-</ul>
+{ % for link in linklists.sitemap-more-diamondback.links %}
+   <li { % if link.active %} class="active"{ % endif %}>{ { link.title | link_to: link.url }}</li>
+{ % endfor %}
+</ul-->
 
 <br />

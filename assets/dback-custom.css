@@ -502,13 +502,18 @@ section.compare-atv h1 {color: #fff; font-weight: normal; font-family: "Vitesse 
 section.compare-atv h2 {color: #fff; font-weight: normal; font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 400; font-size: 24px; text-transform: none; text-align: center!important;}
 section.compare-atv .row {margin:0; padding:0;}
 section.compare-atv .row-btn {width:80%; margin: 100px auto 0 auto; text-align: center;}
-section.compare-atv .column {display:inline-block; margin-right:120px;}
+section.compare-atv .column {display:inline-block; margin-right:5%; vertical-align:middle;}
 section.compare-atv .link {color: #fff; font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 300; text-decoration: none; transition: all 0.3s ease 0s; font-size: 18px;}
 section.compare-atv .link span {font-family: "Forza SSm A", "Forza SSm B"; font-style: normal; font-weight: 700;}
 .compare-collection-atv .collection-atv-wrapper {height:352px!important;}
 
 .header-spec, .compare-atv-spec {min-height:80px;}
 .sp-h-p {display:block;}
+
+/* FIX DESKTOP 1281px */
+@media (max-width:1281px) {
+  section.compare-atv .column {margin-right:;}
+}
 
 /* Tablet 1024px */
 @media (max-width:1024px) {
